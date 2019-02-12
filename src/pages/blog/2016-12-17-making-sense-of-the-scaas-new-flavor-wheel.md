@@ -25,7 +25,7 @@ Long before I cared about letterforms I grew up in the 'burbs of a big city wher
 
 In middle school I ended up in the district where a lot of Korean students lived and started learning the occasional word from the Korean dramas they would recommend to me:
 
-## 빨리!
+> 빨리!
 
 I became best friends with a girl who had been in remedial English until second grade because she had only spoken Vietnamese at home, and by high school I was spending many afternoons at her house as her mother would make us dishes translated on English menus as _fish in clay pot_ and _vermicelli noodles_. She gave me a bootlegged version of Photoshop 7 her brother had taken from work and we would spend our afternoons making _Final Fantasy X_ forum banners. At lunchtime my friends and I would draw and talk about the fan fiction we were writing and brainstorm plotlines together, despite how uncool we knew this made us.
 
@@ -33,9 +33,9 @@ Once, when researching some CSS for a LiveJournal theme I was writing, I learned
 
 In 9th grade I was finally allowed to take a language, and ended up in French. I sat next to a boy named Brian, and even then we were so desperate to talk to each other we'd talk in French (them's were the rules) even though we couldn't express anything worth saying yet:
 
-## J'aime la pizza
-
-## Tu es laid
+> J'aime la pizza
+>
+> Tu es laid
 
 Facebook messages, when, on a whim, I scrolled back in time, showed a progression in both our abilities to speak: where at first we spoke mostly in _xD_, _:)_, _@_@_, we eventually were able to speak in words, and phrases, and full thoughts.
 
@@ -45,17 +45,17 @@ In 11th grade I was allowed to drop gym for another elective, and I decided to e
 
 Perhaps most fascinating about the expression of truth is how languages can differ ever so slightly in how they express even the small things. For example:
 
-## мне холодно!
+> мне холодно!
 
 Saying "I'm cold" in Russian is more like "It is cold to me". Russian expresses the cold as something exterior; the cold is affecting me, it's doing something to me. In English, the cold becomes something you _are_. I think this is perhaps because Russians understand cold better than the English do; the way cold seeps through your coat, through your skin, and into your bones in a way that is impossible to shake with more clothing.
 
 In French _missing something_ is inverted; instead of
 
-## I miss you
+> I miss you
 
 we have
 
-## Tu me manques
+> Tu me manques
 
 As if the thing, or person, you are missing were a fundamental part of your being and when they are gone it is as if they have taken part of you that you are not whole without.
 
@@ -65,11 +65,11 @@ In Spanish the very act of saying _you_ is complicated. Are you addressing one p
 
 In the younger days of my marriage the sudden cacophony of my in-laws house in comparison to the relative silence of mine was shocking. A constant, mock annoyance:
 
-## Apuráaaate vos!
-
-## Bajáte d'allí!
-
-## Jajajaja cállase gordita!
+> Apuráaaate vos!
+>
+> Bajáte d'allí!
+>
+> Jajajaja cállase gordita!
 
 These were the things that made learning other languages endlessly complicated and it was easy, delightful even, to fall into the rabbithole of questioning that is so often awkward for a native speakers who have never analyzed their speech in such a way before:
 
@@ -83,21 +83,21 @@ Years later, with so many of these questions answered I still seem to constantly
 
 Learning the ways that each language I studied expressed the same ideas, the same thoughts, with different connotations revealed beauty if one had the patience for it. My favorite poem has long been a poem from Pushkin that modern English has lost the ability to give justice to as English no longer differentiates between the formal and informal _you_:
 
-## Пустое вы сердечным ты
-
-##  Она, обмолвясь, заменила
-
-##  И все счастливые мечты
-
-##  В душе влюбленной возбудила.
-
-##  Пред ней задумчиво стою,
-
-##  Свести очей с нее нет силы;
-
-##  И говорю ей: как вы милы!
-
-##  И мыслю: как тебя люблю!
+> Пустое вы сердечным ты
+>
+> Она, обмолвясь, заменила
+>
+> И все счастливые мечты
+>
+> В душе влюбленной возбудила.
+>
+> Пред ней задумчиво стою,
+>
+> Свести очей с нее нет силы;
+>
+> И говорю ей: как вы милы!
+>
+> И мыслю: как тебя люблю!
 
 ["Sweet thou for an empty you/She humorously substituted"…](https://www.stihi.ru/2010/12/31/683)
 
@@ -109,17 +109,17 @@ English has its own charms, its own complications. Looking at a word and knowing
 
 As I steamrolled through an obsession with language with no good idea what to do with it - my conversation in French was stilted, my Spanish poorly accented, and Russian's just fucking hard - I also was still endlessly fiddling with computers and layouts, drawing, writing, and spending a great deal of time not being any good at any of those things either. Declaring a major in graphic design amidst the mess made more sense as an employable sort of confusion. The introductory level courses included
 
-## Introduction to Graphic Design
-
-## Typography 1
-
-## Introduction to Digital Media Design
-
-## Graphic Design History
-
-## Typography 2
-
-## Design for Print
+> Introduction to Graphic Design
+>
+> Typography 1
+>
+> Introduction to Digital Media Design
+>
+> Graphic Design History
+>
+> Typography 2
+>
+> Design for Print
 
 In Type 1 the first assignment was to draw letterforms. I drew the letter k 10 times over, and we hung them up in front of the class and critiqued our ability to copy a typographers' work but moreover discovered and discussed just how much work someone had put into making that letter, that alphabet, the entire typeface. It takes forever, making characters. It takes forever being any good at something small and careful like that.
 
@@ -149,7 +149,7 @@ I was pulled from academic curiosity with language into its messier reality by a
 
 Once my husband almost died from blood loss - a bad gash to the leg. I watched him pale and faint and in my panic I pounded on his chest, willing him to wake up with every fiber of my being more than really doing something useful, like calling an ambulance, fashioning a tourniquet. When he came to, he said
 
-## ¿Que está pasando?
+> ¿Que está pasando?
 
 and I saw the tiny skip between thought and its worded expression and realized I'd jumped the gap closer to that amorphous thought, accidentally. Gotten one step closer to being in someone's head. Trauma bubbling out the words at the same time as truth was being woven in the neurons of his brain.
 
