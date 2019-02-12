@@ -131,7 +131,7 @@ We typeset articles, and posters, and booklets. The big assignment of the year w
 
 Typefaces, like the languages they express, have interesting histories and etymologies all their own. Baskerville is a popular story for illustrating this: as John Baskerville set to work on his typeface, he was simultaneously falling in love with his live-in housemaid, who it is believed had a great deal to do with the creation of that famous work. Centuries later Zuzana Licko created _Mrs Eaves_¹, a modern Baskerville type pairing, meant to acknowledge the work Ms. Eaves - eventually, Mrs. Baskerville - had contributed to Baskerville's creation in a time when women were not recognized in professional settings for their work.
 
-!["You mustn't worry" typeset in Baskerville and then again in Mrs. Eaves.](/img/1_7kciostuzroocreu5yjllw.png)
+![You mustn't worry typeset in Baskerville and then again in Mrs. Eaves.](/img/1_7kciostuzroocreu5yjllw.png)
 
 Modern stories are not dissimilar; typefaces are often created with a purpose in mind. The Wall Street Journal commissioned _Retina_ because they wanted to typeset letters and numbers incredibly small, incredibly dense, without ink from the newspaper printing press bleeding².
 
@@ -139,7 +139,7 @@ Modern stories are not dissimilar; typefaces are often created with a purpose in
 
 Sometimes content can change the form it's been put into so fundamentally the form is forever connotatively altered. In 2008 the Obama [_Hope_ poster](https://en.wikipedia.org/wiki/Barack_Obama_%22Hope%22_poster) was typeset in Gotham, forever changing that selection of typeface to have meaning beyond _something that evokes New York to immediate transportation to a pivotal moment in our country's history_. The Nazis used [_Fraktur_](https://en.wikipedia.org/wiki/Fraktur), a popular blackletter at the time, in many of their campaigns giving a centuries old lettering process the new, less desirable connection to mass genocide³. Apple chose Helvetica Neue as the default iPhone font and had a hand in setting the stage for what _clean, modern software_ was supposed to look like, and then captivated us all again when they switched to San Francisco⁴.
 
-!["Welcome home." typeset in both Helvetica Neue and San Francisco.](/img/1_agw5cbuzuc3ghnnxpf4pxg.png)
+![Welcome home typeset in both Helvetica Neue and San Francisco.](/img/1_agw5cbuzuc3ghnnxpf4pxg.png)
 
 This is the odd thing about choosing a typeface: like choosing a language to give shape to ones' inner thoughts, you may end up expressing more than you originally intended, or in a better form. This is why choosing typefaces can be paralyzing, like editing copy: there are endless options and combinations, and choosing the one that feels _right_ can seem impossible.
 
