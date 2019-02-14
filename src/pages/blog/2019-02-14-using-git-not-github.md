@@ -1,15 +1,10 @@
 ---
 templateKey: blog-post
 title: Using Git Not Github
-date: 2013-06-12T14:04:10.000Z
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+date: 2013-06-12T13:55:11.252Z
+description: Hello! Hi!
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - learning
 ---
 <p>This is embarrassing because this is a pretty important concept that obviously just… escaped me. I figured I might as well do a quick write-up for anyone else who didn’t really get this because, well, I figure I’m not the only one:</p>
 
@@ -21,32 +16,32 @@ tags:
 
 <p>Start with the files you’d like to make your local repo. I’m doing it with an Ember starter kit that eventually I want to store on Dropbox:</p>
 
-<code>
+```
   cd code
   mkdir ember-starter
   cd ember-starter
   git init
   touch README.md
   git commit -m "First commit"
-</code>
+```
 
 <p>Somewhere else, be it Dropbox, a harddrive, or some other cloud solution make a remote repo. I'm doing it by just making a folder on Dropbox to push to:</p>
 
-<code>
+```
   cd ~/Dropbox
   mkdir ember-starter
   cd ember-starter
   git init --bare
-  </code>
+```
 
 <p>(The <code>-—bare</code> is important. What we’re doing is creating an empty repo to push our already created repo to.)*</p>
 
 <p>Now that we’ve made the directory where are remote is, switch back to where all your starter files are. Mine are at <code>~/code</code>. We’re going to tell it where its remote repo is:</p>
 
-<code>
+```
   cd ~/code/ember-starter
   git remote add origin ~/Dropbox/ember-starter
-</code>
+```
 
 <p>Now that we’ve pointed it to our remote repo, we can push our files:</p>
 
