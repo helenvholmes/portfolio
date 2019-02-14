@@ -118,9 +118,3 @@ transition: text-shadow 0.7s ease;
 ```
 
 <p>Obviously I don't have all of the browser prefixes in there, which you'd need if you were being serious about implementing something like this.</p>
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@helenvholmes" />
-<meta name="twitter:title" content="{{ title }}" />
-<meta name="twitter:description" content="{{ description }}" />
-<meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
