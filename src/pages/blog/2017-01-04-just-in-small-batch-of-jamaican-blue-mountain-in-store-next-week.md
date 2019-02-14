@@ -1,7 +1,7 @@
 ---
-templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+templateKey: blog-post
+title: Using Git Not Github
+date: 2013-06-12T14:04:10.000Z
 description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
@@ -11,23 +11,69 @@ tags:
   - flavor
   - tasting
 ---
+<p>This is embarrassing because this is a pretty important concept that obviously just… escaped me. I figured I might as well do a quick write-up for anyone else who didn’t really get this because, well, I figure I’m not the only one:</p>
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+<p>Git and Github are not the same thing.</p>
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+<p>While I thought I understood this distinction, for a long time I thought that you needed both in order to actually use git. Turns out this isn't true. You can get the full benefits of git and all it’s versioning, merging, cloning glory without ever pushing your repo to Github or any other public storage site unless that’s what you wanted to do. This is great because for the longest time, while under this misconception, I was putting public repos up on GitHub to store them when they weren’t really open-source projects or anything useful to others like that: they were just things I needed to put somewhere, and I thought that GitHub was how I was supposed to store my git repos.</p>
 
-## A little history
+<p>Anyway, here’s an example of how you might set up a remote repo with Dropbox if it was installed on your local machine:</p>
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+<p>Start with the files you’d like to make your local repo. I’m doing it with an Ember starter kit that eventually I want to store on Dropbox:</p>
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+<code>
+  cd code
+  mkdir ember-starter
+  cd ember-starter
+  git init
+  touch README.md
+  git commit -m "First commit"
+</code>
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+<p>Somewhere else, be it Dropbox, a harddrive, or some other cloud solution make a remote repo. I'm doing it by just making a folder on Dropbox to push to:</p>
 
-## What you need to know before trying
+<code>
+  cd ~/Dropbox
+  mkdir ember-starter
+  cd ember-starter
+  git init --bare
+  </code>
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+<p>(The <code>-—bare</code> is important. What we’re doing is creating an empty repo to push our already created repo to.)*</p>
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+<p>Now that we’ve made the directory where are remote is, switch back to where all your starter files are. Mine are at <code>~/code</code>. We’re going to tell it where its remote repo is:</p>
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+<code>
+  cd ~/code/ember-starter
+  git remote add origin ~/Dropbox/ember-starter
+</code>
+
+<p>Now that we’ve pointed it to our remote repo, we can push our files:</p>
+
+<code>
+  git push -u origin master
+</code>
+
+<p>Finished. Pretty simple, really.</p>
+
+<h2>Some articles that helped me write this:</h2>
+
+<ul>
+  <li><a href="http://thelucid.com/2008/12/02/git-setting-up-a-remote-repository-and-doing-an-initial-push/">@thelucid's post on Git</a> - Setting Up a Remote Repository and Doing an Initial Push</li>
+  <li><a href="http://git-scm.com/">git-scm.com</a> - The official Git docs</li>
+  <li><a href="http://twitter.com/wlaurance">@wlaurance</a> - Coworker who helped teach me git in the first place</li>
+</ul>
+
+<h2>Alternatives</h2>
+<p>Hosting your remote repos on Github is a pretty good idea - you have the ability to easily add collaborators, track stats, and it's all with the good vibes of open source. That said, if you really need private repos, their micro plans are pretty cheap, <a href="https://github.com/pricing">starting at $7/month</a>. If you're a student, you can get <a href="https://github.com/edu">two years of micro for free</a>. There also is <a href="http://gitlab.org/">Git Lab</a>, which is an open-source version of Github that seems promising (although I haven't tried it myself).</p>
+</main>
+
+<p class="center">
+<em>If you thought this was helpful, <a href="https://twitter.com/helenvholmes">tell me on Twitter</a>.</em>
+</p>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@helenvholmes" />
+<meta name="twitter:title" content="{{ title }}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
