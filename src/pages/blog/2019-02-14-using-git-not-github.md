@@ -66,9 +66,3 @@ tags:
 <p class="center">
 <em>If you thought this was helpful, <a href="https://twitter.com/helenvholmes">tell me on Twitter</a>.</em>
 </p>
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@helenvholmes" />
-<meta name="twitter:title" content="{{ title }}" />
-<meta name="twitter:description" content="{{ description }}" />
-<meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
