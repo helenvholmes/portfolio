@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Infinite CSS Animations
-date: 2019-02-14T15:00:09.060Z
+date: 2013-11-12T15:00:09.060Z
 description: 'Hello, hi'
 tags:
   - learning
