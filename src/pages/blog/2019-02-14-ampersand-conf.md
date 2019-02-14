@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Ampersand Conf
-date: 2014-11-12T14:56:40.168Z
+date: 2013-11-20T14:56:40.168Z
 description: Hello! Hi!
 tags:
   - learning
