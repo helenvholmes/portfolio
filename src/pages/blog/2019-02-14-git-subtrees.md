@@ -20,9 +20,3 @@ gulp.task('deploy', shell.task([
 <p>The Gulp Starter I referenced above splits all of its tasks into separate files which is why I only have one thing in here and I'm requiring gulp again.</p>
 
 <p>After we require gulp we require gulp-shell, which lets us enter bash commands into our task declarations. We then specify the subfolder we want to push (<code>build</code>), the remote (<code>origin</code>), and then the branch (<code>master</code>). I'm defining master, not gh-pages, because the <code>yourUserName.github.io</code> repo works off of master instead of gh-pages.</p>
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@helenvholmes" />
-<meta name="twitter:title" content="{{ title }}" />
-<meta name="twitter:description" content="{{ description }}" />
-<meta name="twitter:image" content="http://helenvholmes.com/images/partials/writing/orb.jpg" />
