@@ -3,6 +3,8 @@ templateKey: blog-post
 title: CSS Conf Oakland Summary
 date: 2014-12-31T14:41:43.545Z
 description: '"tl;dr: it was really fun."'
+tags:
+  - conferences
 ---
 <p>In case you weren't able to attend <a href="http://cssconfoak.land/">CSS Conf Oakland</a>, I tried to take comprehensive notes during the conference:</p>
 
@@ -37,5 +39,3 @@ description: '"tl;dr: it was really fun."'
 <p>@floriidaaa did Sketchnotes, which you can find <a href="https://storify.com/thefox/cssconf-oakland-notes" target="_blank">here</a>.</p>
 
 <p>@jina also posted her notes on Medium, which you can find <a href="https://medium.com/salesforce-ux/cssconf-oakland-b24c8b12da25" target="_blank">here</a>.</p>
-
-<p>If there are slides missing from any of the talks, please let me know either in the comments or on twitter <a href="https://twitter.com/helenvholmes" target="_blank">@helenvholmes</a>. (Same for spelling errors. We all need a little help from our friends.)</p>
