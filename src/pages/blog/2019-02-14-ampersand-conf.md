@@ -4,7 +4,7 @@ title: Ampersand Conf
 date: 2013-11-20T14:56:40.168Z
 description: Hello! Hi!
 tags:
-  - learning
+  - conferences
 ---
 <p>I figured it might be useful to have all of the things each of the speakers mentioned in one place to look at more thoroughly later, so for those curious, here are the various links the speakers brought up or things that they mentioned that I needed clarification on:</p>
 
