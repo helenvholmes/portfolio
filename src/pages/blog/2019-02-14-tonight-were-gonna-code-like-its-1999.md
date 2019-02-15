@@ -3,6 +3,8 @@ templateKey: blog-post
 title: Tonight We're Gonna Code Like It's 1999
 date: 2014-12-01T21:24:31.157Z
 description: Creating responsive emails
+tags:
+  - conferences
 ---
 <p><a href="https://twitter.com/mybluewristband">@mybluewristband</a>, Jennifer Wong</p>
 
