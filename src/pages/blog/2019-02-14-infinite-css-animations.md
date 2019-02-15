@@ -4,7 +4,8 @@ title: Infinite CSS Animations
 date: 2013-11-12T15:00:09.060Z
 description: 'Hello, hi'
 tags:
-  - learning
+  - workplace-guides
+  - css
 ---
 <p>You may have seen my <a href="/writing/ampersand-conf">other article about Ampersand Conference</a>, which really just goes to show that I learned a lot. In any case, <a href="http://trentwalton.com/" target="_blank">Trent Walton</a>’s talk on various CSS tricks was very informative and I wanted to try out some of the things he went over right away.</p>
 
