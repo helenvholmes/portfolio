@@ -5,7 +5,7 @@ date: 2014-10-15T20:16:18.287Z
 description: I always run into the same damn problems
 tags:
   - workplace-guides
-  - command-line
+  - craft
 ---
 <p>You have to have mycrypt installed.</p>
 
