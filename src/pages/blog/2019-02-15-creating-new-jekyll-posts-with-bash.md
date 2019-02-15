@@ -4,7 +4,8 @@ title: Creating New Jekyll Posts with Bash
 date: 2014-12-02T14:40:54.919Z
 description: Executables are nifty
 tags:
-  - learning
+  - workplace-guides
+  - jekyll
 ---
 <p><a href="http://jekyllrb.com/">Jekyll's</a> pretty damn sweet, but I found myself hating this part of the blogging process:</p>
 
