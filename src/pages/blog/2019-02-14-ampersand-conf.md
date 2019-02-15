@@ -102,7 +102,3 @@ tags:
 
   <p><small><em>* Update May 9, 2014: Hoefler & Frere-Jones has split up and is now just Hoefler&Co. You can read about why <a href="http://www.businessweek.com/articles/2014-04-08/font-war-inside-the-design-worlds-20-million-divorce" target="_blank">here</a>.</em></small></p>
 </main>
-
-<p class="center">
-  <em>If this was helpful, please let me known on <a href="https://twitter.com/helenvholmes">Twitter</a>.</em>
-</p>
