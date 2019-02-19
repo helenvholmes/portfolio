@@ -4,7 +4,7 @@ title: Ampersand Conf
 date: 2013-11-20T14:56:40.168Z
 description: Hello! Hi!
 tags:
-  - learning
+  - conferences
 ---
 <p>I figured it might be useful to have all of the things each of the speakers mentioned in one place to look at more thoroughly later, so for those curious, here are the various links the speakers brought up or things that they mentioned that I needed clarification on:</p>
 
@@ -102,7 +102,3 @@ tags:
 
   <p><small><em>* Update May 9, 2014: Hoefler & Frere-Jones has split up and is now just Hoefler&Co. You can read about why <a href="http://www.businessweek.com/articles/2014-04-08/font-war-inside-the-design-worlds-20-million-divorce" target="_blank">here</a>.</em></small></p>
 </main>
-
-<p class="center">
-  <em>If this was helpful, please let me known on <a href="https://twitter.com/helenvholmes">Twitter</a>.</em>
-</p>

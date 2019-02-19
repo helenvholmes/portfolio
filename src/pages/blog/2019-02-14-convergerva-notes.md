@@ -4,7 +4,7 @@ title: ConvergeRVA Notes
 date: 2014-10-31T20:15:32.353Z
 description: 'ConvergeRVA 2014, Convergerva.com'
 tags:
-  - learning
+  - conferences
 ---
 <h2>Designers Can Open Source</h2>
 

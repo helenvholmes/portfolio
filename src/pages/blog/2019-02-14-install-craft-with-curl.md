@@ -4,7 +4,8 @@ title: Install Craft with Curl
 date: 2014-11-08T21:19:40.579Z
 description: 'URL to get Craft zip on, say, a Digital Ocean server'
 tags:
-  - learning
+  - workplace-guides
+  - command-line
 ---
 <p>Sometimes you need to install something programmatically, such as when you're setting up a server from scratch (as you might if you were working with Digital Ocean). In those instances, you want to use <code>wget</code> or <code>curl</code>. </p>
 

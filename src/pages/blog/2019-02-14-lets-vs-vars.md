@@ -4,7 +4,8 @@ title: Lets vs Vars
 date: 2014-03-12T14:29:52.831Z
 description: HellO! Hi!
 tags:
-  - learning
+  - workplace-guides
+  - javascript
 ---
 <p>Recently while trying to figure out the difference between <code>var</code>s and <code>let</code>s in Swift Google autocomplete offered up 'javascript' as a suggestion. Surprisingly, javascript also has lets and vars! The difference between them comes down to <em>scope</em>.</p>
 
