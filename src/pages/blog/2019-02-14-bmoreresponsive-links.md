@@ -5,6 +5,7 @@ date: 2014-05-14T20:11:23.128Z
 description: 'Hello, hey'
 tags:
   - learning
+  - conferences
 ---
 <p>Whenever I go to a conference I like to do a quick recap of all of the links that all the speakers mentioned (like the one I did for <a href="/writing/ampersand-conf">AmpersandConf</a> which took place in NYC last November). <a href="http://bmoresponsive.com/" target="_blank">BmoreResponsive</a> had a great lineup so for the curious:</p>
 
