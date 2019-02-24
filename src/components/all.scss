@@ -1,0 +1,31 @@
+// Config vars
+$helen-red: #D04A39;
+$helen-blue: #222DC5;
+$helen-yellow: #D39E42;
+$helen-tan: #E6E0D6;
+$helen-off-white: #F5F2EE;
+
+$helen-black: #000;
+$helen-white: #fff;
+
+$primary: $helen-red;
+$body-color: $helen-black;
+$bg: $helen-off-white;
+
+// Vendor
+@import './styles/vendor/normalize.scss';
+@import './styles/vendor/normalize-opentype.scss';
+
+// Global
+@import './styles/colors.scss';
+@import './styles/font-face.scss';
+@import './styles/typography.scss';
+@import './styles/animations.scss';
+@import './styles/global.scss';
+
+// Modules
+@import './styles/modules/links.scss';
+
+// Partials
+@import './styles/partials/footer.scss';
+@import './styles/partials/navigation.scss';
