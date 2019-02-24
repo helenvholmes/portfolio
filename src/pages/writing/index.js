@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import Layout from '../../components/Layout'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+              <h1 className="has-text-weight-bold is-size-2">Writing page</h1>
             </div>
             {posts
               .map(({ node: post }) => (
