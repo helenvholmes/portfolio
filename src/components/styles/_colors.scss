@@ -5,8 +5,22 @@
    Typography variables are stored in _typography.scss.
 */
 
+// Config vars
+$helen-red: #D04A39;
+$helen-blue: #222DC5;
+$helen-yellow: #D39E42;
+$helen-tan: #E6E0D6;
+$helen-off-white: #F5F2EE;
+
+$helen-black: #000;
+$helen-white: #fff;
+
+$brand-primary: $helen-red;
+$body-color: $helen-black;
+$bg: $helen-off-white;
+
+
 // Colors
-$brand-primary:               indianred; // #cd5c5c
 $devtools-primary:            #4a90e2;
 $brand-secondary:             #ddd147;
 $brand-tertiary:              #240eba;
@@ -23,17 +37,3 @@ $brand-white:                 #ffffff;
 $winsome-bg:                  #2a2a39;
 
 $test:                        tomato; // only for testing. e.g., throw on a bg
-
-// Config vars
-$helen-red: #D04A39;
-$helen-blue: #222DC5;
-$helen-yellow: #D39E42;
-$helen-tan: #E6E0D6;
-$helen-off-white: #F5F2EE;
-
-$helen-black: #000;
-$helen-white: #fff;
-
-$primary: $helen-red;
-$body-color: $helen-black;
-$bg: $helen-off-white;
