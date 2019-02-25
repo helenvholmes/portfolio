@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Love Affair with Letterforms
-date: 2017-09-21T14:04:00.000Z
+date: 2016-12-17T14:04:00.000Z
 description: It can be so difficult sometimes to tell the truth.
 tags:
   - long-form
