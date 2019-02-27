@@ -1,9 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
+import LayoutStyles from "./Layout.module.css"
 
 import Navbar from '../components/Navbar'
-import './all.scss'
+import './all.css'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -37,7 +38,7 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navbar />
-        <div>{children}</div>
+        <div className={LayoutStyles.container}>{children}</div>
       </div>
     )}
   />

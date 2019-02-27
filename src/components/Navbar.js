@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
+import NavbarStyles from "./Navbar.module.css"
 
 const Navbar = class extends React.Component {
 
@@ -21,40 +22,33 @@ const Navbar = class extends React.Component {
           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
           el.classList.toggle('is-active');
           $target.classList.toggle('is-active');
- 
+        });
       });
-    });
+    }
   }
-}
 
- render() {
-   return (
-
-  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
-    <div className="navbar-brand">
-      <Link to="/" className="navbar-item" title="Logo">
-        <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
-      </Link>
-      {/* Hamburger menu */}
-      <div className="navbar-burger burger" data-target="navMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div id="navMenu" className="navbar-menu">
-      <Link className="navbar-item" to="/writing">
-        Writing
-      </Link>
-      <Link className="navbar-item" to="/work">
-        Work
-      </Link>
-      <Link className="navbar-item" to="/contact">
-        Contact Me
-      </Link>
-    </div>
-  </nav>
-  )}
+  render() {
+    return (
+      <nav className={NavbarStyles.navbar} role="navigation" aria-label="main-navigation">
+        <div className={NavbarStyles.navbarBrand}>
+          <Link to="/" className={NavbarStyles.navbarItem} title="Logo">
+            <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
+          </Link>
+        </div>
+        <div id="navMenu" className={NavbarStyles.navbarMenu}>
+          <Link className={NavbarStyles.navbarItem} to="/writing">
+            Writing
+          </Link>
+          <Link className={NavbarStyles.navbarItem} to="/work">
+            Work
+          </Link>
+          <Link className={NavbarStyles.navbarItem} to="/contact">
+            Contact Me
+          </Link>
+        </div>
+      </nav>
+    )
+  }
 }
 
 export default Navbar
