@@ -52,6 +52,8 @@ The projects I'm planning to work on next:
 
 Creating this will require buying some new materials (ribbon to finish the inside, a zipper, potentially a mesh pocket, potentially some soft jersey to line the hand warmer, some elastic for the coat hang) so I'm going to scrounge around thrift stores to see if I can thrift those things before I head out to any fabric stores. (I assume I'll end up at one eventually, but for now I've been enjoying the sustainability challenge on the heels of reading _Overdressed_.) 
 
+The only challenge with this project is getting started: the sleeping bag is currently in storage, and depends on whether or not my mother is willing to pick it up before she comes and visits me. So we'll see!
+
 I think the puffer jacket in particular will carry me through to Q2 (possibly even beyond when I have need of the coat), which is totally fine. I've been using Pinterest to create moodboards of things I'd like to attempt next along with Youtube to create playlists of tutorials I'd like to try out. I also recently thrifted a book called _Vogue Sewing_ that I haven't even cracked yet but looks like it's full of cool patterns and tutorials, so I have more ideas than time at the moment.
 
 If this inspired you in any way, I'd love to hear about it at sayhi@helenvholmes.com. I know it's weird to cold-email someone, but I don't mind.
