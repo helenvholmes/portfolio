@@ -3,8 +3,9 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 import LayoutStyles from "./Layout.module.css"
 
-import Navbar from '../components/Navbar'
+import 'normalize.css'
 import './all.css'
+import Navbar from '../components/Navbar'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
