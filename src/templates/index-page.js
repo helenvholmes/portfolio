@@ -6,7 +6,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
 import IndexStyles from './index-page.module.css'
 
-export const IndexPageTemplate = ({ title, content, contentComponent, description }) => {
+export const IndexPageTemplate = ({ title, content, contentComponent, intro }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({ title, content, contentComponent, descriptio
       <Header />
 
       <section className={IndexStyles.intro + " container"}>
-      {description}
+        {intro.description}
       </section>
 
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
@@ -29,7 +29,10 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
+  intro: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -41,7 +44,7 @@ const IndexPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        description={post.frontmatter.description}
+        intro={post.frontmatter.intro}
       />
     </Layout>
   )
@@ -59,7 +62,10 @@ export const IndexPageQuery = graphql`
       html
       frontmatter {
         title
-        description
+        intro {
+          heading
+          description
+        }
       }
     }
   }
