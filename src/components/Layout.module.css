@@ -16,7 +16,7 @@ html {
 
   --brand-primary: var(--helen-red);
   --body-color: var(--helen-black);
-  --bg: var(--helen-off-white);
+  --bg: var(--helen-tan);
 
 
   --devtools-primary:            #4a90e2;
@@ -32,9 +32,20 @@ html {
   --brand-white:                 #ffffff;
 
   --winsome-bg: #2a2a39;
+
+  background-color: var(--bg);
 }
 
-.container {
-  margin: auto;
-  width: 80%;
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: regular;
+  src: url("./fonts/avenirnext/avenir-next-regular.woff2") format("woff2"),
+       url("./fonts/avenirnext/avenir-next-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: bold;
+  src: url("./fonts/avenirnext/avenir-next-bold.woff2") format("woff2"),
+       url("./fonts/avenirnext/avenir-next-bold.woff") format("woff");
 }

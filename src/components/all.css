@@ -5,32 +5,10 @@
    Typography variables are stored in _typography.scss.
 */
 
---helen-red: #D04A39;
---helen-blue: #222DC5;
---helen-yellow: #D39E42;
---helen-tan: #E6E0D6;
---helen-off-white: #F5F2EE;
-
---helen-black: #000;
---helen-white: #fff;
-
---brand-primary: var(--helen-red);
---body-color: var(--helen-black);
---bg: var(--helen-off-white);
-
-
---devtools-primary:            #4a90e2;
---brand-secondary:             #ddd147;
---brand-tertiary:              #240eba;
-
---brand-blacker:               #202420;
---brand-black:                 #2d2d2d;
---brand-gray-dark:             #959595;
---brand-gray:                  #F5F5F5;
---brand-gray-light:            #F2F2F2;
---brand-gray-accent:           #D8D8D8;
---brand-white:                 #ffffff;
-
---winsome-bg:                  #2a2a39;
-
---test:                        tomato;
+.container {
+  margin: auto;
+  width: 80%;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 0.95em;
+  line-height: 1.75;
+}

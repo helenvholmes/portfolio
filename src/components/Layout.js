@@ -6,6 +6,7 @@ import LayoutStyles from "./Layout.module.css"
 import 'normalize.css'
 import './all.css'
 import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -39,7 +40,7 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navbar />
-        <div className={LayoutStyles.container}>{children}</div>
+        <div>{children}</div>
       </div>
     )}
   />

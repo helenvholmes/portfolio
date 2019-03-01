@@ -1,0 +1,7 @@
+.intro {
+  grid-template:
+    "header header" 10vh
+    "top-left top-right" 40vh
+    "bottom-left bottom-right" 40vh
+    "footer footer" / 50vw 50vw;
+}
