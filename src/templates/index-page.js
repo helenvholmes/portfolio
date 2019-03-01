@@ -6,7 +6,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
 import IndexStyles from './index-page.module.css'
 
-export const IndexPageTemplate = ({ title, content, contentComponent, intro }) => {
+export const IndexPageTemplate = ({ title, content, contentComponent, description }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({ title, content, contentComponent, intro }) =
       <Header />
 
       <section className={IndexStyles.intro + " container"}>
-      {intro}
+      {description}
       </section>
 
       <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        intro={post.frontmatter.intro}
+        description={post.frontmatter.description}
       />
     </Layout>
   )
