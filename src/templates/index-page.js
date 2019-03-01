@@ -28,9 +28,7 @@ export const IndexPageTemplate = ({ title, content, contentComponent, intro }) =
 IndexPageTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  intro: PropTypes.shape({
-    description: PropTypes.string,
-  }),
+  intro: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
@@ -40,7 +38,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
         intro={post.html}
         content={post.html}
       />
@@ -60,10 +57,7 @@ export const IndexPageQuery = graphql`
       html
       frontmatter {
         title
-        intro {
-          heading
-          description
-        }
+        intro
       }
     }
   }
