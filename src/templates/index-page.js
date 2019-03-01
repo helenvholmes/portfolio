@@ -57,7 +57,10 @@ export const IndexPageQuery = graphql`
       html
       frontmatter {
         title
-        intro
+        intro {
+          heading
+          description
+        }
       }
     }
   }
