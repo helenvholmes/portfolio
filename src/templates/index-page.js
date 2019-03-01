@@ -26,11 +26,9 @@ export const IndexPageTemplate = ({ title, content, contentComponent, intro }) =
 }
 
 IndexPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   intro: PropTypes.shape({
-    heading: PropTypes.string,
     description: PropTypes.string,
   }),
 }
@@ -43,8 +41,8 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        intro={post.html}
         content={post.html}
-        intro={post.frontmatter.intro}
       />
     </Layout>
   )
