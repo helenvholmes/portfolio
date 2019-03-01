@@ -35,7 +35,7 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Intro", name: "intro", widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
