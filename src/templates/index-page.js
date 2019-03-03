@@ -6,8 +6,6 @@ import Header from '../components/Header'
 import IndexStyles from './index-page.module.css'
 
 export const IndexPageTemplate = ({ 
-  heading, 
-  description, 
   intro 
 }) => {
   return (
@@ -15,7 +13,7 @@ export const IndexPageTemplate = ({
       <Header />
 
       <section className={IndexStyles.intro + " container"}>
-        {intro.description}
+        {intro}
       </section>
     </div>
   )
