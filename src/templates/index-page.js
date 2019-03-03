@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         heading={frontmatter.heading}
         description={frontmatter.description}
-        intro={frontmatter.intro}
+        intro={post.html}
       />
     </Layout>
   )
