@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
@@ -35,7 +35,8 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: "Intro", name: "intro", widget: "markdown"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Intro, name: intro, widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

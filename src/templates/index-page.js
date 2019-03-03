@@ -50,10 +50,8 @@ export const IndexPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        intro {
-          heading
-          description
-        }
+        title
+        intro
       }
     }
   }
