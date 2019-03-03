@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import IndexStyles from './index-page.module.css'
 
 export const IndexPageTemplate = ({ 
-  intro 
+  intro, 
 }) => {
   return (
     <div>
@@ -19,25 +19,27 @@ export const IndexPageTemplate = ({
   )
 }
 
+IndexPageTemplate.propTypes = {
+  intro: PropTypes.node.isRequired,
+}
+
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { markdownRemark: post } = data
+
+  console.log(data)
 
   return (
     <Layout>
       <IndexPageTemplate
-        heading={frontmatter.heading}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        intro={post.frontmatter.intro}
       />
     </Layout>
   )
 }
 
-IndexPageTemplate.propTypes = {
+IndexPage.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
+    markdownRemark: PropTypes.object,
   }),
 }
 
@@ -46,9 +48,7 @@ export default IndexPage
 export const IndexPageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
-        title
         intro
       }
     }
