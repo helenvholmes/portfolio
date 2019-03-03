@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
+import Content from '../components/Content'
 import IndexStyles from './index-page.module.css'
 
 export const IndexPageTemplate = ({ 
@@ -13,7 +14,7 @@ export const IndexPageTemplate = ({
       <Header />
 
       <section className={IndexStyles.intro + " container"}>
-        {intro}
+      <Content content={intro} />
       </section>
     </div>
   )
