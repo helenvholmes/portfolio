@@ -2,13 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
 import IndexStyles from './index-page.module.css'
 
-export const IndexPageTemplate = ({ title, content, contentComponent, intro }) => {
-  const PageContent = contentComponent || Content
-
+export const IndexPageTemplate = ({ 
+  heading, 
+  description, 
+  intro 
+}) => {
   return (
     <div>
       <Header />
@@ -16,37 +17,30 @@ export const IndexPageTemplate = ({ title, content, contentComponent, intro }) =
       <section className={IndexStyles.intro + " container"}>
         {intro.description}
       </section>
-
-      <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-        {title}
-      </h2>
-      <PageContent className="container" content={content} />
     </div>
   )
 }
 
-IndexPageTemplate.propTypes = {
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-  intro: PropTypes.string,
-}
-
 const IndexPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
       <IndexPageTemplate
-        contentComponent={HTMLContent}
-        intro={post.html}
-        content={post.html}
+        heading={frontmatter.heading}
+        description={frontmatter.description}
+        intro={frontmatter.intro}
       />
     </Layout>
   )
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.object.isRequired,
+IndexPageTemplate.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
+  }),
 }
 
 export default IndexPage
@@ -56,7 +50,6 @@ export const IndexPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
         intro {
           heading
           description
