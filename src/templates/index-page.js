@@ -3,42 +3,50 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Header from '../components/Header'
-import Content from '../components/Content'
+import Content, { HTMLContent } from '../components/Content'
 import IndexStyles from './index-page.module.css'
 
 export const IndexPageTemplate = ({ 
-  intro 
+  intro, 
+  contentComponent,
 }) => {
+  const IndexContent = contentComponent || Content
+
   return (
     <div>
       <Header />
 
       <section className={IndexStyles.intro + " container"}>
-      <Content content={intro} />
+        <IndexContent content={intro} />
       </section>
     </div>
   )
 }
 
+IndexPageTemplate.propTypes = {
+  intro: PropTypes.node.isRequired,
+  contentComponent: PropTypes.func,
+  title: PropTypes.string,
+}
+
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { markdownRemark: post } = data
 
   return (
     <Layout>
       <IndexPageTemplate
-        heading={frontmatter.heading}
-        description={frontmatter.description}
+        heading={post.frontmatter.heading}
+        description={post.frontmatter.description}
         intro={post.html}
+        contentComponent={HTMLContent}
       />
     </Layout>
   )
 }
 
-IndexPageTemplate.propTypes = {
+IndexPage.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
+    markdownRemark: PropTypes.object,
   }),
 }
 
