@@ -34,6 +34,9 @@ html {
   --winsome-bg: #2a2a39;
 
   background-color: var(--bg);
+  font-family: "Avenir Next", sans-serif;
+  font-size: 0.95em;
+  line-height: 1.75;
 }
 
 @font-face {
@@ -48,8 +51,4 @@ html {
   font-weight: bold;
   src: url("./fonts/avenirnext/avenir-next-bold.woff2") format("woff2"),
        url("./fonts/avenirnext/avenir-next-bold.woff") format("woff");
-}
-
-.coolStory {
-
 }

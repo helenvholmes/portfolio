@@ -1,7 +1,17 @@
 .intro {
-  grid-template:
-    "header header" 10vh
-    "top-left top-right" 40vh
-    "bottom-left bottom-right" 40vh
-    "footer footer" / 50vw 50vw;
+  display: flex;
+}
+
+.introParagraph {
+  color: var(--brand-primary);
+  flex: 30%;
+  padding: 0 5% 0 10%;
+}
+
+.headshots {
+  flex: 30%;
+}
+
+.learnMore {
+  flex: 30%;
 }
