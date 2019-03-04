@@ -1,9 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
+import 'normalize.css'
 import LayoutStyles from "./Layout.module.css"
 
-import 'normalize.css'
 import './all.css'
 import Navbar from '../components/Navbar'
 
@@ -39,7 +39,7 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navbar />
-        <div className={LayoutStyles.coolStory}>{children}</div>
+        <div>{children}</div>
       </div>
     )}
   />
