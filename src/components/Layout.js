@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 import 'normalize.css'
+// eslint-disable-next-line
 import LayoutStyles from "./Layout.module.css"
 
 import './all.css'
