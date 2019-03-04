@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import '../components/all.css'
 import Header from '../components/Header'
 import IndexStyles from './index-page.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
@@ -24,14 +25,13 @@ export const IndexPageTemplate = ({
             <p>{intro3}</p>
           </div>
 
-          <div className={IndexStyles.headshots}>
-            <PreviewCompatibleImage imageInfo={helenHeadshots.image1} />
-            <PreviewCompatibleImage imageInfo={helenHeadshots.image2} />
-            <PreviewCompatibleImage imageInfo={helenHeadshots.image3} />
-          </div>
-
-          <div className={IndexStyles.learnMore}>
-            <p>Read more about Helen</p>
+          <div className={IndexStyles.headshotsSection}>
+            <div className={IndexStyles.headshots}>
+              <PreviewCompatibleImage imageInfo={helenHeadshots.image1} />
+              <PreviewCompatibleImage imageInfo={helenHeadshots.image2} />
+              <PreviewCompatibleImage imageInfo={helenHeadshots.image3} />
+            </div>
+            <p className={IndexStyles.learnMore}>Read more about Helen</p>
           </div>
         </section>
       </main>

@@ -1,17 +1,28 @@
 .intro {
   display: flex;
+  margin-left: 10%;
+  width: 90%;
+  flex-flow: row wrap;
 }
 
 .introParagraph {
   color: var(--brand-primary);
-  flex: 30%;
-  padding: 0 5% 0 10%;
+  flex: 400px 1 1;
+  padding: 3% 10% 0 0;
+}
+
+.headshotsSection {
+  color: var(--helen-off-white);
+  flex: 700px 2 1;
+
+  padding: 5% 0;
 }
 
 .headshots {
-  flex: 30%;
+  width: 20%;
+  float: left;
 }
 
 .learnMore {
-  flex: 30%;
+  background-color: var(--brand-primary);
 }
