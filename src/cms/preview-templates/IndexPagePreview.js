@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { IndexPageTemplate } from '../../templates/index-page'
 
-const IndexPagePreview = ({ entry, getAsset }) => {
+const IndexPagePreview = ({ entry, widgetFor }) => {
   return (
     <IndexPageTemplate
       intro1={entry.getIn(['data', 'intro1'])}
