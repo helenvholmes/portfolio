@@ -8,7 +8,7 @@
 .introParagraph {
   color: var(--brand-primary);
   flex: 400px 1 1;
-  padding: 3% 10% 0 0;
+  padding: 3% 5% 0 0;
 }
 
 .headshotsSection {
@@ -16,13 +16,44 @@
   flex: 700px 2 1;
 
   padding: 5% 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .headshots {
-  width: 20%;
-  float: left;
+  width: 25%;
+  position: relative;
+}
+
+.headshot1 {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: -10%;
+  border: 1px solid var(--brand-primary);
+}
+
+.headshot2 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 15%;
+  border: 1px solid var(--brand-primary);
+}
+
+.headshot3 {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  border: 1px solid var(--brand-primary);
 }
 
 .learnMore {
   background-color: var(--brand-primary);
+  display: flex;
+  flex: 1;
+  height: 150px;
+  justify-content: center;
+  align-content: center;
 }

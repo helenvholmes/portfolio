@@ -27,11 +27,19 @@ export const IndexPageTemplate = ({
 
           <div className={IndexStyles.headshotsSection}>
             <div className={IndexStyles.headshots}>
-              <PreviewCompatibleImage imageInfo={helenHeadshots.image1} />
-              <PreviewCompatibleImage imageInfo={helenHeadshots.image2} />
-              <PreviewCompatibleImage imageInfo={helenHeadshots.image3} />
+              <div className={IndexStyles.headshot1}>
+                <PreviewCompatibleImage imageInfo={helenHeadshots.image1} />
+              </div>
+              <div className={IndexStyles.headshot2}>
+                <PreviewCompatibleImage imageInfo={helenHeadshots.image2} />
+              </div>
+              <div className={IndexStyles.headshot3}>
+                <PreviewCompatibleImage imageInfo={helenHeadshots.image3} />
+              </div>
             </div>
-            <p className={IndexStyles.learnMore}>Read more about Helen</p>
+            <div className={IndexStyles.learnMore}>
+              <p>Read more about Helen</p>
+            </div>
           </div>
         </section>
       </main>
