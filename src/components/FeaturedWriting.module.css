@@ -1,3 +1,29 @@
 .section {
   background-color: #fff;
+  color: var(--helen-red);
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 5% 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transform: rotate(270deg);
+}
+
+.articles {
+  grid-column-start: 3;
+  grid-column-end: 8;
+}
+
+.link {
+  color: var(--helen-red);
+  display: block;
+  font-family: "Butler", serif;
+  font-size: 4em;
 }
