@@ -3,7 +3,6 @@
   color: var(--helen-off-white);
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  justify-items: center;
   align-items: center;
   padding: 5% 0;
   text-align: center;
@@ -14,19 +13,23 @@ h2 {
   font-weight: bold;
   letter-spacing: 0.5px;
   transform: rotate(270deg);
+  justify-self: center;
 }
 
 .work {
-  grid-column-start: 3;
-  grid-column-end: 8;
-  background-color: var(--helen-off-white);
-  padding: 5% 20%;
+  background-color: var(--brand-primary);
+  border: 8px solid var(--helen-off-white);
+  grid-column-start: 2;
+  grid-column-end: 9;
 }
 
 .link {
-  color: var(--brand-primary);
-  text-decoration: none;
-  display: block;
-  font-size: 4em;
+  background-color: var(--helen-off-white);
   border: 1px solid var(--brand-primary);
+  color: var(--brand-primary);
+  display: block;
+  font-family: "Knockout", sans-serif;
+  font-size: 4em;
+  font-weight: black;
+  text-decoration: none;
 }

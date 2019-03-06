@@ -59,3 +59,10 @@ html {
   src: url("./fonts/butler/butler-black.woff2") format("woff2"),
        url("./fonts/butler/butler-black.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Knockout";
+  font-weight: black;
+  src: url("./fonts/knockout/Knockout-HTF74-FullSumo.woff2") format("woff2"),
+       url("./fonts/knockout/Knockout-HTF74-FullSumo.woff") format("woff");
+}
