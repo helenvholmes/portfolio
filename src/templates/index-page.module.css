@@ -21,7 +21,7 @@
 }
 
 .headshots {
-  /* position: relative; */
+  position: relative;
   width: 25%;
 }
 
@@ -29,7 +29,7 @@
   /* left: 65%; */
   position: absolute;
   top: -10%;
-  width: 90%;
+  width: 100%;
   z-index: 2;
 }
 
@@ -37,7 +37,7 @@
   /* left: 120%; */
   position: absolute;
   top: 35%;
-  width: 90%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -45,7 +45,7 @@
   /* left: 50%; */
   position: absolute;
   top: 70%;
-  width: 90%;
+  width: 100%;
   z-index: 3;
 }
 
