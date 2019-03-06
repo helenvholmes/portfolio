@@ -5,6 +5,10 @@ import Layout from '../components/Layout'
 import { Link } from 'gatsby'
 import '../components/all.css'
 import Header from '../components/Header'
+import FeaturedWriting from '../components/FeaturedWriting'
+import FeaturedWork from '../components/FeaturedWork'
+import FeaturedLogos from '../components/FeaturedLogos'
+import Footer from '../components/Footer'
 import IndexStyles from './index-page.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
@@ -45,6 +49,11 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </section>
+
+        <FeaturedWriting />
+        <FeaturedWork />
+        <FeaturedLogos />
+        <Footer />
       </main>
     </div>
   )
