@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import { Link } from 'gatsby'
 import '../components/all.css'
 import Header from '../components/Header'
 import IndexStyles from './index-page.module.css'
@@ -38,7 +39,9 @@ export const IndexPageTemplate = ({
               </div>
             </div>
             <div className={IndexStyles.learnMore}>
-              <p>Read more about Helen</p>
+              <Link to="/#about" className={IndexStyles.learnMoreLink}>
+                Read more about Helen ⟶
+              </Link>
             </div>
           </div>
         </section>

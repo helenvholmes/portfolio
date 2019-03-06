@@ -2,10 +2,10 @@
   background-color: var(--brand-primary);
   margin: 0;
   display: flex;
-  color: white;
-  font-size: 2em;
+  color: var(--helen-off-white);
+  font-size: 2.75em;
   font-family: "Avenir Next", sans-serif;
   font-weight: bold;
-  padding: 0 20%;
+  padding: 0 9.5%;
   line-height: 1.15;
 }

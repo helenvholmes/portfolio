@@ -1,59 +1,65 @@
 .intro {
   display: flex;
+  flex-flow: row wrap;
   margin-left: 10%;
   width: 90%;
-  flex-flow: row wrap;
 }
 
 .introParagraph {
   color: var(--brand-primary);
-  flex: 400px 1 1;
-  padding: 3% 5% 0 0;
+  flex: 200px 1 1;
+  padding: 3% 9% 0 0;
 }
 
 .headshotsSection {
-  color: var(--helen-off-white);
-  flex: 700px 2 1;
-
-  padding: 5% 0;
-  display: flex;
-  justify-content: center;
   align-content: center;
+  color: var(--helen-off-white);
+  display: flex;
+  flex: 700px 2 1;
+  justify-content: center;
+  padding: 5% 0;
 }
 
 .headshots {
+  /* position: relative; */
   width: 25%;
-  position: relative;
 }
 
 .headshot1 {
+  /* left: 65%; */
   position: absolute;
-  z-index: 2;
-  width: 100%;
   top: -10%;
-  border: 1px solid var(--brand-primary);
+  width: 90%;
+  z-index: 2;
 }
 
 .headshot2 {
+  /* left: 120%; */
   position: absolute;
+  top: 35%;
+  width: 90%;
   z-index: 1;
-  width: 100%;
-  left: 15%;
-  border: 1px solid var(--brand-primary);
 }
 
 .headshot3 {
+  /* left: 50%; */
   position: absolute;
+  top: 70%;
+  width: 90%;
   z-index: 3;
-  top: 10%;
-  border: 1px solid var(--brand-primary);
 }
 
 .learnMore {
   background-color: var(--brand-primary);
   display: flex;
   flex: 1;
-  height: 150px;
+  height: 300px;
   justify-content: center;
-  align-content: center;
+}
+
+.learnMoreLink {
+  align-self: center;
+  color: var(--helen-off-white);
+  letter-spacing: 0.01em;
+  text-decoration: none;
 }
