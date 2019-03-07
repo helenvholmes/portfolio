@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import FeaturedWritingStyles from "./FeaturedWriting.module.css"
+import HeadersStyles from "./Headers.module.css"
 
 const FeaturedWriting = class extends React.Component {
 
   render() {
     return (
       <section className={FeaturedWritingStyles.section}>
-        <h2>Featured Writing</h2>
+        <h2 className={[HeadersStyles.featured, HeadersStyles.rotate].join(' ')}>Featured Writing</h2>
 
         <div className={FeaturedWritingStyles.articles}>
           <Link className={FeaturedWritingStyles.link} to="/writing/the-things-we-own">

@@ -9,13 +9,6 @@
   text-align: center;
 }
 
-h2 {
-  font-size: 1em;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  transform: rotate(270deg);
-}
-
 .articles {
   grid-column-start: 3;
   grid-column-end: 8;

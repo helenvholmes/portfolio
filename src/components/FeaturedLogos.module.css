@@ -1,3 +1,26 @@
 .section {
-  color: purple;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  align-items: center;
+  padding: 7% 0;
+  text-align: center;
+  color: var(--brand-primary);
+}
+
+.work {
+  background-color: var(--brand-primary);
+  border: 8px solid var(--helen-off-white);
+  grid-column-start: 3;
+  grid-column-end: 8;
+}
+
+.link {
+  background-color: var(--helen-off-white);
+  border: 1px solid var(--brand-primary);
+  color: var(--brand-primary);
+  display: block;
+  font-family: "Knockout", sans-serif;
+  font-size: 4em;
+  font-weight: black;
+  text-decoration: none;
 }

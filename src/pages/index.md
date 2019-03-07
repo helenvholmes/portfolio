@@ -3,8 +3,7 @@ templateKey: index-page
 title: Index Page
 intro1: >-
   ...creating brands, designing logos, illustrating, making websites, building
-  print collateral, and animating shorts. In July of 2018 she created Your
-  Grandma Lied Studios, a boutique branding shop which she runs with her partner
+  print collateral, and animating shorts. In January of 2017 she went freelance with her own design shop which she runs with her partner
   and talented friends from New York, New York.
 intro2: >-
   She’s given talks at conferences all over the world about the spaces where

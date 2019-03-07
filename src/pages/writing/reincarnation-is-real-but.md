@@ -1,8 +1,7 @@
 ---
 templateKey: blog-post
 title: >-
-  Reincarnation is real, but you've reincarnated into the same time period as
-  you previous lived, and you've just met somebody you remember being.
+  Reincarnation is real, but
 date: 2018-02-22T18:40:25.342Z
 description: Writing prompt
 tags:

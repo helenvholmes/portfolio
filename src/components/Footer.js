@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
-import FooterStyles from "./Navbar.module.css"
+import FooterStyles from "./Footer.module.css"
 
 const Footer = class extends React.Component {
   render() {

@@ -1,3 +1,39 @@
 .section {
   background-color: #fff;
+  color: var(--body-color);
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.aboutHeader {
+  color: var(--brand-primary);
+}
+
+.platitudes {
+  align-content: center;
+  align-self: stretch;
+  justify-self: stretch;
+  background-color: var(--brand-primary);
+  color: var(--helen-off-white);
+  display: flex;
+  grid-column-end: 4;
+  grid-column-start: 2;
+  justify-content: center;
+  border-left: 40px solid white;
+  border-right: 40px solid white;
+}
+
+.partOne {
+  align-self: start;
+  grid-column-end: 6;
+  grid-column-start: 4;
+}
+
+.partTwo {
+  align-self: start;
+  grid-column-end: 9;
+  grid-column-start: 7;
 }

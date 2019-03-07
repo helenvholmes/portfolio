@@ -1,0 +1,10 @@
+.featured {
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  justify-self: center;
+}
+
+.rotate {
+  transform: rotate(270deg);
+}
