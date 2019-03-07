@@ -13,11 +13,11 @@ const FeaturedLogos = class extends React.Component {
         <h2 className={HeadersStyles.featured}>Additional Projects</h2>
 
         <div className={FeaturedLogosStyles.logosGrid}>
-        <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
-        <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
-        <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
-        <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
-        <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
+          <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
+          <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
+          <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
+          <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
+          <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
         </div>
       </section>
     )

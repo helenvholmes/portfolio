@@ -12,54 +12,52 @@
 }
 
 .headshotsSection {
-  align-content: center;
   color: var(--helen-off-white);
-  display: flex;
+  display: grid;
   flex: 700px 2 1;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 5% 0;
 }
 
 .headshots {
-  position: relative;
-  width: 25%;
+  display: grid;
+  width: 40%;
+  grid-row: 1 / 5;
+  grid-column: 1 / 5;
+  grid-template-columns: repeat(8 1fr);
+  grid-template-rows: repeat(12 fr);
 }
 
 .headshot1 {
-  /* left: 65%; */
-  position: absolute;
-  top: -10%;
-  width: 100%;
-  z-index: 2;
+  grid-row: 1 / 5;
+  grid-column: 1 / 5;
+  border: 1px solid var(--brand-primary);
 }
 
 .headshot2 {
-  /* left: 120%; */
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  z-index: 1;
+  grid-row: 3 / 7;
+  grid-column: 4 / 8;
+  border: 1px solid var(--helen-yellow);
 }
 
 .headshot3 {
-  /* left: 50%; */
-  position: absolute;
-  top: 70%;
-  width: 100%;
-  z-index: 3;
+  grid-row: 6 / 12;
+  grid-column: 2 / 6;
+  border: 1px solid var(--helen-red);
 }
 
 .learnMore {
   background-color: var(--brand-primary);
   display: flex;
-  flex: 1;
+  grid-column: 2 / 5;
+  grid-row: 2;
   height: 300px;
   justify-content: center;
 }
 
 .learnMoreLink {
-  align-self: center;
   color: var(--helen-off-white);
   letter-spacing: 0.01em;
   text-decoration: none;
+  align-self: center;
 }
