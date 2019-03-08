@@ -13,7 +13,7 @@ intro2: |
 intro3: >-
   As of 2019 her most recent side projects include auditing design courses at
   Parsons at the New School, writing short stories, and sewing, all of which are
-  catalogued here.
+  catalogued [here](/writing).
 helenHeadshots:
   image1:
     alt: Headshot of Helen

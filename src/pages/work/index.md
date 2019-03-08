@@ -2,10 +2,9 @@
 templateKey: work-page
 title: Work
 project1:
+  background1: off-white
   image1:
-    image: /img/_dsf4454.jpg
-  background1:
-    - "off-white"
+    image1: /img/fastly-festival.svg
 ---
 ### Shade-grown coffee
 
