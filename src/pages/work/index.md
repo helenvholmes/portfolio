@@ -7,17 +7,10 @@ project1:
     alt: Fastly Festival
     image: /img/artboard-1.png
 project2:
-<<<<<<< HEAD
-  background2: off-white
-  image2:
-    alt: babies are fun
-    image: /img/artboard-1.png
-=======
   background2: red
   image2:
     alt: Wilted Yards project
     image: /img/artboard-43-copy-3x.png
->>>>>>> e7192104bb61d1d80bfcf1e18e37b78e72775207
 ---
 ### Shade-grown coffee
 
