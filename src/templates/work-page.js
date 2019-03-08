@@ -4,14 +4,20 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import WorkStyles from "./work.module.css"
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const WorkPageTemplate = ({ title, content, contentComponent }) => {
+export const WorkPageTemplate = ({ 
+  title, 
+  content, 
+  contentComponent,
+  project1, 
+}) => {
   const PageContent = contentComponent || Content
 
   return (
     <main>
       <section className={WorkStyles.video}>
-        <p>video here</p>
+        <PreviewCompatibleImage imageInfo={project1.image1} />
       </section>
 
       <section>
@@ -26,6 +32,12 @@ WorkPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  project1: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background1:PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
 }
 
 const WorkPage = ({ data }) => {
@@ -37,6 +49,7 @@ const WorkPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        project1={post.frontmatter.project1}
       />
     </Layout>
   )
@@ -63,8 +76,8 @@ export const WorkPageQuery = graphql`
                 }
               }
             }
-            background1
           }
+          background1
         }
       }
     }

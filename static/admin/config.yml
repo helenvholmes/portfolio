@@ -28,8 +28,8 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page"}
           - {label: "Title", name: "title", widget: "hidden", default: "work-page"}
+          - {label: "Project 1", name: project1, widget: object, fields: [{label: Image, name: image1, widget: object, fields: [{label: Image, name: image1, widget: image}]}, {label: Background, name: background1, widget: select, options: ["red", "white", "off-white"]}]}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Project 1", name: project1, widget: object, fields: [{label: Image, name: image1, widget: object, fields: [{label: Image, name: image1, widget: image}, {label: Background, name: background1, widget: select, options: ["red", "white", "off-white"]}]}]}
       - file: "src/pages/index.md"
         label: "Index Page"
         name: "index"

@@ -1,6 +1,11 @@
 ---
 templateKey: work-page
 title: Work
+project1:
+  image1:
+    image: /img/_dsf4454.jpg
+  background1:
+    - "off-white"
 ---
 ### Shade-grown coffee
 
