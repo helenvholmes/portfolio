@@ -18,6 +18,7 @@ export const WorkPageTemplate = ({
     <main>
       <section className={WorkStyles.video}>
         <PreviewCompatibleImage imageInfo={project1.image1} />
+        <p>{project1.background1}</p>
       </section>
 
       <section>

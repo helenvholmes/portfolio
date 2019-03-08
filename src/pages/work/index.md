@@ -4,7 +4,7 @@ title: Work
 project1:
   background1: off-white
   image1:
-    image1: /img/fastly-festival.svg
+    image: /img/fastly-festival.svg
 ---
 ### Shade-grown coffee
 
