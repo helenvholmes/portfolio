@@ -6,6 +6,11 @@ project1:
   image1:
     alt: Fastly Festival
     image: /img/artboard-1.png
+project2:
+  background2: red
+  image2:
+    alt: Wilted Yards project
+    image: /img/artboard-43-copy-3x.png
 ---
 ### Shade-grown coffee
 
