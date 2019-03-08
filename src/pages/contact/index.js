@@ -39,7 +39,15 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-        <h1>Contact</h1>
+        <h1>You have a project, <br />
+        I have skills.</h1>
+
+        <section className="hey">
+          <p>If you have a project that you need assistance with, I am here to help. I work exclusively through my company Your Grandma Lied, where I am able to put together a dream team for your project no matter how big or small. You may get in contact with me directly to suss out the details at <a href="mailto:team@yourgrandmalied.com">team@yourgrandmalied.com</a>.</p>
+
+          <p>If you would like to quote me in a publication, discuss a potential opportunity, or tell me how something you’ve seen here impacted you, you may also email me at <a href="mailto:sayhi@helenvholmes.com">sayhi@helenvholmes.com</a>, or by using the form below. I look forward to hearing from you.</p>
+        </section>
+
         <form
           name="contact"
           method="post"

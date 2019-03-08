@@ -19,7 +19,6 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "select", multiple: true, options: ["conferences", "learning", "essay", "long-form", "workplace-guides", "css", "javascript", "command-line", "ios", "goals"]}
-
   - name: "pages"
     label: "Pages"
     files:
@@ -30,6 +29,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page"}
           - {label: "Title", name: "title", widget: "hidden", default: "work-page"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Project 1", name: project1, widget: object, fields: [{label: Image, name: image1, widget: object, fields: [{label: Image, name: image1, widget: image}, {label: Background, name: background1, widget: select, options: ["red", "white", "off-white"]}]}]}
       - file: "src/pages/index.md"
         label: "Index Page"
         name: "index"

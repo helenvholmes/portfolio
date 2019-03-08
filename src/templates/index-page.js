@@ -102,7 +102,6 @@ export default IndexPage
 export const IndexPageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         intro1
         intro2
