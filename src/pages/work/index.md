@@ -4,7 +4,7 @@ title: Work
 project1:
   background1: off-white
   image1:
-    alt: babies are fun
+    alt: Fastly Festival
     image: /img/artboard-1.png
 project2:
   background2: off-white
