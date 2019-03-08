@@ -6,7 +6,7 @@ intro1: >-
   print collateral, and animating shorts. In January of 2017 she went freelance
   with her own design shop which she runs with her partner and talented friends
   from New York, New York.
-intro2: >-
+intro2: |
   She’s given talks at conferences all over the world about the spaces where
   design and technology intersect. She writes on the subject along with mental
   health, immigration, and web development [here](/writing).
