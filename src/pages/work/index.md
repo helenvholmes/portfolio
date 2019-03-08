@@ -4,6 +4,7 @@ title: Work
 project1:
   background1: off-white
   image1:
+    alt: babies are fun
     image: /img/fastly-festival.svg
 ---
 ### Shade-grown coffee
