@@ -5,7 +5,7 @@ project1:
   background1: off-white
   image1:
     alt: babies are fun
-    image: /img/fastly-festival.svg
+    image: /img/artboard-1.png
 ---
 ### Shade-grown coffee
 
