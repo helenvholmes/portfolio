@@ -6,6 +6,11 @@ project1:
   image1:
     alt: babies are fun
     image: /img/artboard-1.png
+project2:
+  background2: off-white
+  image2:
+    alt: babies are fun
+    image: /img/artboard-1.png
 ---
 ### Shade-grown coffee
 

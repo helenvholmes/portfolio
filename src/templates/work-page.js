@@ -11,13 +11,22 @@ export const WorkPageTemplate = ({
   content, 
   contentComponent,
   project1, 
+  project2, 
 }) => {
   const PageContent = contentComponent || Content
 
   return (
     <main>
-      <section className={WorkStyles.video}>
-        <PreviewCompatibleImage imageInfo={project1.image1} />
+      <section className={WorkStyles.project}>
+        <div className={WorkStyles.projectImage + " " + project1.background1}>
+          <PreviewCompatibleImage imageInfo={project1.image1} />
+        </div>
+      </section>
+
+      <section className={WorkStyles.project}>
+        <div className={WorkStyles.projectImage + " " + project2.background1}>
+          <PreviewCompatibleImage imageInfo={project2.image1} />
+        </div>
       </section>
 
       <section>
@@ -33,10 +42,12 @@ WorkPageTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   project1: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     background1:PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
+  project2: PropTypes.shape({
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background2:PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
 }
 
@@ -50,6 +61,7 @@ const WorkPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
         project1={post.frontmatter.project1}
+        project2={post.frontmatter.project1}
       />
     </Layout>
   )
@@ -78,6 +90,18 @@ export const WorkPageQuery = graphql`
             }
           }
           background1
+        }
+        project2 {
+          image2 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          background2
         }
       }
     }

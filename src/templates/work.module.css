@@ -1,5 +1,13 @@
-.video {
-  background-color: var(--brand-primary);
+.project {
+  align-content: center;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.projectImage {
+  width: 25%;
 }
 
 .work {

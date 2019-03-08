@@ -28,7 +28,24 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page"}
           - {label: "Title", name: "title", widget: "hidden", default: "work-page"}
-          - {label: "Project 1", name: project1, widget: object, fields: [{label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Background, name: background1, widget: select, options: ["red", "white", "off-white"]}]}
+          - {label: "Project 1", name: project1, widget: object, fields: [
+              {label: Image, name: image1, widget: object, fields: [
+                {label: Image, name: image, widget: image}, 
+                {label: Alt, name: alt, widget: string}
+              ]}, 
+              {label: Background, name: background1, widget: select, options: [
+                "red", "white", "off-white"
+              ]}
+            ]}
+          - {label: "Project 2", name: project2, widget: object, fields: [
+              {label: Image, name: image2, widget: object, fields: [
+                {label: Image, name: image, widget: image}, 
+                {label: Alt, name: alt, widget: string}
+              ]}, 
+              {label: Background, name: background2, widget: select, options: [
+                "red", "white", "off-white"
+              ]}
+            ]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/index.md"
         label: "Index Page"
