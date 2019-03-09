@@ -24,7 +24,7 @@ export const WorkPageTemplate = ({
       </section>
 
       <section className={WorkStyles.project}>
-        <div className={WorkStyles.projectImage + " " + project2.background1}>
+        <div className={WorkStyles.projectImage + " " + project2.background2}>
           <PreviewCompatibleImage imageInfo={project2.image2} />
         </div>
       </section>
