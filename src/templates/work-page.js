@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import '../components/all.css'
 import WorkStyles from "./work.module.css"
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
@@ -17,19 +18,19 @@ export const WorkPageTemplate = ({
 
   return (
     <main>
-      <section className={WorkStyles.project}>
-        <div className={WorkStyles.projectImage + " " + project1.background1}>
+      <section className={WorkStyles.project + " " + project1.background1}>
+        <div className={WorkStyles.projectImage}>
           <PreviewCompatibleImage imageInfo={project1.image1} />
         </div>
       </section>
 
-      <section className={WorkStyles.project}>
-        <div className={WorkStyles.projectImage + " " + project2.background2}>
+      <section className={WorkStyles.project + " " + project2.background2}>
+        <div className={WorkStyles.projectImage}>
           <PreviewCompatibleImage imageInfo={project2.image2} />
         </div>
       </section>
 
-      <section>
+      <section className="container">
         <h2>{title}</h2>
         <PageContent className="content" content={content} />
       </section>
@@ -43,11 +44,11 @@ WorkPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   project1: PropTypes.shape({
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    background1:PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background1: PropTypes.string,
   }),
   project2: PropTypes.shape({
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    background2:PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background2: PropTypes.string,
   }),
 }
 
@@ -61,7 +62,7 @@ const WorkPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
         project1={post.frontmatter.project1}
-        project2={post.frontmatter.project1}
+        project2={post.frontmatter.project2}
       />
     </Layout>
   )

@@ -56,7 +56,19 @@ collections:
           - {label: "Intro 1", name: intro1, widget: "markdown"}
           - {label: "Intro 2", name: intro2, widget: "markdown"}
           - {label: "Intro 3", name: intro3, widget: "markdown"}
-          - {label: "Headshots", name: helenHeadshots, widget: object, fields: [{label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: "Headshots", name: helenHeadshots, widget: object, fields: 
+              [{label: Image1, name: image1, widget: object, fields: 
+                [{label: Image, name: image, widget: image}, 
+                 {label: Alt, name: alt, widget: string}
+                ]}, 
+                {label: Image2, name: image2, widget: object, fields: 
+                  [{label: Image, name: image, widget: image}, 
+                   {label: Alt, name: alt, widget: string}
+                ]}, 
+                {label: Image3, name: image3, widget: object, fields: 
+                  [{label: Image, name: image, widget: image}, 
+                   {label: Alt, name: alt, widget: string}]
+                }]}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

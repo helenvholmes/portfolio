@@ -9,3 +9,15 @@
   margin: auto;
   width: 80%;
 }
+
+.red {
+  background-color: var(--brand-primary);
+}
+
+.white {
+  background-color: var(--helen-white);
+}
+
+.off-white {
+  background-color: var(--helen-off-white);
+}
