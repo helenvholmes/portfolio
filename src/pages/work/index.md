@@ -3,14 +3,14 @@ templateKey: work-page
 title: Work
 project1:
   background1: off-white
-  image1: 
-    image: /img/artboard-1.png
+  image1:
     alt: Fastly Festival
+    image: /img/artboard-1-3x.png
 project2:
   background2: red
-  image2: 
-    image: /img/artboard-43-copy-3x.png
+  image2:
     alt: Wilted Yards project
+    image: /img/artboard-43-copy-3x.png
 ---
 ### Shade-grown coffee
 
