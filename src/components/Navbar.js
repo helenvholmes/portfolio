@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo.svg'
+import logo from '../img/logo-white.svg'
 import NavbarStyles from "./Navbar.module.css"
 
 const Navbar = class extends React.Component {
 
   componentDidMount() {
     // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbarBurger'), 0);
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
  
@@ -36,7 +36,10 @@ const Navbar = class extends React.Component {
           </Link>
         </div>
         <div id="navMenu" className={NavbarStyles.navbarMenu}>
-          <Link className={NavbarStyles.navbarItem} to="/writing">
+          <span className="navbarBurger">a</span>
+          <span className="navbarBurger">b</span>
+          <span className="navbarBurger">c</span>
+          {/* <Link className={NavbarStyles.navbarItem} to="/writing">
             Writing
           </Link>
           <Link className={NavbarStyles.navbarItem} to="/work">
@@ -44,7 +47,7 @@ const Navbar = class extends React.Component {
           </Link>
           <Link className={NavbarStyles.navbarItem} to="/contact">
             Contact Me
-          </Link>
+          </Link> */}
         </div>
       </nav>
     )
