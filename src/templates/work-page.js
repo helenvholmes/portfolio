@@ -18,13 +18,13 @@ export const WorkPageTemplate = ({
 
   return (
     <main>
-      <section className={WorkStyles.project + " " + project1.background1}>
+      <section className={WorkStyles.project}>
         <div className={WorkStyles.projectImage}>
           <PreviewCompatibleImage imageInfo={project1.image1} />
         </div>
       </section>
 
-      <section className={WorkStyles.project + " " + project2.background2}>
+      <section className={WorkStyles.project}>
         <div className={WorkStyles.projectImage}>
           <PreviewCompatibleImage imageInfo={project2.image2} />
         </div>
