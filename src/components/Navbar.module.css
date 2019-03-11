@@ -13,15 +13,17 @@
 }
 
 .navbarMenu {
-  flex: 0.2;
-
+  align-content: space-between;
+  cursor: pointer;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 20px 0 0;
+  height: 15px;
 }
 
 .navbarBurger {
   background-color: var(--helen-off-white);
   display: block;
-  height: 2px;
-  width: 200px;
+  height: 1px;
+  width: 30px;
 }
