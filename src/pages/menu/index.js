@@ -51,16 +51,22 @@ const Menu = ({ children }) => (
             </div>
           </div>
           <div className={MenuStyles.mainLinks}>
-            <Link to="/work">
+            <Link to="/work" className={MenuStyles.link1}>
               Work
             </Link>
-            <Link to="/writing">
+            <div className={MenuStyles.link1Sublinks}>
+              sublin ks1asldk fjkldjska aseen e afi dfha
+            </div>
+            <Link to="/writing" className={MenuStyles.link2}>
               Writing
             </Link>
-            <Link to="/contact">
+            <div className={MenuStyles.link2Sublinks}>
+              sublinks1a sld kfjkldjska aseen e afi dfha
+            </div>
+            <Link to="/contact" className={MenuStyles.link3}>
               About
             </Link>
-            <Link to="/contact">
+            <Link to="/contact" className={MenuStyles.link4}>
               Contact Me
             </Link>
           </div>

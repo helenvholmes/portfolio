@@ -55,6 +55,7 @@
   display: grid;
   font-size: 5em;
   font-weight: bold;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 70%;
   line-height: 1;
   margin: auto;
@@ -64,6 +65,53 @@
 .mainLinks a {
   color: var(--helen-off-white);
   text-decoration: none;
+  border-bottom: 4px solid var(--helen-blue);
+}
+
+.link1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.link1Sublinks {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-size: 0.25em;
+}
+
+.link2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.link2Sublinks {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  font-size: 0.25em;
+}
+
+.link3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.link4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 4;
 }
 
 .mainLinks a:hover {
