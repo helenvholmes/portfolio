@@ -41,6 +41,12 @@ html {
 
 @font-face {
   font-family: "Avenir Next";
+  font-weight: thin;
+  src: url("./fonts/avenirnext/avenir-next-thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
   font-weight: regular;
   src: url("./fonts/avenirnext/avenir-next-regular.woff2") format("woff2"),
        url("./fonts/avenirnext/avenir-next-regular.woff") format("woff");
@@ -58,6 +64,13 @@ html {
   font-weight: black;
   src: url("./fonts/butler/butler-black.woff2") format("woff2"),
        url("./fonts/butler/butler-black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Butler";
+  font-weight: medium;
+  src: url("./fonts/butler/butler-medium.woff2") format("woff2"),
+       url("./fonts/butler/butler-medium.woff") format("woff");
 }
 
 @font-face {

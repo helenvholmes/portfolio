@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import logo from '../../img/logo-white.svg'
 import MenuStyles from "./Menu.module.css"
 
-const TemplateWrapper = ({ children }) => (
+const Menu = ({ children }) => (
   <StaticQuery
     query={graphql`
       query MenuOverlayQuery {
@@ -38,20 +38,42 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
 
         <nav className={MenuStyles.menu} id="menuOverlay">
-          <Link to="/" className={MenuStyles.navbarItem} title="Logo">
-            <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
-          </Link>
-          <Link to="/writing">
-            Writing
-          </Link>
-          <Link to="/work">
-            Work
-          </Link>
-          <Link to="/contact">
-            Contact Me
-          </Link>
+          <div className={MenuStyles.originalNav}>
+            <Link to="/" className={MenuStyles.navbarItem} title="Logo">
+              <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
+            </Link>
+            <div id="closeMenu" className={MenuStyles.navbarMenu}>
+              <span className={MenuStyles.closeButton}>Close</span>
+              <div className={MenuStyles.navbarBurger}>
+                <span className={MenuStyles.closeX1}></span>
+                <span className={MenuStyles.closeX2}></span>
+              </div>
+            </div>
+          </div>
+          <div className={MenuStyles.mainLinks}>
+            <Link to="/work">
+              Work
+            </Link>
+            <Link to="/writing">
+              Writing
+            </Link>
+            <Link to="/contact">
+              About
+            </Link>
+            <Link to="/contact">
+              Contact Me
+            </Link>
+          </div>
+          <div className={MenuStyles.contact}>
+            <span className={MenuStyles.getInTouch}>Get in touch</span>
+            <a href="mailto:sayhi@helenvholmes.com">
+              sayhi@helenvholmes.com
+            </a>
+          </div>
         </nav>
       </div>
     )}
   />
 )
+
+export default Menu

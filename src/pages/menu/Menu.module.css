@@ -1,12 +1,16 @@
 .menu {
-  align-items: center;
   background-color: var(--helen-blue);
-  display: flex;
   height: 100vh;
-  justify-content: space-between;
   overflow: hidden;
-  padding: 0 9%;
   width: 100vw;
+}
+
+.originalNav {
+  padding: 0 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
 }
 
 .navbarBrand {
@@ -14,17 +18,67 @@
 }
 
 .navbarMenu {
-  align-content: space-between;
   cursor: pointer;
   display: flex;
-  flex-wrap: wrap;
   flex: 20px 0 0;
-  height: 15px;
+  justify-content: center;
+  align-content: center;
 }
 
-.navbarBurger {
+.closeButton {
+  color: var(--helen-off-white);
+  font-weight: bold;
+  padding-right: 15%;
+}
+
+.navbarBurger > span {
   background-color: var(--helen-off-white);
   display: block;
+  display: flex;
+  flex-wrap: wrap;
   height: 1px;
   width: 30px;
+}
+
+.navbarMenu .closeX1 {
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+}
+
+.navbarMenu .closeX2 {
+  transform: rotate(-45deg);
+  transform-origin: 0% 50%;
+}
+
+.mainLinks {
+  align-items: center;
+  display: grid;
+  font-size: 5em;
+  font-weight: bold;
+  height: 70%;
+  line-height: 1;
+  margin: auto;
+  width: 70%;
+}
+
+.mainLinks a {
+  color: var(--helen-off-white);
+  text-decoration: none;
+}
+
+.mainLinks a:hover {
+  border-bottom: 4px solid var(--helen-off-white);
+}
+
+.getInTouch {
+  font-family: "Butler", serif;
+  color: var(--helen-off-white);
+  font-size: 2em;
+  font-weight: medium;
+}
+
+.contact a {
+  color: var(--helen-off-white);
+  font-size: 1.15em;
+  font-weight: thin;
 }

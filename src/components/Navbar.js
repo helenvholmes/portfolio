@@ -13,7 +13,8 @@ const Navbar = class extends React.Component {
     // Add a click event to menu
     $navbarMenu.addEventListener('click', () => {
       // Navigate to the menu route
-      // navigate("/menu/")
+      navigate("/menu/")
+      // $navbarMenu.classList.toggle('is-active');
     });
   }
 
