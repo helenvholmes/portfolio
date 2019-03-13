@@ -26,6 +26,8 @@ export default class Menu extends React.Component {
 
       linkElement.addEventListener('mouseover', (e) => {
         if (current) current.pause();
+        line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
+        line.style['stroke-dashoffset'] = lineLength;
 
         current = Anime({
           targets: line,
