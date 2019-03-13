@@ -1,48 +1,62 @@
 import React from "react";
 import { Link } from 'gatsby';
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from "gatsby"
-import logo from '../../img/logo-white.svg'
-import linkUnderline from '../../img/linkunderline.svg'
+import Layout from '../../components/Menu-Layout'
+import Anime from 'animejs'
+import Logo from '../../img/logo-white.svg'
+import LinkUnderline from '../../img/linkunderline.svg'
 import MenuStyles from "./Menu.module.css"
 
-const Menu = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query MenuOverlayQuery {
-          site {
-            siteMetadata {
-              title,
-              description,
-            }
-          }
+export default class Menu extends React.Component {
+
+  componentDidMount() {
+    // Get the "#navbarMenu" element
+    const $LinkOne = document.querySelector('#link1');
+    const $LinkOneUnderline = document.querySelector('.Menu-module--linkUnderline1--Yj1ic line');
+    const $length = $LinkOneUnderline.getTotalLength(); // Get length of its underline
+
+    Anime({
+      targets: $LinkOneUnderline,
+      strokeDashoffset: {
+        value: -400,
+        duration: 700,
+        easing: 'easeOutQuart'
+      },
+      strokeDasharray: {
+        value: $length + ' ' + $length,
+        duration: 700,
+        easing: 'easeOutQuart'
+      }
+    });
+
+    // Add a mouseover event to menu
+    $LinkOne.addEventListener('mouseover', (e) => {
+      console.log("Moused");
+      Anime({
+        targets: $LinkOneUnderline,
+        strokeDashOffset: {
+          value: 400,
+          duration: 700,
+          easing: 'easeOutQuart'
+        },
+        strokeDasharray: {
+          value: $length + ' ' + $length,
+          duration: 700,
+          easing: 'easeOutQuart'
         }
-    `}
-    render={data => (
-      <div>
-        <Helmet>
-          <html lang="en" />
-          <title>{data.site.siteMetadata.title}</title>
-          <meta name="description" content={data.site.siteMetadata.description} />
-          
-          <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
-          <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+      });
+    });
+  };
 
-          <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
-          <meta name="theme-color" content="#fff" />
-
-          <meta property="og:type" content="business.business" />
-          <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/og-image.jpg" />
-        </Helmet>
-
+  render() {
+    return (
+      <Layout>
         <nav className={MenuStyles.menu} id="menuOverlay">
           <div className={MenuStyles.originalNav}>
-            <Link to="/" className={MenuStyles.navbarItem} title="Logo">
-              <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
-            </Link>
+            <div className={MenuStyles.navbarBrand}>
+              <Link to="/" className={MenuStyles.navbarItem} title="Logo">
+                <Logo />
+              </Link>
+            </div>
             <div id="closeMenu" className={MenuStyles.navbarMenu}>
               <span className={MenuStyles.closeButton}>Close</span>
               <div className={MenuStyles.navbarBurger}>
@@ -52,10 +66,10 @@ const Menu = ({ children }) => (
             </div>
           </div>
           <div className={MenuStyles.mainLinks}>
-            <Link to="/work" className={MenuStyles.link1}>
+            <Link to="/work" id="link1" className={MenuStyles.link1}>
               Work
             </Link>
-            <img src={linkUnderline} className={MenuStyles.linkUnderline1} alt="link underline" />
+            <LinkUnderline className={MenuStyles.linkUnderline1} alt="link underline" />
             <div className={MenuStyles.link1Sublinks}>
               <Link to="/work/featured">Featured</Link>
               <Link to="/work/physical">Physical</Link>
@@ -65,7 +79,7 @@ const Menu = ({ children }) => (
             <Link to="/writing" className={MenuStyles.link2}>
               Writing
             </Link>
-            <img src={linkUnderline} className={MenuStyles.linkUnderline2} alt="link underline" />
+            <LinkUnderline className={MenuStyles.linkUnderline2} alt="link underline" />
             <div className={MenuStyles.link2Sublinks}>
               <Link to="/work/featured">Featured</Link>
               <Link to="/work/physical">Physical</Link>
@@ -75,11 +89,11 @@ const Menu = ({ children }) => (
             <Link to="/contact" className={MenuStyles.link3}>
               About
             </Link>
-            <img src={linkUnderline} className={MenuStyles.linkUnderline3} alt="link underline" />
+            <LinkUnderline className={MenuStyles.linkUnderline3} alt="link underline" />
             <Link to="/contact" className={MenuStyles.link4}>
               Contact
             </Link>
-            <img src={linkUnderline} className={MenuStyles.linkUnderline4} alt="link underline" />
+            <LinkUnderline className={MenuStyles.linkUnderline4} alt="link underline" />
           </div>
           <div className={MenuStyles.contact}>
             <span className={MenuStyles.getInTouch}>Get in touch</span>
@@ -88,9 +102,7 @@ const Menu = ({ children }) => (
             </a>
           </div>
         </nav>
-      </div>
-    )}
-  />
-)
-
-export default Menu
+        </Layout>
+    );
+  }
+}

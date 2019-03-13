@@ -18,6 +18,10 @@
   flex: 1;
 }
 
+.navbarBrand svg {
+  width: 60px;
+}
+
 .navbarMenu {
   cursor: pointer;
   display: flex;

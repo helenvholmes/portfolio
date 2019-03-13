@@ -12,6 +12,10 @@
   flex: 1;
 }
 
+.navbarBrand svg {
+  width: 60px;
+}
+
 .navbarMenu {
   align-content: space-between;
   cursor: pointer;
