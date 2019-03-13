@@ -14,27 +14,15 @@ export default class Menu extends React.Component {
     const $LinkOneUnderline = document.querySelector('.Menu-module--linkUnderline1--Yj1ic line');
     const $length = $LinkOneUnderline.getTotalLength(); // Get length of its underline
 
-    Anime({
-      targets: $LinkOneUnderline,
-      strokeDashoffset: {
-        value: -400,
-        duration: 700,
-        easing: 'easeOutQuart'
-      },
-      strokeDasharray: {
-        value: $length + ' ' + $length,
-        duration: 700,
-        easing: 'easeOutQuart'
-      }
-    });
+    $LinkOneUnderline.style['stroke-dasharray'] = ($length + ' ' + $length);
+    $LinkOneUnderline.style['stroke-dashoffset'] = $length;
 
     // Add a mouseover event to menu
-    $LinkOne.addEventListener('mouseover', (e) => {
-      console.log("Moused");
+    $LinkOne.addEventListener('mouseover', () => {
       Anime({
         targets: $LinkOneUnderline,
-        strokeDashOffset: {
-          value: 400,
+        strokeDashoffset: {
+          value: 0,
           duration: 700,
           easing: 'easeOutQuart'
         },
@@ -42,6 +30,37 @@ export default class Menu extends React.Component {
           value: $length + ' ' + $length,
           duration: 700,
           easing: 'easeOutQuart'
+        }
+      });
+    });
+
+    $LinkOne.addEventListener('mouseout', () => {
+      Anime({
+        targets: $LinkOneUnderline,
+        strokeDashoffset: {
+          value: -$length,
+          duration: 700,
+          easing: 'easeOutQuart'
+        },
+        strokeDasharray: {
+          value: $length + ' ' + $length,
+          duration: 700,
+          easing: 'easeOutQuart'
+        },
+        complete: function() {
+          Anime({
+              targets: $LinkOneUnderline,
+              strokeDashoffset: {
+                value: $length,
+                duration: 0,
+                easing: 'easeOutQuart'
+              },
+              strokeDasharray: {
+                value: $length + ' ' + $length,
+                duration: 0,
+                easing: 'easeOutQuart'
+              }
+          });
         }
       });
     });
