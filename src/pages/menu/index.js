@@ -15,9 +15,9 @@ export default class Menu extends React.Component {
       '#link3',
       '#link4',
     ]
-    let current = null;
 
     $links.forEach(function ($link) {
+      let current = null;
       let linkElement = document.querySelector($link);
       let line = document.querySelector($link + ' + svg line');
       let lineLength = line.getTotalLength(); // Get length of its underline
@@ -26,7 +26,6 @@ export default class Menu extends React.Component {
 
       linkElement.addEventListener('mouseover', (e) => {
         if (current) current.pause();
-        console.log(e);
 
         current = Anime({
           targets: line,
