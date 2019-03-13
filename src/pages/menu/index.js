@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 import logo from '../../img/logo-white.svg'
+import linkUnderline from '../../img/linkunderline.svg'
 import MenuStyles from "./Menu.module.css"
 
 const Menu = ({ children }) => (
@@ -54,21 +55,31 @@ const Menu = ({ children }) => (
             <Link to="/work" className={MenuStyles.link1}>
               Work
             </Link>
+            <img src={linkUnderline} className={MenuStyles.linkUnderline1} alt="link underline" />
             <div className={MenuStyles.link1Sublinks}>
-              sublin ks1asldk fjkldjska aseen e afi dfha
+              <Link to="/work/featured">Featured</Link>
+              <Link to="/work/physical">Physical</Link>
+              <Link to="/work/digital">Digital</Link>
+              <Link to="/work">All Projects</Link>
             </div>
             <Link to="/writing" className={MenuStyles.link2}>
               Writing
             </Link>
+            <img src={linkUnderline} className={MenuStyles.linkUnderline2} alt="link underline" />
             <div className={MenuStyles.link2Sublinks}>
-              sublinks1a sld kfjkldjska aseen e afi dfha
+              <Link to="/work/featured">Featured</Link>
+              <Link to="/work/physical">Physical</Link>
+              <Link to="/work/digital">Digital</Link>
+              <Link to="/work">All Projects</Link>
             </div>
             <Link to="/contact" className={MenuStyles.link3}>
               About
             </Link>
+            <img src={linkUnderline} className={MenuStyles.linkUnderline3} alt="link underline" />
             <Link to="/contact" className={MenuStyles.link4}>
-              Contact Me
+              Contact
             </Link>
+            <img src={linkUnderline} className={MenuStyles.linkUnderline4} alt="link underline" />
           </div>
           <div className={MenuStyles.contact}>
             <span className={MenuStyles.getInTouch}>Get in touch</span>

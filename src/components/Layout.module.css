@@ -41,7 +41,7 @@ html {
 
 @font-face {
   font-family: "Avenir Next";
-  font-weight: thin;
+  font-weight: lighter;
   src: url("./fonts/avenirnext/avenir-next-thin.woff") format("woff");
 }
 
