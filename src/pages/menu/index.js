@@ -9,59 +9,70 @@ import MenuStyles from "./Menu.module.css"
 export default class Menu extends React.Component {
 
   componentDidMount() {
-    // Get the "#navbarMenu" element
-    const $LinkOne = document.querySelector('#link1');
-    const $LinkOneUnderline = document.querySelector('.Menu-module--linkUnderline1--Yj1ic line');
-    const $length = $LinkOneUnderline.getTotalLength(); // Get length of its underline
+    const $links = [
+      '#link1',
+      '#link2',
+      '#link3',
+      '#link4',
+    ]
+    let current = null;
 
-    $LinkOneUnderline.style['stroke-dasharray'] = ($length + ' ' + $length);
-    $LinkOneUnderline.style['stroke-dashoffset'] = $length;
+    $links.forEach(function ($link) {
+      let linkElement = document.querySelector($link);
+      let line = document.querySelector($link + ' + svg line');
+      let lineLength = line.getTotalLength(); // Get length of its underline
+      line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
+      line.style['stroke-dashoffset'] = lineLength;
 
-    // Add a mouseover event to menu
-    $LinkOne.addEventListener('mouseover', () => {
-      Anime({
-        targets: $LinkOneUnderline,
-        strokeDashoffset: {
-          value: 0,
-          duration: 700,
-          easing: 'easeOutQuart'
-        },
-        strokeDasharray: {
-          value: $length + ' ' + $length,
-          duration: 700,
-          easing: 'easeOutQuart'
-        }
+      linkElement.addEventListener('mouseover', (e) => {
+        if (current) current.pause();
+        console.log(e);
+
+        current = Anime({
+          targets: line,
+          strokeDashoffset: {
+            value: 0,
+            duration: 700,
+            easing: 'easeOutQuart'
+          },
+          strokeDasharray: {
+            value: lineLength + ' ' + lineLength,
+            duration: 700,
+            easing: 'easeOutQuart'
+          }
+        });
       });
-    });
 
-    $LinkOne.addEventListener('mouseout', () => {
-      Anime({
-        targets: $LinkOneUnderline,
-        strokeDashoffset: {
-          value: -$length,
-          duration: 700,
-          easing: 'easeOutQuart'
-        },
-        strokeDasharray: {
-          value: $length + ' ' + $length,
-          duration: 700,
-          easing: 'easeOutQuart'
-        },
-        complete: function() {
-          Anime({
-              targets: $LinkOneUnderline,
-              strokeDashoffset: {
-                value: $length,
-                duration: 0,
-                easing: 'easeOutQuart'
-              },
-              strokeDasharray: {
-                value: $length + ' ' + $length,
-                duration: 0,
-                easing: 'easeOutQuart'
-              }
-          });
-        }
+      linkElement.addEventListener('mouseout', () => {
+        if (current) current.pause();
+        current = Anime({
+          targets: line,
+          strokeDashoffset: {
+            value: -lineLength,
+            duration: 700,
+            easing: 'easeOutQuart'
+          },
+          strokeDasharray: {
+            value: lineLength + ' ' + lineLength,
+            duration: 700,
+            easing: 'easeOutQuart'
+          },
+          complete: function() {
+            Anime({
+                targets: line,
+                strokeDashoffset: {
+                  value: lineLength,
+                  duration: 0,
+                  easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                  value: lineLength + ' ' + lineLength,
+                  duration: 0,
+                  easing: 'easeOutQuart'
+                }
+            });
+          }
+        });
       });
     });
   };
@@ -95,7 +106,7 @@ export default class Menu extends React.Component {
               <Link to="/work/digital">Digital</Link>
               <Link to="/work">All Projects</Link>
             </div>
-            <Link to="/writing" className={MenuStyles.link2}>
+            <Link to="/writing" id="link2" className={MenuStyles.link2}>
               Writing
             </Link>
             <LinkUnderline className={MenuStyles.linkUnderline2} alt="link underline" />
@@ -105,11 +116,11 @@ export default class Menu extends React.Component {
               <Link to="/work/digital">Digital</Link>
               <Link to="/work">All Projects</Link>
             </div>
-            <Link to="/contact" className={MenuStyles.link3}>
+            <Link to="/contact" id="link3" className={MenuStyles.link3}>
               About
             </Link>
             <LinkUnderline className={MenuStyles.linkUnderline3} alt="link underline" />
-            <Link to="/contact" className={MenuStyles.link4}>
+            <Link to="/contact" id="link4" className={MenuStyles.link4}>
               Contact
             </Link>
             <LinkUnderline className={MenuStyles.linkUnderline4} alt="link underline" />
