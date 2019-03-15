@@ -119,6 +119,10 @@ export default class Menu extends React.Component {
     });
   };
 
+  closeButton() {
+    window.history.go(-1);
+  };
+
   render() {
     return (
       <Layout>
@@ -130,7 +134,7 @@ export default class Menu extends React.Component {
               </Link>
             </div>
             <div id="closeMenu" className={MenuStyles.navbarMenu}>
-              <span className={MenuStyles.closeButton}>Close</span>
+              <span className={MenuStyles.closeButton} onClick={this.closeButton}>Close</span>
               <div className={MenuStyles.navbarBurger}>
                 <span className={MenuStyles.closeX1}></span>
                 <span className={MenuStyles.closeX2}></span>
