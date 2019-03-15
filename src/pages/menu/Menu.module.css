@@ -100,12 +100,14 @@
   font-size: 0.25em;
   font-weight: lighter;
   justify-self: end;
+  opacity: 0;
   line-height: 1.25;
   text-align: right;
 }
 
 .link1Sublinks > a {
   padding-top: 2%;
+  opacity: 0;
 }
 
 .link2 {
@@ -136,12 +138,14 @@
   font-size: 0.25em;
   font-weight: lighter;
   justify-self: end;
+  opacity: 0;
   line-height: 1.25;
   text-align: right;
 }
 
 .link2Sublinks > a {
   padding-top: 2%;
+  opacity: 0;
 }
 
 .link3 {

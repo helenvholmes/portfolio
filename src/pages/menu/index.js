@@ -24,6 +24,9 @@ export default class Menu extends React.Component {
       line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
       line.style['stroke-dashoffset'] = lineLength;
 
+      let subNav = document.querySelector($link + ' + svg + div');
+      let subNavSubItems = document.querySelectorAll($link + ' + svg + div a');
+
       linkElement.addEventListener('mouseover', (e) => {
         if (current) current.pause();
         line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
@@ -42,6 +45,26 @@ export default class Menu extends React.Component {
             easing: 'easeOutQuart'
           }
         });
+
+        if (subNav) {
+          subNav.style.opacity = 1;
+          let delayCounter = 200;
+          let translateCounter = 0;
+
+          subNavSubItems.forEach(function ($subLink, i) {
+            Anime({
+              targets: $subLink,
+              opacity: 1,
+              translateY: translateCounter,
+              delay: delayCounter,
+              duration: 600,
+              easing: 'easeOutQuart'
+            });
+
+            delayCounter = (delayCounter + 100);
+            translateCounter = (translateCounter + 10);
+          }, translateCounter, delayCounter);
+        }
       });
 
       linkElement.addEventListener('mouseout', () => {
@@ -74,6 +97,24 @@ export default class Menu extends React.Component {
             });
           }
         });
+        if (subNav) {
+          let delayCounter = 400;
+          let translateCounter = 0;
+
+          subNavSubItems.forEach(function ($subLink, i) {
+            Anime({
+              targets: $subLink,
+              opacity: 0,
+              translateY: translateCounter,
+              delay: delayCounter,
+              duration: 400,
+              easing: 'easeOutQuart'
+            });
+
+            delayCounter = (delayCounter - 100);
+            translateCounter = (translateCounter - 10);
+          }, translateCounter, delayCounter);
+        }
       });
     });
   };
