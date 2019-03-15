@@ -7,117 +7,139 @@ import LinkUnderline from '../../img/linkunderline.svg'
 import MenuStyles from "./Menu.module.css"
 
 export default class Menu extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      current: null
+    }
+  }
 
   componentDidMount() {
-    const $links = [
-      '#link1',
-      '#link2',
-      '#link3',
-      '#link4',
-    ]
+    // nothing to see here
+  }
 
-    $links.forEach(function ($link) {
-      let current = null;
-      let linkElement = document.querySelector($link);
-      let line = document.querySelector($link + ' + svg line');
-      let lineLength = line.getTotalLength(); // Get length of its underline
-      line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
-      line.style['stroke-dashoffset'] = lineLength;
+  handleLinkMouseover(i) {
+    let current = this.state.current;
+    let line = document.querySelector('svg:nth-of-type(' + i + ') line');
+    let lineLength = line.getTotalLength(); // Get length of its underline
+    line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
+    line.style['stroke-dashoffset'] = lineLength;
 
-      let subNav = document.querySelector($link + ' + svg + div');
-      let subNavSubItems = document.querySelectorAll($link + ' + svg + div a');
+    let subNav = document.querySelector('#link' + i + ' + svg + div');
+    let subNavSubItems = document.querySelectorAll('#link' + i + ' + svg + div a');
 
-      linkElement.addEventListener('mouseover', (e) => {
-        if (current) current.pause();
-        line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
-        line.style['stroke-dashoffset'] = lineLength;
+    if (current) {
+      current.pause();
+    }
 
-        current = Anime({
-          targets: line,
-          strokeDashoffset: {
-            value: 0,
-            duration: 700,
-            easing: 'easeOutQuart'
-          },
-          strokeDasharray: {
-            value: lineLength + ' ' + lineLength,
-            duration: 700,
-            easing: 'easeOutQuart'
-          }
-        });
+    line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
+    line.style['stroke-dashoffset'] = lineLength;
 
-        if (subNav) {
-          subNav.style.opacity = 1;
-          let delayCounter = 200;
-          let translateCounter = 0;
-
-          subNavSubItems.forEach(function ($subLink, i) {
-            Anime({
-              targets: $subLink,
-              opacity: 1,
-              translateY: translateCounter,
-              delay: delayCounter,
-              duration: 600,
-              easing: 'easeOutQuart'
-            });
-
-            delayCounter = (delayCounter + 100);
-            translateCounter = (translateCounter + 10);
-          }, translateCounter, delayCounter);
-        }
-      });
-
-      linkElement.addEventListener('mouseout', () => {
-        if (current) current.pause();
-        current = Anime({
-          targets: line,
-          strokeDashoffset: {
-            value: -lineLength,
-            duration: 700,
-            easing: 'easeOutQuart'
-          },
-          strokeDasharray: {
-            value: lineLength + ' ' + lineLength,
-            duration: 700,
-            easing: 'easeOutQuart'
-          },
-          complete: function() {
-            Anime({
-                targets: line,
-                strokeDashoffset: {
-                  value: lineLength,
-                  duration: 0,
-                  easing: 'easeOutQuart'
-                },
-                strokeDasharray: {
-                  value: lineLength + ' ' + lineLength,
-                  duration: 0,
-                  easing: 'easeOutQuart'
-                }
-            });
-          }
-        });
-        if (subNav) {
-          let delayCounter = 400;
-          let translateCounter = 0;
-
-          subNavSubItems.forEach(function ($subLink, i) {
-            Anime({
-              targets: $subLink,
-              opacity: 0,
-              translateY: translateCounter,
-              delay: delayCounter,
-              duration: 400,
-              easing: 'easeOutQuart'
-            });
-
-            delayCounter = (delayCounter - 100);
-            translateCounter = (translateCounter - 10);
-          }, translateCounter, delayCounter);
-        }
-      });
+    current = Anime({
+      targets: line,
+      strokeDashoffset: {
+        value: 0,
+        duration: 700,
+        easing: 'easeOutQuart'
+      },
+      strokeDasharray: {
+        value: lineLength + ' ' + lineLength,
+        duration: 700,
+        easing: 'easeOutQuart'
+      }
     });
-  };
+
+    this.setState = {
+      current: current
+    }
+
+    if (subNav) {
+      subNav.style.opacity = 1;
+      let delayCounter = 200;
+      let translateCounter = 0;
+
+      subNavSubItems.forEach(function ($subLink, i) {
+        Anime({
+          targets: $subLink,
+          opacity: 1,
+          translateY: translateCounter,
+          delay: delayCounter,
+          duration: 600,
+          easing: 'easeOutQuart'
+        });
+
+        delayCounter = (delayCounter + 100);
+        translateCounter = (translateCounter + 10);
+      }, translateCounter, delayCounter);
+    }
+  }
+
+  handleLinkMouseout(i) {
+    let current = this.state.current;
+    let line = document.querySelector('svg:nth-of-type(' + i + ') line');
+    let lineLength = line.getTotalLength(); // Get length of its underline
+    line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
+    line.style['stroke-dashoffset'] = lineLength;
+
+    let subNav = document.querySelector('#link' + i + ' + svg + div');
+    let subNavSubItems = document.querySelectorAll('#link' + i + ' + svg + div a');
+
+    if (current) {
+      current.pause();
+    }
+
+    current = Anime({
+      targets: line,
+      strokeDashoffset: {
+        value: -lineLength,
+        duration: 700,
+        easing: 'easeOutQuart'
+      },
+      strokeDasharray: {
+        value: lineLength + ' ' + lineLength,
+        duration: 700,
+        easing: 'easeOutQuart'
+      },
+      complete: function () {
+        Anime({
+          targets: line,
+          strokeDashoffset: {
+            value: lineLength,
+            duration: 0,
+            easing: 'easeOutQuart'
+          },
+          strokeDasharray: {
+            value: lineLength + ' ' + lineLength,
+            duration: 0,
+            easing: 'easeOutQuart'
+          }
+        });
+      }
+    });
+
+    this.setState = {
+      current: current
+    }
+
+    if (subNav) {
+      let delayCounter = 400;
+      let translateCounter = 0;
+
+      subNavSubItems.forEach(function ($subLink, i) {
+        Anime({
+          targets: $subLink,
+          opacity: 0,
+          translateY: translateCounter,
+          delay: delayCounter,
+          duration: 400,
+          easing: 'easeOutQuart'
+        });
+
+        delayCounter = (delayCounter - 100);
+        translateCounter = (translateCounter - 10);
+      }, translateCounter, delayCounter);
+    }
+  }
 
   render() {
     return (
@@ -138,7 +160,13 @@ export default class Menu extends React.Component {
             </div>
           </div>
           <div className={MenuStyles.mainLinks}>
-            <Link to="/work" id="link1" className={MenuStyles.link1}>
+            <Link to="/work" id="link1"
+              className={MenuStyles.link1}
+              // this specific bind style, arrow binding: (arg) => method(arg) 
+              // is mandatory to preserve 'this.state'
+              // indices are still hard-coded, for simplicity's sake
+              onMouseEnter={(i) => this.handleLinkMouseover(1)}
+              onMouseOut={(i) => this.handleLinkMouseout(1)}>
               Work
             </Link>
             <LinkUnderline className={MenuStyles.linkUnderline1} alt="link underline" />
@@ -148,7 +176,10 @@ export default class Menu extends React.Component {
               <Link to="/work/digital">Digital</Link>
               <Link to="/work">All Projects</Link>
             </div>
-            <Link to="/writing" id="link2" className={MenuStyles.link2}>
+            <Link to="/writing" id="link2"
+              className={MenuStyles.link2}
+              onMouseEnter={(i) => this.handleLinkMouseover(2)}
+              onMouseOut={(i) => this.handleLinkMouseout(2)}>
               Writing
             </Link>
             <LinkUnderline className={MenuStyles.linkUnderline2} alt="link underline" />
@@ -158,11 +189,17 @@ export default class Menu extends React.Component {
               <Link to="/work/digital">Digital</Link>
               <Link to="/work">All Projects</Link>
             </div>
-            <Link to="/contact" id="link3" className={MenuStyles.link3}>
+            <Link to="/contact" id="link3"
+              className={MenuStyles.link3}
+              onMouseEnter={(i) => this.handleLinkMouseover(3)}
+              onMouseOut={(i) => this.handleLinkMouseout(3)}>
               About
             </Link>
             <LinkUnderline className={MenuStyles.linkUnderline3} alt="link underline" />
-            <Link to="/contact" id="link4" className={MenuStyles.link4}>
+            <Link to="/contact" id="link4"
+              className={MenuStyles.link4}
+              onMouseEnter={(i) => this.handleLinkMouseover(4)}
+              onMouseOut={(i) => this.handleLinkMouseout(4)}>
               Contact
             </Link>
             <LinkUnderline className={MenuStyles.linkUnderline4} alt="link underline" />
@@ -174,7 +211,7 @@ export default class Menu extends React.Component {
             </a>
           </div>
         </nav>
-        </Layout>
+      </Layout>
     );
   }
 }
