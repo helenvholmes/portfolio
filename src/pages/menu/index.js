@@ -152,6 +152,10 @@ export default class Menu extends React.Component {
     }
   }
 
+  handleLinkHovers() {
+    
+  };
+
   closeButton() {
     window.history.go(-1);
   };
@@ -168,7 +172,7 @@ export default class Menu extends React.Component {
             </div>
             <div id="closeMenu" className={MenuStyles.navbarMenu}>
               <span className={MenuStyles.closeButton} onClick={this.closeButton}>Close</span>
-              <div className={MenuStyles.navbarBurger}>
+              <div className={MenuStyles.navbarBurger} onClick={this.closeButton}>
                 <span className={MenuStyles.closeX1}></span>
                 <span className={MenuStyles.closeX2}></span>
               </div>
