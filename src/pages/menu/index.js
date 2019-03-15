@@ -15,10 +15,20 @@ export default class Menu extends React.Component {
   }
 
   componentDidMount() {
-    let line = document.querySelector('svg line');
-    let lineLength = line.getTotalLength(); // Get length of its underline
-    line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
-    line.style['stroke-dashoffset'] = lineLength;
+    let linkLines = document.querySelectorAll('svg line');
+
+    linkLines.forEach(function (line) {
+      let lineLength = line.getTotalLength(); // Get length of its underline
+      line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
+      line.style['stroke-dashoffset'] = lineLength;
+    });
+
+    this.$links = [
+      '#link1',
+      '#link2',
+      '#link3',
+      '#link4',
+    ]
   }
 
   handleLinkMouseover(i) {
