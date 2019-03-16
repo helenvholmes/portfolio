@@ -2,7 +2,7 @@
   background-color: #fff;
   color: var(--body-color);
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   justify-items: center;
   align-items: center;
   padding: 5% 0;
@@ -13,7 +13,6 @@
 }
 
 .platitudes {
-  align-content: center;
   align-self: stretch;
   justify-self: stretch;
   background-color: var(--brand-primary);
@@ -22,18 +21,16 @@
   grid-column-end: 4;
   grid-column-start: 2;
   justify-content: center;
-  border-left: 40px solid white;
-  border-right: 40px solid white;
 }
 
 .partOne {
   align-self: start;
-  grid-column-end: 6;
-  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-column-start: 5;
 }
 
 .partTwo {
   align-self: start;
-  grid-column-end: 9;
-  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-column-start: 8;
 }

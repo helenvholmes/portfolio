@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo.svg'
+import Logo from '../img/logo.svg'
 import FooterStyles from "./Footer.module.css"
 
 const Footer = class extends React.Component {
@@ -9,7 +9,7 @@ const Footer = class extends React.Component {
       <nav className={FooterStyles.navbar} role="navigation" aria-label="main-navigation">
         <div className={FooterStyles.navbarBrand}>
           <Link to="/" className={FooterStyles.navbarItem} title="Logo">
-            <img src={logo} alt="Helen V. Holmes" style={{ width: '60px' }} />
+            <Logo />
           </Link>
         </div>
         <div id="navMenu" className={FooterStyles.navbarMenu}>

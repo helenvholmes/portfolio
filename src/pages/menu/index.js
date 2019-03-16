@@ -152,10 +152,6 @@ export default class Menu extends React.Component {
     }
   }
 
-  handleLinkHovers() {
-    
-  };
-
   closeButton() {
     window.history.go(-1);
   };
