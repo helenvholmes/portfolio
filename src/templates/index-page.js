@@ -19,6 +19,7 @@ export const IndexPageTemplate = ({
   intro3, 
   helenHeadshots, 
 }) => {
+
   return (
     <div>
       <Header />
