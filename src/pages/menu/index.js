@@ -14,7 +14,23 @@ export default class Menu extends React.Component {
     }
   }
 
+  updateDimensions() {
+    let linkLines = document.querySelectorAll('svg line');
+
+    linkLines.forEach(function (line) {
+      let lineLength = line.getTotalLength(); // Get length of its underline
+      line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
+      line.style['stroke-dashoffset'] = lineLength;
+    });
+  }
+
+  componentWillMount() {
+    this.updateDimensions();
+  }
+
   componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+
     let linkLines = document.querySelectorAll('svg line');
 
     linkLines.forEach(function (line) {
@@ -29,6 +45,10 @@ export default class Menu extends React.Component {
       '#link3',
       '#link4',
     ]
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
   }
 
   handleLinkMouseover(i) {
@@ -60,10 +80,6 @@ export default class Menu extends React.Component {
       }
     });
 
-    this.setState = {
-      current: current
-    }
-
     if (subNav) {
       subNav.style.opacity = 1;
       let delayCounter = 200;
@@ -82,6 +98,10 @@ export default class Menu extends React.Component {
         delayCounter = (delayCounter + 100);
         translateCounter = (translateCounter + 10);
       }, translateCounter, delayCounter);
+    }
+
+    this.setState = {
+      current: current
     }
   }
 
@@ -128,10 +148,6 @@ export default class Menu extends React.Component {
       }
     });
 
-    this.setState = {
-      current: current
-    }
-
     if (subNav) {
       let delayCounter = 400;
       let translateCounter = 0;
@@ -149,6 +165,10 @@ export default class Menu extends React.Component {
         delayCounter = (delayCounter - 100);
         translateCounter = (translateCounter - 10);
       }, translateCounter, delayCounter);
+    }
+
+    this.setState = {
+      current: current
     }
   }
 

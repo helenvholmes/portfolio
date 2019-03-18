@@ -23,16 +23,20 @@
 }
 
 .navbarMenu {
+  align-content: center;
   cursor: pointer;
   display: flex;
   flex: 20px 0 0;
   justify-content: center;
-  align-content: center;
 }
 
 .closeButton {
   font-weight: bold;
   padding-right: 15%;
+}
+
+.navbarBurger {
+  margin-top: 10px;
 }
 
 .navbarBurger > span {
@@ -46,12 +50,10 @@
 
 .navbarMenu .closeX1 {
   transform: rotate(45deg);
-  transform-origin: 0% 0%;
 }
 
 .navbarMenu .closeX2 {
   transform: rotate(-45deg);
-  transform-origin: 0% 50%;
 }
 
 .mainLinks {
@@ -130,8 +132,8 @@
 .link2Sublinks {
   grid-column-start: 4;
   grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 7;
 
   align-self: start;
   display: grid;
