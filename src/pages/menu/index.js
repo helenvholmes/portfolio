@@ -31,6 +31,15 @@ export default class Menu extends React.Component {
   componentDidMount() {
     window.addEventListener("resize", this.updateDimensions);
 
+    const menu = document.querySelector('#menuOverlay');
+    console.log(menu);
+
+    // Anime({
+    //   targets: menu,
+    //   height: '100vh',
+    //   easing: 'easeInOutQuad'
+    // });
+
     let linkLines = document.querySelectorAll('svg line');
 
     linkLines.forEach(function (line) {
