@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Critique Is Terrifying
+title: On Learning to Take Critique
 date: 2019-03-21T15:02:28.067Z
 description: 'Chloe asks from in front of the oven, “What are these on the second rack?”'
 tags:
