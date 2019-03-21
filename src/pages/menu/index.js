@@ -16,15 +16,11 @@ export default class Menu extends React.Component {
   }
 
   componentDidMount() {
-    if (typeof window !== 'undefined') {
-      document.getElementById("root");
-    }
-
-    ReactDOM.window.addEventListener("resize", function() {
-      let linkLines = ReactDOM.document.querySelectorAll('svg line');
+    window.addEventListener("resize", function() {
+      let linkLines = document.querySelectorAll('svg line');
 
       linkLines.forEach(function (line) {
-        let lineLength = ReactDOM.line.getTotalLength(); // Get length of its underline
+        let lineLength = line.getTotalLength(); // Get length of its underline
         line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
         line.style['stroke-dashoffset'] = lineLength;
       });
@@ -39,7 +35,7 @@ export default class Menu extends React.Component {
     //   easing: 'easeInOutQuad'
     // });
 
-    let linkLines = ReactDOM.document.querySelectorAll('svg line');
+    let linkLines = document.querySelectorAll('svg line');
 
     linkLines.forEach(function (line) {
       let lineLength = line.getTotalLength(); // Get length of its underline
@@ -57,11 +53,11 @@ export default class Menu extends React.Component {
 
   handleLinkMouseover(i) {
     let current = this.state.current;
-    let line = ReactDOM.document.querySelector('svg:nth-of-type(' + i + ') line');
+    let line = document.querySelector('svg:nth-of-type(' + i + ') line');
     let lineLength = line.getTotalLength(); // Get length of its underline
 
-    let subNav = ReactDOM.document.querySelector('#link' + i + ' + svg + div');
-    let subNavSubItems = ReactDOM.document.querySelectorAll('#link' + i + ' + svg + div a');
+    let subNav = document.querySelector('#link' + i + ' + svg + div');
+    let subNavSubItems = document.querySelectorAll('#link' + i + ' + svg + div a');
 
     if (current) {
       current.pause();
@@ -116,8 +112,8 @@ export default class Menu extends React.Component {
     line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
     line.style['stroke-dashoffset'] = lineLength;
 
-    let subNav = ReactDOM.document.querySelector('#link' + i + ' + svg + div');
-    let subNavSubItems = ReactDOM.document.querySelectorAll('#link' + i + ' + svg + div a');
+    let subNav = document.querySelector('#link' + i + ' + svg + div');
+    let subNavSubItems = document.querySelectorAll('#link' + i + ' + svg + div a');
 
     if (current) {
       current.pause();
