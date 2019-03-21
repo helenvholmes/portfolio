@@ -1,8 +1,7 @@
 import React from 'react'
-import HeaderStyles from "./Header.module.css"
+import HeaderStyles from './Header.module.css'
 
 const Header = class extends React.Component {
-
   render() {
     return (
       <header className={HeaderStyles.header}>

@@ -30,10 +30,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
-          rule: {
-            include: `${__dirname}/src/img`
-          }
-      }
+        rule: {
+          include: `${__dirname}/src/img`,
+        },
+      },
     },
     'gatsby-plugin-sharp',
     `gatsby-plugin-transition-link`,
@@ -49,19 +49,18 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-embed-video",
+            resolve: 'gatsby-remark-embed-video',
             options: {
               width: 800,
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
               height: 400, // Optional: Overrides optional.ratio
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
-            }
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+            },
           },
           {
-            resolve: "gatsby-remark-responsive-iframe",
-            options: {
-            }
+            resolve: 'gatsby-remark-responsive-iframe',
+            options: {},
           },
           {
             resolve: 'gatsby-remark-images',
@@ -76,8 +75,8 @@ module.exports = {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',
-            }
-          }
+            },
+          },
         ],
       },
     },
@@ -88,9 +87,9 @@ module.exports = {
       },
     },
     {
-      resolve:'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
-        develop: true,            // Activates purging in npm run develop
+        develop: true, // Activates purging in npm run develop
         purgeOnly: ['/all.css'], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins

@@ -3,24 +3,22 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import '../components/all.css'
-import WorkStyles from "./work.module.css"
+import WorkStyles from './work.module.css'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const WorkPageTemplate = ({ 
-  title, 
-  content, 
+export const WorkPageTemplate = ({
+  title,
+  content,
   contentComponent,
-  project1, 
-  project2, 
+  project1,
+  project2,
 }) => {
   const PageContent = contentComponent || Content
 
   return (
     <main>
-      <section className={WorkStyles.reel}>
-        reel
-      </section>
+      <section className={WorkStyles.reel}>reel</section>
 
       <section className={WorkStyles.project}>
         <div className={WorkStyles.projectImage}>

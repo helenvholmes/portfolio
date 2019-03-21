@@ -13,13 +13,12 @@ import Footer from '../components/Footer'
 import IndexStyles from './index-page.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const IndexPageTemplate = ({ 
-  intro1, 
-  intro2, 
-  intro3, 
-  helenHeadshots, 
+export const IndexPageTemplate = ({
+  intro1,
+  intro2,
+  intro3,
+  helenHeadshots,
 }) => {
-
   return (
     <div>
       <Header />
@@ -43,9 +42,9 @@ export const IndexPageTemplate = ({
               <div className={IndexStyles.headshot3}>
                 <PreviewCompatibleImage imageInfo={helenHeadshots.image3} />
               </div>
-              <div className={IndexStyles.headshotBorder1}></div>
-              <div className={IndexStyles.headshotBorder2}></div>
-              <div className={IndexStyles.headshotBorder3}></div>
+              <div className={IndexStyles.headshotBorder1} />
+              <div className={IndexStyles.headshotBorder2} />
+              <div className={IndexStyles.headshotBorder3} />
             </div>
             <div className={IndexStyles.learnMore}>
               <Link to="/#about" className={IndexStyles.learnMoreLink}>
