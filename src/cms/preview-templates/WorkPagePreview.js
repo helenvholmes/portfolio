@@ -18,6 +18,12 @@ const WorkPagePreview = ({ entry, widgetFor, getAsset }) => (
         alt: entry.getIn(['data', 'project2', 'image2', 'alt']),
       },
     }}
+    project3={{
+      image3: {
+        image: getAsset(entry.getIn(['data', 'project3', 'image3', 'image'])),
+        alt: entry.getIn(['data', 'project3', 'image3', 'alt']),
+      },
+    }}
   />
 )
 
