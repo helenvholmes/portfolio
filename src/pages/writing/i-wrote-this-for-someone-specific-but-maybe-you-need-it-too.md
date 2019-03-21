@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'I wrote this for someone specific, but maybe you need it too.'
-date: 2019-03-21T14:47:30.051Z
+date: 2016-11-23T15:47:30.051Z
 description: 'Dear _____,'
 tags:
   - essay
