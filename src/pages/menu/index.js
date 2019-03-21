@@ -15,7 +15,7 @@ export default class Menu extends React.Component {
   }
 
   updateDimensions() {
-    let linkLines = document.querySelectorAll('svg line');
+    let linkLines = window.querySelectorAll('svg line');
 
     linkLines.forEach(function (line) {
       let lineLength = line.getTotalLength(); // Get length of its underline
