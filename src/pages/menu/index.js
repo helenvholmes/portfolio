@@ -16,6 +16,10 @@ export default class Menu extends React.Component {
   }
 
   componentDidMount() {
+    if (typeof window !== 'undefined') {
+      document.getElementById("root");
+    }
+
     ReactDOM.window.addEventListener("resize", function() {
       let linkLines = ReactDOM.document.querySelectorAll('svg line');
 
