@@ -55,10 +55,6 @@ export default class Menu extends React.Component {
     ]
   }
 
-  componentWillUnmount() {
-    ReactDOM.window.removeEventListener("resize", this.updateDimensions);
-  }
-
   handleLinkMouseover(i) {
     let current = this.state.current;
     let line = ReactDOM.document.querySelector('svg:nth-of-type(' + i + ') line');
