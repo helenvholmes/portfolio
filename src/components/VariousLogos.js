@@ -1,10 +1,6 @@
 import React from 'react'
 import VariousLogosStyles from './VariousLogos.module.css'
 import HeadersStyles from './Headers.module.css'
-import CIPLogo from '../img/featured-logos/CIP-logo.svg'
-import YGLLogo from '../img/featured-logos/YGL-logo.svg'
-import WiltedYardsLogo from '../img/featured-logos/WiltedYards-logo.svg'
-import FastlyFestivalLogo from '../img/featured-logos/FastlyFestival-logo.svg'
 import Illustrations from '../img/illustrations.svg'
 
 const VariousLogos = class extends React.Component {

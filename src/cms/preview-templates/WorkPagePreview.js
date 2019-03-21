@@ -11,18 +11,24 @@ const WorkPagePreview = ({ entry, widgetFor, getAsset }) => (
         image: getAsset(entry.getIn(['data', 'project1', 'image1', 'image'])),
         alt: entry.getIn(['data', 'project1', 'image1', 'alt']),
       },
+      background1: entry.getIn(['data', 'background1']),
+      url: entry.getIn(['data', 'url']),
     }}
     project2={{
       image2: {
         image: getAsset(entry.getIn(['data', 'project2', 'image2', 'image'])),
         alt: entry.getIn(['data', 'project2', 'image2', 'alt']),
       },
+      background2: entry.getIn(['data', 'background2']),
+      url: entry.getIn(['data', 'url']),
     }}
     project3={{
       image3: {
         image: getAsset(entry.getIn(['data', 'project3', 'image3', 'image'])),
         alt: entry.getIn(['data', 'project3', 'image3', 'alt']),
       },
+      background3: entry.getIn(['data', 'background3']),
+      url: entry.getIn(['data', 'url']),
     }}
   />
 )
