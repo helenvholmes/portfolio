@@ -108,8 +108,7 @@ export default class Menu extends React.Component {
 
   handleLinkMouseout(i) {
     let current = this.state.current
-    let line =
-      ReactDOM / document.querySelector('svg:nth-of-type(' + i + ') line')
+    let line = document.querySelector('svg:nth-of-type(' + i + ') line')
     let lineLength = line.getTotalLength() // Get length of its underline
     line.style['stroke-dasharray'] = lineLength + ' ' + lineLength
     line.style['stroke-dashoffset'] = lineLength
