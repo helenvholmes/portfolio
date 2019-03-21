@@ -1,5 +1,6 @@
-import React from "react";
-import { Link } from 'gatsby';
+import React from "react"
+import ReactDOM from "react-dom"
+import { Link } from 'gatsby'
 import Layout from '../../components/Menu-Layout'
 import Anime from 'animejs'
 import Logo from '../../img/logo-white.svg'
@@ -15,7 +16,7 @@ export default class Menu extends React.Component {
   }
 
   updateDimensions() {
-    let linkLines = window.querySelectorAll('svg line');
+    let linkLines = document.querySelectorAll('svg line');
 
     linkLines.forEach(function (line) {
       let lineLength = line.getTotalLength(); // Get length of its underline
