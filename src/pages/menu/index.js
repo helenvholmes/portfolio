@@ -19,7 +19,7 @@ export default class Menu extends React.Component {
     let linkLines = ReactDOM.document.querySelectorAll('svg line');
 
     linkLines.forEach(function (line) {
-      let lineLength = line.getTotalLength(); // Get length of its underline
+      let lineLength = ReactDOM.line.getTotalLength(); // Get length of its underline
       line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
       line.style['stroke-dashoffset'] = lineLength;
     });
