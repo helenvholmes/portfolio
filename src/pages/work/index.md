@@ -2,13 +2,21 @@
 templateKey: work-page
 title: Work
 project1:
-  background1: off-white
+  background: white
+  url: /work/cip-conference
   image1:
-    alt: Fastly Festival
-    image: /img/artboard-1-3x.png
+    alt: CIP Conference
+    image: /img/CIP-Conference.png
 project2:
-  background2: red
+  background: red
+  url: /work/wilted-yards
   image2:
+    alt: Wilted Yards project
+    image: /img/artboard-43-copy-3x.png
+project3:
+  background: red
+  url: /work/fastly-festival
+  image3:
     alt: Wilted Yards project
     image: /img/artboard-43-copy-3x.png
 ---

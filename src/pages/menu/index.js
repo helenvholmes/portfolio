@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { Link } from 'gatsby'
 import Layout from '../../components/Menu-Layout'
 import Anime from 'animejs'
@@ -193,17 +192,9 @@ export default class Menu extends React.Component {
                 <Logo />
               </Link>
             </div>
-            <div id="closeMenu" className={MenuStyles.navbarMenu}>
-              <span
-                className={MenuStyles.closeButton}
-                onClick={this.closeButton}
-              >
-                Close
-              </span>
-              <div
-                className={MenuStyles.navbarBurger}
-                onClick={this.closeButton}
-              >
+            <div onClick={this.closeButton} id="closeMenu" className={MenuStyles.navbarMenu}>
+              <span className={MenuStyles.closeButton}>Close</span>
+              <div className={MenuStyles.navbarBurger}>
                 <span className={MenuStyles.closeX1} />
                 <span className={MenuStyles.closeX2} />
               </div>

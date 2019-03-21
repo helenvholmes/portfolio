@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import '../components/all.css'
 import WorkStyles from './work.module.css'
@@ -13,6 +13,7 @@ export const WorkPageTemplate = ({
   contentComponent,
   project1,
   project2,
+  project3,
 }) => {
   const PageContent = contentComponent || Content
 
@@ -20,15 +21,23 @@ export const WorkPageTemplate = ({
     <main>
       <section className={WorkStyles.reel}>reel</section>
 
-      <section className={WorkStyles.project}>
-        <div className={WorkStyles.projectImage}>
-          <PreviewCompatibleImage imageInfo={project1.image1} />
-        </div>
-      </section>
+      <Link to={project1.url}>
+        <section className={WorkStyles.project}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project1.image1} />
+          </div>
+        </section>
+      </Link>
 
       <section className={WorkStyles.project + ' ' + WorkStyles.red}>
         <div className={WorkStyles.projectImage}>
           <PreviewCompatibleImage imageInfo={project2.image2} />
+        </div>
+      </section>
+
+      <section className={WorkStyles.project}>
+        <div className={WorkStyles.projectImage}>
+          <PreviewCompatibleImage imageInfo={project3.image3} />
         </div>
       </section>
 
@@ -46,11 +55,15 @@ WorkPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   project1: PropTypes.shape({
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    background1: PropTypes.string,
+    background: PropTypes.string,
   }),
   project2: PropTypes.shape({
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    background2: PropTypes.string,
+    background: PropTypes.string,
+  }),
+  project3: PropTypes.shape({
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background: PropTypes.string,
   }),
 }
 
@@ -65,6 +78,7 @@ const WorkPage = ({ data }) => {
         content={post.html}
         project1={post.frontmatter.project1}
         project2={post.frontmatter.project2}
+        project3={post.frontmatter.project3}
       />
     </Layout>
   )
@@ -92,7 +106,8 @@ export const WorkPageQuery = graphql`
               }
             }
           }
-          background1
+          background
+          url
         }
         project2 {
           image2 {
@@ -104,7 +119,21 @@ export const WorkPageQuery = graphql`
               }
             }
           }
-          background2
+          background
+          url
+        }
+        project3 {
+          image3 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          background
+          url
         }
       }
     }
