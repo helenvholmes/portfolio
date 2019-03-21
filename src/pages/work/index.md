@@ -6,7 +6,7 @@ project1:
   url: /work/cip-conference
   image1:
     alt: CIP Conference
-    image: /img/CIP-Conference.png
+    image: /img/artboard-1-3x.png
 project2:
   background: red
   url: /work/wilted-yards

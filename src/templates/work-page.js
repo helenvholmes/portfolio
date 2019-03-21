@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
+import VariousLogos from '../components/VariousLogos'
 import '../components/all.css'
 import WorkStyles from './work.module.css'
 import Content, { HTMLContent } from '../components/Content'
@@ -29,17 +30,23 @@ export const WorkPageTemplate = ({
         </section>
       </Link>
 
-      <section className={WorkStyles.project + ' ' + WorkStyles.red}>
-        <div className={WorkStyles.projectImage}>
-          <PreviewCompatibleImage imageInfo={project2.image2} />
-        </div>
-      </section>
+      <Link to={project2.url}>
+        <section className={WorkStyles.project + ' ' + WorkStyles.red}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project2.image2} />
+          </div>
+        </section>
+      </Link>
 
-      <section className={WorkStyles.project}>
-        <div className={WorkStyles.projectImage}>
-          <PreviewCompatibleImage imageInfo={project3.image3} />
-        </div>
-      </section>
+      <VariousLogos />
+
+      <Link to={project3.url}>
+        <section className={WorkStyles.project}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project3.image3} />
+          </div>
+        </section>
+      </Link>
 
       <section className="container">
         <h2>{title}</h2>
