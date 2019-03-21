@@ -15,22 +15,20 @@ export default class Menu extends React.Component {
     }
   }
 
-  updateDimensions() {
-    let linkLines = ReactDOM.document.querySelectorAll('svg line');
-
-    linkLines.forEach(function (line) {
-      let lineLength = ReactDOM.line.getTotalLength(); // Get length of its underline
-      line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
-      line.style['stroke-dashoffset'] = lineLength;
-    });
-  }
-
   componentWillMount() {
     this.updateDimensions();
   }
 
   componentDidMount() {
-    ReactDOM.window.addEventListener("resize", this.updateDimensions);
+    ReactDOM.window.addEventListener("resize", function() {
+      let linkLines = ReactDOM.document.querySelectorAll('svg line');
+
+      linkLines.forEach(function (line) {
+        let lineLength = ReactDOM.line.getTotalLength(); // Get length of its underline
+        line.style['stroke-dasharray'] = (lineLength + ' ' + lineLength);
+        line.style['stroke-dashoffset'] = lineLength;
+      });
+    });
 
     const menu = document.querySelector('#menuOverlay');
     console.log(menu);
