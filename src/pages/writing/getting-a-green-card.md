@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Getting a Green Card
-date: 2019-03-21T14:51:48.105Z
+date: 2017-01-18T15:51:48.105Z
 description: I’m not a lawyer. Don’t use this article as gospel for receiving a green card.
 tags:
   - essay
