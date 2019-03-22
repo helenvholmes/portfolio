@@ -9,14 +9,14 @@ project1:
     image: /img/cip-conference.png
 project2:
   background2: red
-  url: /work/cip-conference
+  url: /work/wilted-yards
   image2:
     alt: Wilted Yards project
     image: /img/artboard-43-copy-3x.png
 project3:
   background3: red
-  url: /work/cip-conference
+  url: /work/fastly-festival
   image3:
-    alt: Wilted Yards project
+    alt: Fastly Festival project
     image: /img/artboard-43-copy-3x.png
 ---
