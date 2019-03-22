@@ -7,6 +7,7 @@ import LayoutStyles from './Layout.module.css'
 
 import './all.css'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -62,6 +63,7 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <Navbar />
         <div>{children}</div>
+        <Footer />
       </div>
     )}
   />

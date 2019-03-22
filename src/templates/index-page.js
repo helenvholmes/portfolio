@@ -9,7 +9,6 @@ import FeaturedWriting from '../components/FeaturedWriting'
 import FeaturedWork from '../components/FeaturedWork'
 import FeaturedLogos from '../components/FeaturedLogos'
 import About from '../components/About'
-import Footer from '../components/Footer'
 import IndexStyles from './index-page.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
@@ -58,7 +57,6 @@ export const IndexPageTemplate = ({
         <FeaturedWork />
         <FeaturedLogos />
         <About />
-        <Footer />
       </main>
     </div>
   )

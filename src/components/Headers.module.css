@@ -1,8 +1,16 @@
 .featured {
+  color: var(--brand-primary);
   font-size: 1em;
   font-weight: bold;
-  letter-spacing: 0.5px;
   justify-self: center;
+  letter-spacing: 0.5px;
+}
+
+.regular {
+  color: var(--brand-primary);
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .rotate {

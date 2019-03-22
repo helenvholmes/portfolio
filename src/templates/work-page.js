@@ -3,28 +3,25 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import VariousLogos from '../components/VariousLogos'
+import VariousSwag from '../components/VariousSwag'
 import '../components/all.css'
 import WorkStyles from './work.module.css'
-import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const WorkPageTemplate = ({
   title,
-  content,
   contentComponent,
   project1,
   project2,
   project3,
 }) => {
-  const PageContent = contentComponent || Content
-
   return (
     <main>
       <section className={WorkStyles.reel}>reel</section>
 
       <Link to={project1.url}>
         <section className={WorkStyles.project}>
-          <div className={WorkStyles.projectImage}>
+          <div className={WorkStyles.projectImageFullWidth}>
             <PreviewCompatibleImage imageInfo={project1.image1} />
           </div>
         </section>
@@ -38,6 +35,8 @@ export const WorkPageTemplate = ({
         </section>
       </Link>
 
+      <VariousSwag />
+
       <VariousLogos />
 
       <Link to={project3.url}>
@@ -48,10 +47,54 @@ export const WorkPageTemplate = ({
         </section>
       </Link>
 
-      <section className="container">
-        <h2>{title}</h2>
-        <PageContent className="content" content={content} />
-      </section>
+      <Link to={project3.url}>
+        <section className={WorkStyles.project}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project3.image3} />
+            Fastly Festival
+          </div>
+        </section>
+      </Link>
+
+      <Link to={project3.url}>
+        <section className={WorkStyles.project}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project3.image3} />
+            helenvholmes.com
+          </div>
+        </section>
+      </Link>
+
+      <VariousSwag />
+
+      <Link to={project3.url}>
+        <section className={WorkStyles.project}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project3.image3} />
+            Designing Developer Tools
+          </div>
+        </section>
+      </Link>
+
+      <Link to={project3.url}>
+        <section className={WorkStyles.project}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project3.image3} />
+            Altitude 2018
+          </div>
+        </section>
+      </Link>
+
+      <VariousSwag />
+
+      <Link to={project3.url}>
+        <section className={WorkStyles.project}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project3.image3} />
+            Me, Elsewhere
+          </div>
+        </section>
+      </Link>
     </main>
   )
 }
@@ -62,15 +105,18 @@ WorkPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   project1: PropTypes.shape({
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    background: PropTypes.string,
+    background1: PropTypes.string,
+    url: PropTypes.string,
   }),
   project2: PropTypes.shape({
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    background: PropTypes.string,
+    background2: PropTypes.string,
+    url: PropTypes.string,
   }),
   project3: PropTypes.shape({
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    background: PropTypes.string,
+    background3: PropTypes.string,
+    url: PropTypes.string,
   }),
 }
 
@@ -80,7 +126,6 @@ const WorkPage = ({ data }) => {
   return (
     <Layout>
       <WorkPageTemplate
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
         project1={post.frontmatter.project1}
@@ -113,7 +158,7 @@ export const WorkPageQuery = graphql`
               }
             }
           }
-          background
+          background1
           url
         }
         project2 {
@@ -126,7 +171,7 @@ export const WorkPageQuery = graphql`
               }
             }
           }
-          background
+          background2
           url
         }
         project3 {
@@ -139,7 +184,7 @@ export const WorkPageQuery = graphql`
               }
             }
           }
-          background
+          background3
           url
         }
       }
