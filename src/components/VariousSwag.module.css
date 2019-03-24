@@ -1,0 +1,10 @@
+.section {
+  margin: auto;
+  width: 95%;
+  height: 70vh;
+}
+
+.spacer {
+  float: left;
+  margin: 5%;
+}

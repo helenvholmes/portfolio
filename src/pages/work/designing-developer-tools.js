@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../../components/Layout'
+import Layout from '../../components/Layout'
 
-const MakingOfWebsite = () => (
+const DesigningDeveloperTools = () => (
   <Layout>
     <div>
       <h1>NOT FOUND</h1>
@@ -10,4 +10,4 @@ const MakingOfWebsite = () => (
   </Layout>
 )
 
-export default MakingOfWebsite
+export default DesigningDeveloperTools

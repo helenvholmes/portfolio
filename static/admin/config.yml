@@ -55,6 +55,42 @@ collections:
                 "red", "white", "off-white"
               ]}
             ]}
+          - {label: "Project 4", name: project4, url: string, widget: object, fields: [
+              {label: Image, name: image4, widget: object, fields: [
+                {label: Image, name: image, widget: image}, 
+                {label: Alt, name: alt, widget: string}
+              ]}, 
+              {label: Background, name: background, widget: select, options: [
+                "red", "white", "off-white"
+              ]}
+            ]}
+          - {label: "Project 5", name: project5, url: string, widget: object, fields: [
+              {label: Image, name: image5, widget: object, fields: [
+                {label: Image, name: image, widget: image}, 
+                {label: Alt, name: alt, widget: string}
+              ]}, 
+              {label: Background, name: background, widget: select, options: [
+                "red", "white", "off-white"
+              ]}
+            ]}
+          - {label: "Project 6", name: project6, url: string, widget: object, fields: [
+              {label: Image, name: image6, widget: object, fields: [
+                {label: Image, name: image, widget: image}, 
+                {label: Alt, name: alt, widget: string}
+              ]}, 
+              {label: Background, name: background, widget: select, options: [
+                "red", "white", "off-white"
+              ]}
+            ]}
+          - {label: "Project 7", name: project7, url: string, widget: object, fields: [
+              {label: Image, name: image7, widget: object, fields: [
+                {label: Image, name: image, widget: image}, 
+                {label: Alt, name: alt, widget: string}
+              ]}, 
+              {label: Background, name: background, widget: select, options: [
+                "red", "white", "off-white"
+              ]}
+            ]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/index.md"
         label: "Index Page"

@@ -14,6 +14,11 @@ export const WorkPageTemplate = ({
   project1,
   project2,
   project3,
+  project4,
+  project5,
+  project6,
+  project7,
+
 }) => {
   return (
     <main>
@@ -47,19 +52,18 @@ export const WorkPageTemplate = ({
         </section>
       </Link>
 
-      <Link to={project3.url}>
+      <Link to={project4.url}>
         <section className={WorkStyles.project}>
           <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project3.image3} />
-            Fastly Festival
+            <PreviewCompatibleImage imageInfo={project4.image4} />
           </div>
         </section>
       </Link>
 
-      <Link to={project3.url}>
+      <Link to={project5.url}>
         <section className={WorkStyles.project}>
           <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project3.image3} />
+            <PreviewCompatibleImage imageInfo={project5.image5} />
             helenvholmes.com
           </div>
         </section>
@@ -67,19 +71,19 @@ export const WorkPageTemplate = ({
 
       <VariousSwag />
 
-      <Link to={project3.url}>
+      <Link to={project6.url}>
         <section className={WorkStyles.project}>
           <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project3.image3} />
+            <PreviewCompatibleImage imageInfo={project6.image6} />
             Designing Developer Tools
           </div>
         </section>
       </Link>
 
-      <Link to={project3.url}>
+      <Link to={project7.url}>
         <section className={WorkStyles.project}>
           <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project3.image3} />
+            <PreviewCompatibleImage imageInfo={project7.image7} />
             Altitude 2018
           </div>
         </section>
@@ -118,6 +122,26 @@ WorkPageTemplate.propTypes = {
     background3: PropTypes.string,
     url: PropTypes.string,
   }),
+  project4: PropTypes.shape({
+    image4: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background4: PropTypes.string,
+    url: PropTypes.string,
+  }),
+  project5: PropTypes.shape({
+    image5: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background5: PropTypes.string,
+    url: PropTypes.string,
+  }),
+  project6: PropTypes.shape({
+    image6: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background6: PropTypes.string,
+    url: PropTypes.string,
+  }),
+  project7: PropTypes.shape({
+    image7: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    background7: PropTypes.string,
+    url: PropTypes.string,
+  }),
 }
 
 const WorkPage = ({ data }) => {
@@ -131,6 +155,10 @@ const WorkPage = ({ data }) => {
         project1={post.frontmatter.project1}
         project2={post.frontmatter.project2}
         project3={post.frontmatter.project3}
+        project4={post.frontmatter.project4}
+        project5={post.frontmatter.project5}
+        project6={post.frontmatter.project6}
+        project7={post.frontmatter.project7}
       />
     </Layout>
   )
@@ -185,6 +213,58 @@ export const WorkPageQuery = graphql`
             }
           }
           background3
+          url
+        }
+        project4 {
+          image4 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          background4
+          url
+        }
+        project5 {
+          image5 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          background5
+          url
+        }
+        project6 {
+          image6 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          background6
+          url
+        }
+        project7 {
+          image7 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          background7
           url
         }
       }

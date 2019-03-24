@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../../components/Layout'
+import Layout from '../../components/Layout'
 
-const MeElsewhere = () => (
+const MakingOfWebsite = () => (
   <Layout>
     <div>
       <h1>NOT FOUND</h1>
@@ -10,4 +10,4 @@ const MeElsewhere = () => (
   </Layout>
 )
 
-export default MeElsewhere
+export default MakingOfWebsite
