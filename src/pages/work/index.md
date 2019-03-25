@@ -24,23 +24,23 @@ project4:
   url: /work/helenvholmes.com
   image4:
     alt: helenvholmes.com
-    image: /img/work/fastly-festival.png
+    image: /img/artboard-43-copy-3x.png
 project5:
   background5: red
   url: /work/designing-developer-tools
   image5:
     alt: Designing Developer Tools
-    image: /img/work/fastly-festival.png
+    image: /img/artboard-43-copy-3x.png
 project6:
   background6: red
   url: /work/altitude-2018
   image6:
     alt: Altitude 2018
-    image: /img/work/fastly-festival.png
+    image: /img/artboard-43-copy-3x.png
 project7:
   background7: red
   url: /work/me-elsewhere
   image7:
     alt: Me, Elsewhere
-    image: /img/work/fastly-festival.png
+    image: /img/artboard-43-copy-3x.png
 ---
