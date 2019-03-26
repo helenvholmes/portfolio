@@ -6,6 +6,7 @@ import VariousLogos from '../components/VariousLogos'
 import VariousSwag from '../components/VariousSwag'
 import '../components/all.css'
 import WorkStyles from './work.module.css'
+import HeadersStyles from '../components/Headers.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const WorkPageTemplate = ({
@@ -22,76 +23,80 @@ export const WorkPageTemplate = ({
 }) => {
   return (
     <main>
-      <section className={WorkStyles.reel}>reel</section>
+      <section className={WorkStyles.reel}>
+        
+      </section>
 
-      <Link to={project1.url}>
-        <section className={WorkStyles.project}>
-          <div className={WorkStyles.projectImageFullWidth}>
-            <PreviewCompatibleImage imageInfo={project1.image1} />
-          </div>
-        </section>
+      <Link to={`/${project1.url}`} className={WorkStyles.project}>
+        <div className={WorkStyles.cipConference}>
+          <PreviewCompatibleImage imageInfo={project1.image1} />
+        </div>
       </Link>
 
-      <Link to={project2.url}>
-        <section className={WorkStyles.project + ' ' + WorkStyles.red}>
-          <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project2.image2} />
-          </div>
-        </section>
+      <Link to={`/${project2.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
+        <div className={WorkStyles.wiltedYards}>
+          <PreviewCompatibleImage imageInfo={project2.image2} />
+        </div>
       </Link>
 
       <VariousSwag />
 
       <VariousLogos />
 
-      <Link to={project3.url}>
-        <section className={WorkStyles.project}>
-          <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project3.image3} />
-          </div>
-        </section>
+      <Link to={`/${project3.url}`} className={WorkStyles.project}>
+        <div className={WorkStyles.fastlyFestival}>
+          <PreviewCompatibleImage imageInfo={project3.image3} />
+        </div>
       </Link>
 
-      <Link to={project4.url}>
-        <section className={WorkStyles.project}>
-          <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project4.image4} />
-          </div>
-        </section>
+      <Link to={`/${project4.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
+        <h2
+          className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.offWhite].join(' ')}
+        >
+          Meta
+        </h2>
+
+        <div className={WorkStyles.helenvholmes}>
+          helenvholmes.com
+        </div>
       </Link>
 
-      <Link to={project5.url}>
-        <section className={WorkStyles.project}>
-          <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project5.image5} />
-            helenvholmes.com
-          </div>
-        </section>
+      <Link to={`/${project5.url}`} className={[WorkStyles.project, WorkStyles.white, WorkStyles.designingDeveloperTools].join(' ')}>
+        <h2
+          className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.red].join(' ')}
+        >
+          Firefox Developer Tools
+        </h2>
+
+        <span>
+          <PreviewCompatibleImage imageInfo={project5.image5} />
+          Designing Developer Tools
+        </span>
       </Link>
 
       <VariousSwag />
 
-      <Link to={project6.url}>
-        <section className={WorkStyles.project}>
+      <Link to={`/${project6.url}`}>
+        <section className={WorkStyles.project + ' ' + WorkStyles.red}>
           <div className={WorkStyles.projectImage}>
             <PreviewCompatibleImage imageInfo={project6.image6} />
-            Designing Developer Tools
-          </div>
-        </section>
-      </Link>
-
-      <Link to={project7.url}>
-        <section className={WorkStyles.project}>
-          <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project7.image7} />
             Altitude 2018
           </div>
         </section>
       </Link>
 
+      <Link to={`/${project7.url}`}>
+        <section className={WorkStyles.project + ' ' + WorkStyles.white}>
+          <div className={WorkStyles.projectImage}>
+            <PreviewCompatibleImage imageInfo={project7.image7} />
+            Me Elsewhere
+          </div>
+        </section>
+      </Link>
+
       <VariousSwag />
 
-      <Link to={project3.url}>
+      <Link to={`/${project7.url}`}>
         <section className={WorkStyles.project}>
           <div className={WorkStyles.projectImage}>
             <PreviewCompatibleImage imageInfo={project3.image3} />

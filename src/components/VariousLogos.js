@@ -8,7 +8,7 @@ const VariousLogos = class extends React.Component {
     return (
       <section className={VariousLogosStyles.section}>
         <h2
-          className={[HeadersStyles.featured, HeadersStyles.rotate].join(' ')}
+          className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.red].join(' ')}
         >
           Various Logos
         </h2>

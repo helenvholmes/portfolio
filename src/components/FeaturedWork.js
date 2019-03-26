@@ -8,7 +8,7 @@ const FeaturedWork = class extends React.Component {
     return (
       <section className={FeaturedWorkStyles.section}>
         <h2
-          className={[HeadersStyles.featured, HeadersStyles.rotate].join(' ')}
+          className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.offWhite].join(' ')}
         >
           Featured Work
         </h2>

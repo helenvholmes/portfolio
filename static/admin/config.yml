@@ -33,7 +33,7 @@ collections:
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}, 
-              {label: Background, name: background, widget: select, options: [
+              {label: Background, name: background1, widget: select, options: [
                 "red", "white", "off-white"
               ]}
             ]}
@@ -42,7 +42,7 @@ collections:
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}, 
-              {label: Background, name: background, widget: select, options: [
+              {label: Background, name: background2, widget: select, options: [
                 "red", "white", "off-white"
               ]}
             ]}
@@ -51,7 +51,7 @@ collections:
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}, 
-              {label: Background, name: background, widget: select, options: [
+              {label: Background, name: background3, widget: select, options: [
                 "red", "white", "off-white"
               ]}
             ]}
@@ -60,7 +60,7 @@ collections:
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}, 
-              {label: Background, name: background, widget: select, options: [
+              {label: Background, name: background4, widget: select, options: [
                 "red", "white", "off-white"
               ]}
             ]}
@@ -69,7 +69,7 @@ collections:
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}, 
-              {label: Background, name: background, widget: select, options: [
+              {label: Background, name: background5, widget: select, options: [
                 "red", "white", "off-white"
               ]}
             ]}
@@ -78,7 +78,7 @@ collections:
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}, 
-              {label: Background, name: background, widget: select, options: [
+              {label: Background, name: background6, widget: select, options: [
                 "red", "white", "off-white"
               ]}
             ]}
@@ -87,11 +87,11 @@ collections:
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}, 
-              {label: Background, name: background, widget: select, options: [
+              {label: Background, name: background7, widget: select, options: [
                 "red", "white", "off-white"
               ]}
             ]}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Reel", name: "reel", widget: "markdown"}
       - file: "src/pages/index.md"
         label: "Index Page"
         name: "index"

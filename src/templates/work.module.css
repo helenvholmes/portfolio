@@ -7,41 +7,63 @@
 }
 
 .project {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
   align-items: center;
-  display: flex;
-  height: 50vh;
   justify-content: center;
-  position: relative;
-  width: 100vw;
+
+  height: 50vh;
+
+  color: var(--brand-primary);
+  text-align: center;
+  text-decoration: none;
+}
+
+.project img {
+  max-height: 50vh;
 }
 
 .red {
   background-color: var(--brand-primary);
+  color: var(--helen-off-white);
 }
 
-.projectImage {
-  width: 15%;
+.white {
+  background-color: var(--helen-white);
 }
 
-.projectImageFullWidth {
-  height: 100%;
-  width: 100%;
+.cipConference {
+  grid-column-start: 1;
+  grid-column-end: 10;
 }
 
-.work {
-  background-color: var(--brand-primary);
-  border: 8px solid var(--helen-off-white);
-  grid-column-start: 3;
-  grid-column-end: 8;
+.wiltedYards {
+  grid-column: 5 / 6;
 }
 
-.link {
-  background-color: var(--helen-off-white);
-  border: 1px solid var(--brand-primary);
-  color: var(--brand-primary);
-  display: block;
-  font-family: "Knockout", sans-serif;
+.fastlyFestival {
+  grid-column: 4 / 7;
+}
+
+.helenvholmes {
+  grid-column: 3 / 8;
+
+  font-family: "Butler", sans-serif;
   font-size: 4em;
-  font-weight: black;
-  text-decoration: none;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.designingDeveloperTools div {
+  display: inline-block;
+  width: 125px;
+}
+
+.designingDeveloperTools span {
+  grid-column: 3 / 10;
+
+  font-family: "Butler", sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  text-decoration: underline;
 }

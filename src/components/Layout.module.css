@@ -61,14 +61,14 @@ html {
 
 @font-face {
   font-family: "Butler";
-  font-weight: black;
+  font-weight: 700;
   src: url("./fonts/butler/butler-black.woff2") format("woff2"),
        url("./fonts/butler/butler-black.woff") format("woff");
 }
 
 @font-face {
   font-family: "Butler";
-  font-weight: medium;
+  font-weight: 600;
   src: url("./fonts/butler/butler-medium.woff2") format("woff2"),
        url("./fonts/butler/butler-medium.woff") format("woff");
 }

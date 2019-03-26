@@ -49,6 +49,16 @@ module.exports = {
             },
           },
           {
+            resolve: 'gatsby-remark-video',
+            options: {
+              width: 800,
+              height: 'auto',
+              preload: 'auto',
+              muted: false,
+              autoplay: false
+            }
+          },
+          {
             resolve: 'gatsby-remark-embed-video',
             options: {
               width: 800,

@@ -1,9 +1,16 @@
 .featured {
-  color: var(--brand-primary);
   font-size: 1em;
   font-weight: bold;
   justify-self: center;
   letter-spacing: 0.5px;
+}
+
+.red {
+  color: var(--brand-primary);
+}
+
+.offWhite {
+  color: var(--helen-off-white);
 }
 
 .regular {
