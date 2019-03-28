@@ -16,7 +16,7 @@ const FeaturedWork = class extends React.Component {
         <div className={FeaturedWorkStyles.work}>
           <Link
             className={FeaturedWorkStyles.link}
-            to="/writing/the-things-we-own"
+            to="/work/cip-conference"
           >
             Welcome to Aspen. <br />
             We're glad you're here.

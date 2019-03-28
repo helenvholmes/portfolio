@@ -10,7 +10,12 @@ import HeaderStyles from '../../components/Headers.module.css'
 import CIPIllustrationSnippets from '../../img/work/cip/cipIllustrationSnippets.svg'
 
 export const CIPConferenceTemplate = ({
-  websiteImage
+  websiteImage,
+  stampsImage,
+  buildingImage,
+  livingRoomImage,
+  spaImage,
+  smokingRoomImage,
 }) => {
   return (
     <div>
@@ -70,23 +75,47 @@ export const CIPConferenceTemplate = ({
         <p>The website was designed to work on both desktop and mobile.</p>
       </section>
 
-      <section className={CIPConferenceStyles.section + ' ' + CIPConferenceStyles.white}>
-        <p className={CIPConferenceStyles.stamps}>The first set of illustrations, inspired by the local landscape, were used in a variety of swag items, one of which was stickers die-cut to look like stamps.</p>
+      <section className={CIPConferenceStyles.stamps + ' ' + CIPConferenceStyles.white}>
+        <div className={CIPConferenceStyles.stampsImage}>
+          <PreviewCompatibleImage imageInfo={stampsImage} />
+        </div>
+        <p className={CIPConferenceStyles.stampsParagraph}>The first set of illustrations, inspired by the local landscape of Aspen, were used in a variety of swag items, one of which was stickers die-cut to look like stamps.</p>
       </section>
 
       <section className={CIPConferenceStyles.section + ' ' + CIPConferenceStyles.white}>
+        <div className={CIPConferenceStyles.smokingRoomImage}>
+          <PreviewCompatibleImage imageInfo={smokingRoomImage} />
+        </div>
+
         <p className={CIPConferenceStyles.signage}>The second set of illustrations was used for the website, signage, and promotional material. It was a fun opportunity to show off the venue while hiding little bits of Fastly in plain sight.</p>
+
+        <div className={CIPConferenceStyles.spaImage}>
+          <PreviewCompatibleImage imageInfo={spaImage} />
+        </div>
+
+        <div className={CIPConferenceStyles.buildingImage}>
+          <PreviewCompatibleImage imageInfo={buildingImage} />
+        </div>
+
+        <div className={CIPConferenceStyles.livingRoomImage}>
+          <PreviewCompatibleImage imageInfo={livingRoomImage} />
+        </div>
       </section>
 
-      <section className={CIPConferenceStyles.section}>
+      {/* <section className={CIPConferenceStyles.section}>
         <p>My favorite piece of swag to produce was this informational booklet that folded out and included a welcome to attendees, the schedule, and a map of the venue.</p>
-      </section>
+      </section> */}
     </div>
   )
 }
 
 CIPConferenceTemplate.propTypes = {
   websiteImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  stampsImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  buildingImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  livingRoomImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  spaImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  smokingRoomImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const CIPConference = ({ data }) => {
@@ -94,6 +123,11 @@ const CIPConference = ({ data }) => {
     <Layout>
       <CIPConferenceTemplate
         websiteImage={data.websiteImage}
+        stampsImage={data.stampsImage}
+        buildingImage={data.buildingImage}
+        livingRoomImage={data.livingRoomImage}
+        spaImage={data.spaImage}
+        smokingRoomImage={data.smokingRoomImage}
       />
     </Layout>
   )
@@ -109,6 +143,66 @@ export const CIPConferenceQuery = graphql`
   query {
     websiteImage: file(
       relativePath: { regex: "/cipWebsite/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    stampsImage: file(
+      relativePath: { regex: "/cipStamps/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    buildingImage: file(
+      relativePath: { regex: "/cipBuilding/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    livingRoomImage: file(
+      relativePath: { regex: "/cipLivingRoom/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    spaImage: file(
+      relativePath: { regex: "/cipSpa/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    smokingRoomImage: file(
+      relativePath: { regex: "/cipSmokingRoom/" }
     ) {
       childImageSharp {
         fluid(
