@@ -26,7 +26,7 @@ export const WiltedYardsTemplate = ({
             Yards
         </h1>
 
-        <FingersCrossed className={WiltedYardsStyles.wiltedIllustration} />
+        <FingersCrossed className={WiltedYardsStyles.wiltedIllustration} style={{width: 50 + 'px'}}/>
 
         <div className={WiltedYardsStyles.p1}>
           <p>Wilted Yards is the brainchild of a young entrepreneur in Alexandria, Virginia who needed help creating the aesthetic for her new brand and designing the first run of her products. Inspired by 90s nostalgia and the girl at the post-game you wish you were, the founder had a very strong vision of where she wanted her brand visually to go.</p>
