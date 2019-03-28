@@ -1,13 +1,123 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 
-const CIPConference = () => (
-  <Layout>
+import CIPConferenceStyles from './cip-conference.module.css'
+import HeaderStyles from '../../components/Headers.module.css'
+
+import CIPIllustrationSnippets from '../../img/work/cip/cipIllustrationSnippets.svg'
+
+export const CIPConferenceTemplate = ({
+  websiteImage
+}) => {
+  return (
     <div>
-      <h1>CIP Conference</h1>
-      <p>This is where the CIP conference stuff will go.</p>
+      <section className={CIPConferenceStyles.section + ' ' + CIPConferenceStyles.white}>
+        <h1 className={HeaderStyles.projectTitle + ' ' + CIPConferenceStyles.title}>Fastly’s <br />
+            Customer <br />
+            Insights Panel
+        </h1>
+
+        <CIPIllustrationSnippets className={CIPConferenceStyles.cipIllustrationSnippets} />
+
+        <p className={CIPConferenceStyles.p1}>Fastly approached me in 2017 to help them rebrand their Customer Insights Panel, a small conference that disseminated information about their product and allowed customers a chance to work with the key players on their team in shaping their product’s future.</p>
+
+        <p className={CIPConferenceStyles.p2}>We settled on a series of illustrations inspired by the conference venue (a beautiful hotel in Denver that had a smoking-room-post-dinner sort of aesthetic) and by the local landscape to create the conference brand, as skiing was on the agenda after the conference. Little easter eggs appeared throughout—server stacks and speedometers appeared in places one wouldn’t expect.</p>
+
+        <p>In the end we shipped:</p>
+
+        <table className={CIPConferenceStyles.cipTable}>
+          <tbody>
+            <tr>
+              <td className={CIPConferenceStyles.tableNumbers}>1</td>
+              <td style={{borderLeft: 5 + 'px solid white'}}>Branding system</td>
+              <td className={CIPConferenceStyles.tableNumbers}>1</td>
+              <td>Presentation template for presenters</td>
+            </tr>
+            <tr>
+              <td className={CIPConferenceStyles.tableNumbers}>1</td>
+              <td>Website*</td>
+              <td className={CIPConferenceStyles.tableNumbers}>19</td>
+              <td>Different signage designs for the event and venue</td>
+            </tr>
+            <tr>
+              <td className={CIPConferenceStyles.tableNumbers}>1</td>
+              <td>Printed invitation</td>
+              <td className={CIPConferenceStyles.tableNumbers}>3</td>
+              <td>Custom giveaways for the event</td>
+            </tr>
+            <tr>
+              <td className={CIPConferenceStyles.tableNumbers}>8</td>
+              <td>Custom illustrations</td>
+            </tr>
+            <tr>
+              <td className={CIPConferenceStyles.tableNumbers}>1</td>
+              <td>Informational presentation</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <em className={CIPConferenceStyles.cipCaveat}>* I was responsible for the design—Fastly’s internal developer team handled the build-out.</em>
+      </section>
+
+      <section className={[CIPConferenceStyles.section, CIPConferenceStyles.red, CIPConferenceStyles.website].join(' ')}>
+        <div className={CIPConferenceStyles.websiteImage}>
+          <PreviewCompatibleImage imageInfo={websiteImage} />
+        </div>
+
+        <p>The website was designed to work on both desktop and mobile.</p>
+      </section>
+
+      <section className={CIPConferenceStyles.section + ' ' + CIPConferenceStyles.white}>
+        <p className={CIPConferenceStyles.stamps}>The first set of illustrations, inspired by the local landscape, were used in a variety of swag items, one of which was stickers die-cut to look like stamps.</p>
+      </section>
+
+      <section className={CIPConferenceStyles.section + ' ' + CIPConferenceStyles.white}>
+        <p className={CIPConferenceStyles.signage}>The second set of illustrations was used for the website, signage, and promotional material. It was a fun opportunity to show off the venue while hiding little bits of Fastly in plain sight.</p>
+      </section>
+
+      <section className={CIPConferenceStyles.section}>
+        <p>My favorite piece of swag to produce was this informational booklet that folded out and included a welcome to attendees, the schedule, and a map of the venue.</p>
+      </section>
     </div>
-  </Layout>
-)
+  )
+}
+
+CIPConferenceTemplate.propTypes = {
+  websiteImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+}
+
+const CIPConference = ({ data }) => {
+  return (
+    <Layout>
+      <CIPConferenceTemplate
+        websiteImage={data.websiteImage}
+      />
+    </Layout>
+  )
+}
+
+CIPConference.propTypes = {
+  data: PropTypes.object.isRequired,
+}
 
 export default CIPConference
+
+export const CIPConferenceQuery = graphql`
+  query {
+    websiteImage: file(
+      relativePath: { regex: "/cipWebsite/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -23,3 +23,9 @@
 .rotate {
   transform: rotate(270deg);
 }
+
+.projectTitle {
+  color: var(--brand-primary);
+  font-size: 6em;
+  line-height: 1;
+}

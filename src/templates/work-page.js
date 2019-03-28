@@ -8,9 +8,11 @@ import '../components/all.css'
 import WorkStyles from './work.module.css'
 import HeadersStyles from '../components/Headers.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Content, { HTMLContent } from '../components/Content'
 
 export const WorkPageTemplate = ({
   title,
+  content,
   contentComponent,
   project1,
   project2,
@@ -21,10 +23,12 @@ export const WorkPageTemplate = ({
   project7,
 
 }) => {
+  const PageContent = contentComponent || Content
+
   return (
     <main>
       <section className={WorkStyles.reel}>
-        
+        <PageContent className="content" content={content} />
       </section>
 
       <Link to={`/${project1.url}`} className={WorkStyles.project}>
@@ -76,33 +80,16 @@ export const WorkPageTemplate = ({
 
       <VariousSwag />
 
-      <Link to={`/${project6.url}`}>
-        <section className={WorkStyles.project + ' ' + WorkStyles.red}>
-          <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project6.image6} />
-            Altitude 2018
-          </div>
-        </section>
+      <Link to={`/${project6.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
+        <div className={WorkStyles.altitude}>
+          <PreviewCompatibleImage imageInfo={project6.image6} />
+        </div>
       </Link>
 
-      <Link to={`/${project7.url}`}>
-        <section className={WorkStyles.project + ' ' + WorkStyles.white}>
-          <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project7.image7} />
-            Me Elsewhere
-          </div>
-        </section>
-      </Link>
-
-      <VariousSwag />
-
-      <Link to={`/${project7.url}`}>
-        <section className={WorkStyles.project}>
-          <div className={WorkStyles.projectImage}>
-            <PreviewCompatibleImage imageInfo={project3.image3} />
-            Me, Elsewhere
-          </div>
-        </section>
+      <Link to={`/${project7.url}`} className={WorkStyles.project + ' ' + WorkStyles.white}>
+        <div className={WorkStyles.meElsewhere}>
+          <PreviewCompatibleImage imageInfo={project7.image7} />
+        </div>
       </Link>
     </main>
   )
@@ -157,6 +144,7 @@ const WorkPage = ({ data }) => {
       <WorkPageTemplate
         title={post.frontmatter.title}
         content={post.html}
+        contentComponent={HTMLContent}
         project1={post.frontmatter.project1}
         project2={post.frontmatter.project2}
         project3={post.frontmatter.project3}

@@ -54,16 +54,27 @@
   text-decoration: underline;
 }
 
-.designingDeveloperTools div {
-  display: inline-block;
-  width: 125px;
-}
-
 .designingDeveloperTools span {
-  grid-column: 3 / 10;
+  grid-column: 2 / 9;
 
   font-family: "Butler", sans-serif;
   font-size: 4em;
   font-weight: 700;
   text-decoration: underline;
+}
+
+.designingDeveloperTools div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: bottom;
+  margin-right: 2%;
+}
+
+.altitude {
+  grid-column: 1 / 10;
+}
+
+.meElsewhere {
+  grid-column: 5 / 6;
 }
