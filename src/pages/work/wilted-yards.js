@@ -7,12 +7,12 @@ import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 import WiltedYardsStyles from './wilted-yards.module.css'
 import HeaderStyles from '../../components/Headers.module.css'
 
-import WiltedLogo from '../../img/work/wiltedyards/wiltedLogo.svg'
+import WiltedLogo from '../../img/work/wiltedYards/wiltedLogo.svg'
 
-import FingersCrossed from '../../img/work/wiltedyards/wiltedFingersCrossed.svg'
-import Fireworks from '../../img/work/wiltedyards/wiltedFireworks.svg'
-import TV from '../../img/work/wiltedyards/wiltedTV.svg'
-import Eye from '../../img/work/wiltedyards/wiltedAllSeeingEye.svg'
+import FingersCrossed from '../../img/work/wiltedYards/wiltedFingersCrossed.svg'
+import Fireworks from '../../img/work/wiltedYards/wiltedFireworks.svg'
+import TV from '../../img/work/wiltedYards/wiltedTV.svg'
+import Eye from '../../img/work/wiltedYards/wiltedAllSeeingEye.svg'
 
 export const WiltedYardsTemplate = ({
   moodboardImage,
