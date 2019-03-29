@@ -8,6 +8,7 @@ import '../components/all.css'
 import WorkStyles from './work.module.css'
 import HeadersStyles from '../components/Headers.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import CIPIntroImage from '../img/work/cip/cipIntro.svg'
 import Content, { HTMLContent } from '../components/Content'
 
 export const WorkPageTemplate = ({
@@ -33,7 +34,7 @@ export const WorkPageTemplate = ({
 
       <Link to={`/${project1.url}`} className={WorkStyles.project}>
         <div className={WorkStyles.cipConference}>
-          <PreviewCompatibleImage imageInfo={project1.image1} />
+          <CIPIntroImage />
         </div>
       </Link>
 

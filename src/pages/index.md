@@ -9,11 +9,9 @@ intro1: >-
 intro2: |
   She’s given talks at conferences all over the world about the spaces where
   design and technology intersect. She writes on the subject along with mental
-  health, immigration, and web development [here](/writing).
+  health, immigration, and web development.
 intro3: >-
-  As of 2019 her most recent side projects include auditing design courses at
-  Parsons at the New School, writing short stories, and sewing, all of which are
-  catalogued [here](/writing).
+  When not designing and building websites she spends her time cooking, baking, and sewing.
 helenHeadshots:
   image1:
     alt: Headshot of Helen

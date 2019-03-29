@@ -15,6 +15,7 @@
   height: 50vh;
 
   color: var(--brand-primary);
+  overflow: hidden;
   text-align: center;
   text-decoration: none;
 }

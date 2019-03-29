@@ -8,7 +8,8 @@
 .introParagraph {
   color: var(--brand-primary);
   flex: 200px 1 1;
-  padding: 3% 9% 0 0;
+  padding: 0 9% 0 0;
+  align-self: center;
 }
 
 .headshotsSection {
