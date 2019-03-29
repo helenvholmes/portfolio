@@ -97,8 +97,8 @@ const Footer = class extends React.Component {
             </thead>
             <tbody>
               <tr>
-                <td>Email</td>
-                <td>Form</td>
+                <td><Link to="/contact#email">Email</Link></td>
+                <td><Link to="/contact#form">Form</Link></td>
               </tr>
             </tbody>
           </table>
