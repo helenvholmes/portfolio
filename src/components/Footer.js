@@ -24,17 +24,18 @@ const Footer = class extends React.Component {
           <table>
             <thead>
               <tr>
-                <th>Work</th>
+                <th><Link to="/work/">Work</Link></th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Featured</td>
-                <td>Physical</td>
+                <td><Link to="/tags/featured/">Featured</Link></td>
+                <td><Link to="/tags/physical/">Physical</Link></td>
               </tr>
               <tr>
-                <td>Digital</td>
-                <td>All Projects</td>
+                <td><Link to="/tags/digital/">Digital</Link></td>
+                <td><Link to="/work/">All Projects</Link></td>
               </tr>
             </tbody>
           </table>
@@ -42,17 +43,18 @@ const Footer = class extends React.Component {
           <table>
             <thead>
               <tr>
-                <th>About</th>
+                <th><Link to="/about">About</Link></th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Professional</td>
-                <td>Personal</td>
+                <td><Link to="/about#professional">Professional</Link></td>
+                <td><Link to="/about#personal">Personal</Link></td>
               </tr>
               <tr>
-                <td>Elsewhere on the Web</td>
-                <td>Resume</td>
+                <td><Link to="/work/me-elsewhere/">Elsewhere on the Web</Link></td>
+                <td><Link to="/resume">Resume</Link></td>
               </tr>
             </tbody>
           </table>
@@ -62,26 +64,26 @@ const Footer = class extends React.Component {
           <table>
             <thead>
               <tr>
-                <th>Writing</th>
+                <th><Link to="/writing/">Writing</Link></th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Essay</td>
-                <td>Talk</td>
+                <td><Link to="/tags/essay/">Essay</Link></td>
+                <td><Link to="/tags/talks/">Talks</Link></td>
               </tr>
               <tr>
-                <td>Research</td>
-                <td>Learning</td>
+                <td><Link to="/tags/research/">Research</Link></td>
+                <td><Link to="/tags/learning/">Learning</Link></td>
               </tr>
               <tr>
-                <td>Longform</td>
-                <td>Conferences</td>
+                <td><Link to="/tags/longform/">Longform</Link></td>
+                <td><Link to="/tags/conferences/">Conferences</Link></td>
               </tr>
               <tr>
-                <td>Resolutions</td>
-                <td>Questions Answered</td>
+                <td><Link to="/tags/resolutions/">Resolutions</Link></td>
+                <td><Link to="/tags/questions-answered/">Questions Answered</Link></td>
               </tr>
             </tbody>
           </table>
@@ -89,7 +91,8 @@ const Footer = class extends React.Component {
           <table>
             <thead>
               <tr>
-                <th>Contact</th>
+                <th><Link to="/contact">Contact</Link></th>
+                <th></th>
               </tr>
             </thead>
             <tbody>

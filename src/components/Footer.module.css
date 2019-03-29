@@ -1,6 +1,6 @@
 .footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 15% 15% 1fr 1fr;
   grid-template-rows: 60px 1fr 60px;
   grid-column-gap: 60px;
 
@@ -35,6 +35,15 @@
 .siteMap table {
   margin-bottom: 5%;
   width: 100%;
+  table-layout: fixed;
+}
+
+.siteMap td {
+  width: 55%;
+}
+
+.siteMap td + td {
+  width: 45%;
 }
 
 .siteMap table th {
