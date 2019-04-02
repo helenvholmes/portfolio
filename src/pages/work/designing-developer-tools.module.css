@@ -54,7 +54,8 @@
 
 .cssGridImage,
 .icons, 
-.socialImagery {
+.socialImagery,
+.fredSticker {
   width: 100%;
 }
 
@@ -98,6 +99,10 @@
   grid-row: 2;
 }
 
+.mediaCampaignSection {
+  grid-row-gap: 3em;
+}
+
 .socialParagraph {
   grid-column: 1 / 4;
   grid-row: 1;
@@ -106,4 +111,9 @@
 .socialImagery {
   grid-column: 5 / 9;
   grid-row: 1;
+}
+
+.fredSticker {
+  grid-column: 3 / 7;
+  grid-row: 2;
 }

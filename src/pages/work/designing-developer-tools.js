@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby'
 import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 
 import Layout from '../../components/Layout'
+import LayoutStyles from '../../components/Layout.module.css'
 import DesigningDevtoolsStyles from './designing-developer-tools.module.css'
 import HeaderStyles from '../../components/Headers.module.css'
 import DevtoolsIcons from '../../img/work/designingDeveloperTools/devtoolsIcons.svg'
@@ -12,6 +13,7 @@ export const DesigningDeveloperToolsTemplate = ({
   cssGridImage,
   rdmImage,
   fredImage,
+  fredSticker,
 }) => {
   return (
     <div>
@@ -61,7 +63,7 @@ export const DesigningDeveloperToolsTemplate = ({
       </section>
 
       <section className={DesigningDevtoolsStyles.rdmDebuggerSection}>
-        <p className={DesigningDevtoolsStyles.rdmParagraph}>During my time at Firefox I also redesigned the <a href="https://hacks.mozilla.org/2016/11/new-responsive-design-mode-rdm-lands-in-firefox-dev-tools/" target="_blank" rel="noopener noreferrer">Responsive Design Mode</a> in the Developer Tools, which allows developers to mock up mobile environments on websites. With 77% of Americans carrying a smartphone in their pockets as of 2018<Link to="#citations">¹</Link>, the need for these tools to grow and adapt to a changing marketplace is becoming more and more vital—so I was glad I got to work on and ship this.</p>
+        <p className={DesigningDevtoolsStyles.rdmParagraph}>During my time at Firefox I also redesigned the <a href="https://hacks.mozilla.org/2016/11/new-responsive-design-mode-rdm-lands-in-firefox-dev-tools/" target="_blank" rel="noopener noreferrer">Responsive Design Mode</a> in the Developer Tools, which allows developers to mock up mobile environments on websites. With 77% of Americans carrying a smartphone in their pockets as of 2018<a href="#citations" id="citation1">¹</a>, the need for these tools to grow and adapt to a changing marketplace is becoming more and more vital—so I was glad I got to work on and ship this.</p>
 
         <p className={DesigningDevtoolsStyles.debuggerParagraph}>I also worked closely with my colleagues <a href="https://jlongster.com/"  target="_blank" rel="noopener noreferrer">James Long</a> and <a href="https://github.com/jasonlaster"  target="_blank" rel="noopener noreferrer">Jason Laster</a> to <a href="https://github.com/firefox-devtools/debugger"  target="_blank" rel="noopener noreferrer">redesign the Debugger</a>. While I feel my own contributions to this project were small in comparison to the projects above, this ended up being a great case study in how the team could set up codebases so that stylistic and visual changes could be made more easily. The project is nearing 5k commits at this point and has 4,309 stars.</p>
 
@@ -81,9 +83,19 @@ export const DesigningDeveloperToolsTemplate = ({
 
         <div className={DesigningDevtoolsStyles.socialImagery}>
           <PreviewCompatibleImage imageInfo={fredImage} className={DesigningDevtoolsStyles.icons} />
-          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Today <a href="https://twitter.com/FirefoxDevTools">@firefoxdevtools</a> designer <a href="https://twitter.com/helenvholmes">@helenvholmes</a> is taking over this space to design some internetish swag in real-time based on your ideas.</p>&mdash; Firefox 🦊🌍 (@firefox) <a href="https://twitter.com/firefox/status/800738574555578368">November 21, 2016</a></blockquote>
-          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <blockquote className="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Today <a href="https://twitter.com/FirefoxDevTools">@firefoxdevtools</a> designer <a href="https://twitter.com/helenvholmes">@helenvholmes</a> is taking over this space to design some internetish swag in real-time based on your ideas.</p>&mdash; Firefox <span role="img" aria-label="fox and world emojis">🦊🌍</span> (@firefox) <a href="https://twitter.com/firefox/status/800738574555578368">November 21, 2016</a></blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
         </div>
+
+        <div className={DesigningDevtoolsStyles.fredSticker}>
+          <PreviewCompatibleImage imageInfo={fredSticker} />
+        </div>
+      </section>
+
+      <section className={[DesigningDevtoolsStyles.citations, DesigningDevtoolsStyles.white, LayoutStyles.citations].join(" ")} id="citations">
+        <a href="#citation1" id="citations">¹</a>Demographics of Mobile Devices in the United States, <a href="https://www.pewinternet.org/fact-sheet/mobile/" target="_blank" rel="noopener noreferrer">https://www.pewinternet.org/fact-sheet/mobile/</a>.
+
+        <Link to="/work" className={LayoutStyles.workLinks}>See other projects ⟶</Link>
       </section>
     </div>
   )
@@ -93,6 +105,7 @@ DesigningDeveloperToolsTemplate.propTypes = {
   cssGridImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   rdmImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   fredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  fredSticker: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const DesigningDeveloperTools = ({ data }) => {
@@ -102,6 +115,7 @@ const DesigningDeveloperTools = ({ data }) => {
         cssGridImage={data.cssGridImage}
         rdmImage={data.rdmImage}
         fredImage={data.fredImage}
+        fredSticker={data.fredSticker}
       />
     </Layout>
   )
@@ -141,6 +155,18 @@ export const DesigningDeveloperToolsQuery = graphql`
     }
     fredImage: file(
       relativePath: { regex: "/fredPSD/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fredSticker: file(
+      relativePath: { regex: "/fredSticker/" }
     ) {
       childImageSharp {
         fluid(

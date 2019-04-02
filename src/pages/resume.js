@@ -1,6 +1,4 @@
 import React from 'react'
-
-import ResumePDF from '../img/helenvholmes_resume.pdf'
 export default class Resume extends React.Component {
   constructor(props) {
     super(props)
@@ -10,6 +8,7 @@ export default class Resume extends React.Component {
   }
 
   componentDidMount() {
+    // eslint-disable-next-line
     const windowHeight = Math.max(
       document.documentElement["clientHeight"],
       document.body["scrollHeight"],

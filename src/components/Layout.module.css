@@ -92,3 +92,15 @@ a:hover {
 a:visited {
   color: var(--brand-primary);
 }
+
+.citations {
+  padding: 5% 10%;
+}
+
+.workLinks {
+  display: block;
+  font-family: "Butler", serif;
+  font-size: 3em;
+  padding: 15% 5% 5% 5%;
+  text-align: center;
+}
