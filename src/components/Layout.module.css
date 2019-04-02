@@ -80,3 +80,15 @@ html {
   src: url("./fonts/knockout/Knockout-HTF74-FullSumo.woff2") format("woff2"),
        url("./fonts/knockout/Knockout-HTF74-FullSumo.woff") format("woff");
 }
+
+a {
+  color: var(--brand-primary);
+}
+
+a:hover {
+  color: var(--brand-primary);
+}
+
+a:visited {
+  color: var(--brand-primary);
+}

@@ -86,12 +86,12 @@ export const WorkPageTemplate = ({
           <PreviewCompatibleImage imageInfo={project6.image6} />
         </div>
       </Link>
-
+{/* 
       <Link to={`/${project7.url}`} className={WorkStyles.project + ' ' + WorkStyles.white}>
         <div className={WorkStyles.meElsewhere}>
           <PreviewCompatibleImage imageInfo={project7.image7} />
         </div>
-      </Link>
+      </Link> */}
     </main>
   )
 }
