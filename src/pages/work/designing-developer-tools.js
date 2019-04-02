@@ -36,7 +36,9 @@ export const DesigningDeveloperToolsTemplate = ({
 
       <section className={DesigningDevtoolsStyles.cssGrid}>
         <div className={DesigningDevtoolsStyles.cssGridImage}>
-          <PreviewCompatibleImage imageInfo={cssGridImage} />
+          <a href="https://hacks.mozilla.org/2016/12/css-grid-and-grid-highlighter-now-in-firefox-developer-edition/" target="_blank" rel="noopener noreferrer">
+            <PreviewCompatibleImage imageInfo={cssGridImage} />
+          </a>
         </div>
 
         <div className={DesigningDevtoolsStyles.cssGridText}>
