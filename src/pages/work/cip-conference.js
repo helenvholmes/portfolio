@@ -39,27 +39,27 @@ export const CIPConferenceTemplate = ({
               <td className={CIPConferenceStyles.tableNumbers}>1</td>
               <td style={{borderLeft: 5 + 'px solid white'}}>Branding system</td>
               <td className={CIPConferenceStyles.tableNumbers}>1</td>
-              <td>Presentation template for presenters</td>
+              <td style={{borderLeft: 5 + 'px solid white'}}>Presentation template for presenters</td>
             </tr>
             <tr>
               <td className={CIPConferenceStyles.tableNumbers}>1</td>
-              <td>Website*</td>
+              <td style={{borderLeft: 5 + 'px solid white'}}>Website*</td>
               <td className={CIPConferenceStyles.tableNumbers}>19</td>
-              <td>Different signage designs for the event and venue</td>
+              <td style={{borderLeft: 5 + 'px solid white'}}>Different signage designs for the event and venue</td>
             </tr>
             <tr>
               <td className={CIPConferenceStyles.tableNumbers}>1</td>
-              <td>Printed invitation</td>
+              <td style={{borderLeft: 5 + 'px solid white'}}>Printed invitation</td>
               <td className={CIPConferenceStyles.tableNumbers}>3</td>
-              <td>Custom giveaways for the event</td>
+              <td style={{borderLeft: 5 + 'px solid white'}}>Custom giveaways for the event</td>
             </tr>
             <tr>
               <td className={CIPConferenceStyles.tableNumbers}>8</td>
-              <td>Custom illustrations</td>
+              <td style={{borderLeft: 5 + 'px solid white'}}>Custom illustrations</td>
             </tr>
             <tr>
               <td className={CIPConferenceStyles.tableNumbers}>1</td>
-              <td>Informational presentation</td>
+              <td style={{borderLeft: 5 + 'px solid white'}}>Informational presentation</td>
             </tr>
           </tbody>
         </table>
