@@ -22,9 +22,11 @@
 }
 
 .cipIllustrationSnippets {
-  grid-column: 3 / 5;
-  justify-self: center;
+  grid-column: 3;
+  justify-self: end;
   align-self: center;
+
+  width: 25%;
 }
 
 .p1 {
@@ -32,12 +34,13 @@
   grid-row: 2 / span 2;
 }
 
-.cipTable {
+.p2 {
   grid-column: 3 / 5;
-  grid-row: 3;
+  grid-row: 2;
+}
 
+.cipTable {
   margin-left: -15px;
-  margin-top: -40px;
   table-layout: fixed;
 }
 
@@ -53,6 +56,62 @@
   width: 25px;
 }
 
+.snippetSections {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 5em;
+  align-items: center;
+  justify-items: center;
+
+  padding: 10%;
+  text-align: justify;
+}
+
+.styletiles,
+.signage,
+video {
+  width: 100%;
+}
+
+.styletiles {
+  grid-column: 1 / 6;
+}
+
 .styleTilesParagraph {
-  grid-column: 3 / 5;
+  grid-column: 7 / 10;
+}
+
+.logo {
+  grid-column: 1 / 4;
+}
+
+.stripes {
+  grid-column: 4 / 7;
+}
+
+.logoParagraph {
+  grid-column: 7 / 10;
+}
+
+.icons {
+  grid-column: 1 / 6;
+}
+
+.iconsParagraph {
+  grid-column: 6 / 9;
+}
+
+.signageParagraph {
+  grid-column: 1 / 5;
+}
+
+.signage {
+  grid-column: 6 / 11;
+}
+
+.guitar {
+  width: 10%;
+  justify-self: center;
+  text-align: center;
+  margin: auto;
 }
