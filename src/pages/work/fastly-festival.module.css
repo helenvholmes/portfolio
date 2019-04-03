@@ -110,8 +110,7 @@ video {
 }
 
 .guitar {
-  width: 10%;
-  justify-self: center;
-  text-align: center;
+  display: block;
   margin: auto;
+  width: 10%;
 }
