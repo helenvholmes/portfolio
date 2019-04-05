@@ -1,9 +1,6 @@
 .reel {
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  width: 100vw;
+  cursor: pointer;
+  width: 100%;
 }
 
 .project {

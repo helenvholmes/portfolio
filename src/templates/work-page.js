@@ -28,8 +28,12 @@ export const WorkPageTemplate = ({
 
   return (
     <main>
-      <section className={WorkStyles.reel}>
-        <PageContent className="content" content={content} />
+      <section className={WorkStyles.reel  + ' ' + WorkStyles.white}>
+        <video
+          src="/img/videos/reel.mp4"
+          videoTitle="Helen V. Holmes 2019 Reel"
+          controls
+        />
       </section>
 
       <Link to={`/${project1.url}`} className={WorkStyles.project}>
@@ -53,7 +57,7 @@ export const WorkPageTemplate = ({
           <PreviewCompatibleImage imageInfo={project3.image3} />
         </div>
       </Link>
-
+{/* 
       <Link to={`/${project4.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
         <h2
           className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.offWhite].join(' ')}
@@ -64,7 +68,7 @@ export const WorkPageTemplate = ({
         <div className={WorkStyles.helenvholmes}>
           helenvholmes.com
         </div>
-      </Link>
+      </Link> */}
 
       <Link to={`/${project5.url}`} className={[WorkStyles.project, WorkStyles.white, WorkStyles.designingDeveloperTools].join(' ')}>
         <h2
@@ -86,12 +90,6 @@ export const WorkPageTemplate = ({
           <PreviewCompatibleImage imageInfo={project6.image6} />
         </div>
       </Link>
-{/* 
-      <Link to={`/${project7.url}`} className={WorkStyles.project + ' ' + WorkStyles.white}>
-        <div className={WorkStyles.meElsewhere}>
-          <PreviewCompatibleImage imageInfo={project7.image7} />
-        </div>
-      </Link> */}
     </main>
   )
 }
