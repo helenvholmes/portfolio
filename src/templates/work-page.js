@@ -9,12 +9,9 @@ import WorkStyles from './work.module.css'
 import HeadersStyles from '../components/Headers.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import CIPIntroImage from '../img/work/cip/cipIntro.svg'
-import Content, { HTMLContent } from '../components/Content'
 
 export const WorkPageTemplate = ({
   title,
-  content,
-  contentComponent,
   project1,
   project2,
   project3,
@@ -24,17 +21,21 @@ export const WorkPageTemplate = ({
   project7,
 
 }) => {
-  const PageContent = contentComponent || Content
-
   return (
     <main>
       <section className={WorkStyles.reel  + ' ' + WorkStyles.white}>
         <video
           src="/img/videos/reel.mp4"
-          videoTitle="Helen V. Holmes 2019 Reel"
+          title="Helen V. Holmes 2019 Reel"
           controls
         />
       </section>
+
+      <Link to={`/${project6.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
+        <div className={WorkStyles.altitude}>
+          <PreviewCompatibleImage imageInfo={project6.image6} />
+        </div>
+      </Link>
 
       <Link to={`/${project1.url}`} className={WorkStyles.project}>
         <div className={WorkStyles.cipConference}>
@@ -70,6 +71,8 @@ export const WorkPageTemplate = ({
         </div>
       </Link> */}
 
+      <VariousSwag />
+
       <Link to={`/${project5.url}`} className={[WorkStyles.project, WorkStyles.white, WorkStyles.designingDeveloperTools].join(' ')}>
         <h2
           className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.red].join(' ')}
@@ -82,22 +85,12 @@ export const WorkPageTemplate = ({
           Designing Developer Tools
         </span>
       </Link>
-
-      <VariousSwag />
-
-      <Link to={`/${project6.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
-        <div className={WorkStyles.altitude}>
-          <PreviewCompatibleImage imageInfo={project6.image6} />
-        </div>
-      </Link>
     </main>
   )
 }
 
 WorkPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
   project1: PropTypes.shape({
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     background1: PropTypes.string,
@@ -142,8 +135,6 @@ const WorkPage = ({ data }) => {
     <Layout>
       <WorkPageTemplate
         title={post.frontmatter.title}
-        content={post.html}
-        contentComponent={HTMLContent}
         project1={post.frontmatter.project1}
         project2={post.frontmatter.project2}
         project3={post.frontmatter.project3}
