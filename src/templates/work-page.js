@@ -4,6 +4,8 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import VariousLogos from '../components/VariousLogos'
 import VariousSwag from '../components/VariousSwag'
+import AdditionalProjects from '../components/AdditionalProjects'
+import SitesDesigned from '../components/AdditionalProjects'
 import '../components/all.css'
 import WorkStyles from './work.module.css'
 import HeadersStyles from '../components/Headers.module.css'
@@ -43,35 +45,17 @@ export const WorkPageTemplate = ({
         </div>
       </Link>
 
+      <VariousSwag />
+
       <Link to={`/${project2.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
         <div className={WorkStyles.wiltedYards}>
           <PreviewCompatibleImage imageInfo={project2.image2} />
         </div>
       </Link>
 
-      <VariousSwag />
-
       <VariousLogos />
 
-      <Link to={`/${project3.url}`} className={WorkStyles.project}>
-        <div className={WorkStyles.fastlyFestival}>
-          <PreviewCompatibleImage imageInfo={project3.image3} />
-        </div>
-      </Link>
-{/* 
-      <Link to={`/${project4.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
-        <h2
-          className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.offWhite].join(' ')}
-        >
-          Meta
-        </h2>
-
-        <div className={WorkStyles.helenvholmes}>
-          helenvholmes.com
-        </div>
-      </Link> */}
-
-      <VariousSwag />
+      <SitesDesigned />
 
       <Link to={`/${project5.url}`} className={[WorkStyles.project, WorkStyles.white, WorkStyles.designingDeveloperTools].join(' ')}>
         <h2
@@ -84,6 +68,18 @@ export const WorkPageTemplate = ({
           <PreviewCompatibleImage imageInfo={project5.image5} />
           Designing Developer Tools
         </span>
+      </Link>
+
+      <AdditionalProjects />
+
+      <Link to={`/${project3.url}`} className={[WorkStyles.project, WorkStyles.white].join(" ")}>
+        <video
+          src="/img/videos/ff_festivallogo.mp4"
+          videoTitle="Fastly Festival logo animation"
+          loop="true"
+          autoPlay="autoplay"
+          className={WorkStyles.fastlyFestival}
+        />
       </Link>
     </main>
   )
