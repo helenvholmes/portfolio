@@ -73,7 +73,10 @@
 .interestingPieces2,
 .interestingPieces3,
 .interestingPieces4,
-.map {
+.map,
+.websiteImage,
+.signageImage,
+.fileSystemImage {
   width: 100%;
 }
 
@@ -139,34 +142,48 @@
 }
 
 .circuits {
-  
+  background: url('./images/altitudeCircuits.png');
+  background-size: cover;
+  background-color: var(--brand-primary);
+
+  padding-top: 0;
 }
 
+.circuits p {
+  align-self: flex-start;
+  grid-column: 1 / 4;
 
+  background-color: var(--brand-primary);
+  padding: 15% 10% 10% 10%;
+  margin: 0;
 
-
-
-
-.icons {
-  grid-column: 1 / 6;
 }
 
-.iconsParagraph {
-  grid-column: 6 / 9;
+.websiteImage {
+  grid-column: 1 / 7;
+}
+
+.website {
+  grid-column: 7 / 10;
+}
+
+.signageImage {
+  width: 100%;
+  background-color: var(--helen-white);
 }
 
 .signageParagraph {
-  grid-column: 1 / 5;
-}
-
-.signage {
-  grid-column: 6 / 11;
-}
-
-.guitar {
-  display: block;
+  background-color: var(--helen-white);
+  padding: 10% 0;
+  text-align: center;
   margin: auto;
-  width: 10%;
+  width: 100%;
+}
+
+.fileSystemImage {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 5%;
 }
 
 .captions {

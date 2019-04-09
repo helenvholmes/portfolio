@@ -19,6 +19,9 @@ export const Altitude2018Template = ({
   newYorkImage,
   sfImage,
   londonMapImage,
+  websiteImage,
+  signageImage,
+  fileSystemImage,
 }) => {
   return (
     <div>
@@ -132,8 +135,33 @@ export const Altitude2018Template = ({
       </section>
 
       <section className={[Altitude2018Styles.snippetSections, Altitude2018Styles.red, Altitude2018Styles.circuits].join(" ")}>
-        <p>Fastly had really liked the way we’d hidden small elements of their brand in plain sight for the CIP Conference, so when creating assets for their Altitude series I did the same. Keeping with Altitude’s theme I created a circuitry pattern, sprinkled with Fastly speedometers, server racks, and their company mascot.</p>
+        <p>The client had really liked the way we’d hidden small elements of their brand in plain sight for the CIP Conference, so when creating assets for their Altitude series I did the same. Keeping with Altitude’s theme I created a circuitry pattern, sprinkled with Fastly speedometers, server racks, and their company mascot.</p>
       </section>
+
+      <section className={[Altitude2018Styles.snippetSections, Altitude2018Styles.white].join(" ")}>
+        <div className={Altitude2018Styles.websiteImage}>
+          <PreviewCompatibleImage imageInfo={websiteImage} />
+        </div>
+
+        <p className={Altitude2018Styles.website}>Each event needed a website, of course. This was the designed site for the San Francisco event. </p>
+      </section>
+
+      <div className={Altitude2018Styles.signageImage}>
+        <PreviewCompatibleImage imageInfo={signageImage} />
+      </div>
+
+      <p className={Altitude2018Styles.signageParagraph}>While I’ve done production jobs before (preparing artwork in lots of variations and sizes to send to printers), this was by far the largest I’d ever done solo. Here’s a glimpse into what that work looked like:</p>
+
+      <div className={Altitude2018Styles.fileSystemImage}>
+        <PreviewCompatibleImage imageInfo={fileSystemImage} />
+      </div>
+
+      <video
+        src="/img/videos/altitudeHandsTyping.mp4"
+        videoTitle="Altitude hands animation"
+        loop="true"
+        autoPlay="autoplay"
+      />
 
       <section className={LayoutStyles.citations}>
         <Link to="/work" className={LayoutStyles.workLinks}>See other projects ⟶</Link>
@@ -151,6 +179,9 @@ Altitude2018Template.propTypes = {
   newYorkImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   sfImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   londonMapImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  websiteImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  signageImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  fileSystemImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const Altitude2018 = ({ data }) => {
@@ -165,6 +196,9 @@ const Altitude2018 = ({ data }) => {
         newYorkImage={data.newYorkImage}
         sfImage={data.sfImage}
         londonMapImage={data.londonMapImage}
+        websiteImage={data.websiteImage}
+        signageImage={data.signageImage}
+        fileSystemImage={data.fileSystemImage}
       />
     </Layout>
   )
@@ -264,6 +298,42 @@ export const Altitude2018Query = graphql`
     }
     londonMapImage: file(
       relativePath: { regex: "/altitudeLondonMap/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    websiteImage: file(
+      relativePath: { regex: "/altitudeWebsite/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    signageImage: file(
+      relativePath: { regex: "/altitudeSignage/" }
+    ) {
+      childImageSharp {
+        fluid(
+          maxWidth: 2048
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fileSystemImage: file(
+      relativePath: { regex: "/altitudeFileSystem/" }
     ) {
       childImageSharp {
         fluid(
