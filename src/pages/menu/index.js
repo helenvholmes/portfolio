@@ -217,13 +217,13 @@ export default class Menu extends React.Component {
               className={MenuStyles.linkUnderline1}
               alt="link underline"
             />
-            <div className={MenuStyles.link1Sublinks}>
+            {/* <div className={MenuStyles.link1Sublinks}>
               <Link to="/work/featured">Featured</Link>
               <Link to="/work/physical">Physical</Link>
               <Link to="/work/digital">Digital</Link>
               <Link to="/work">All Projects</Link>
-            </div>
-            <Link
+            </div> */}
+            {/* <Link
               to="/writing"
               id="link2"
               className={MenuStyles.link2}
@@ -231,17 +231,30 @@ export default class Menu extends React.Component {
               onMouseOut={i => this.handleLinkMouseout(2)}
             >
               Writing
+            </Link> */}
+            <LinkUnderline
+              className={MenuStyles.linkUnderline2}
+              alt="link underline"
+            />
+            {/* <div className={MenuStyles.link2Sublinks}>
+              <Link to="/work/featured">Featured</Link>
+              <Link to="/work/physical">Physical</Link>
+              <Link to="/work/digital">Digital</Link>
+              <Link to="/work">All Projects</Link>
+            </div> */}
+            <Link
+              to="/contact"
+              id="link2"
+              className={MenuStyles.link2}
+              onMouseEnter={i => this.handleLinkMouseover(2)}
+              onMouseOut={i => this.handleLinkMouseout(2)}
+            >
+              About
             </Link>
             <LinkUnderline
               className={MenuStyles.linkUnderline2}
               alt="link underline"
             />
-            <div className={MenuStyles.link2Sublinks}>
-              <Link to="/work/featured">Featured</Link>
-              <Link to="/work/physical">Physical</Link>
-              <Link to="/work/digital">Digital</Link>
-              <Link to="/work">All Projects</Link>
-            </div>
             <Link
               to="/contact"
               id="link3"
@@ -249,23 +262,10 @@ export default class Menu extends React.Component {
               onMouseEnter={i => this.handleLinkMouseover(3)}
               onMouseOut={i => this.handleLinkMouseout(3)}
             >
-              About
-            </Link>
-            <LinkUnderline
-              className={MenuStyles.linkUnderline3}
-              alt="link underline"
-            />
-            <Link
-              to="/contact"
-              id="link4"
-              className={MenuStyles.link4}
-              onMouseEnter={i => this.handleLinkMouseover(4)}
-              onMouseOut={i => this.handleLinkMouseout(4)}
-            >
               Contact
             </Link>
             <LinkUnderline
-              className={MenuStyles.linkUnderline4}
+              className={MenuStyles.linkUnderline3}
               alt="link underline"
             />
           </div>

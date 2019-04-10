@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import FeaturedLogosStyles from './FeaturedLogos.module.css'
 import HeadersStyles from './Headers.module.css'
 import CIPLogo from '../img/featured-logos/CIP-logo.svg'
@@ -20,14 +21,30 @@ const FeaturedLogos = class extends React.Component {
         <h2 className={HeadersStyles.featured}>Additional Projects</h2>
 
         <div className={FeaturedLogosStyles.logosGrid}>
-          <CIPLogo style={{ width: '60%' }} />
+          <Link to="/work/cip-conference">
+            <CIPLogo style={{ width: '60%' }} />
+          </Link>
+
           <span className={FeaturedLogosStyles.logoGridVerticalSeparator1} />
+
           <YGLLogo style={{ width: '60%' }} />
+
           <span className={FeaturedLogosStyles.logoGridVerticalSeparator2} />
-          <WiltedYardsLogo style={{ width: '60%' }} />
-          <FastlyFestivalLogo style={{ width: '50%' }} />
+
+          <Link to="/work/wilted-yards">
+            <WiltedYardsLogo style={{ width: '60%' }} />
+          </Link>
+
+          <Link to="/work/fastly-festival">
+            <FastlyFestivalLogo style={{ width: '50%' }} />
+          </Link>
+
           <span className={FeaturedLogosStyles.logoGridVerticalSeparator3} />
-          <AltitudeLogo style={{ width: '150%' }} />
+
+          <Link to="/work/altitude-2018">
+            <AltitudeLogo style={{ width: '150%' }} />
+          </Link>
+
           <span className={FeaturedLogosStyles.logoGridHorizontalSeparator} />
         </div>
       </section>

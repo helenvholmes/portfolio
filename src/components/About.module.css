@@ -23,6 +23,20 @@
   justify-content: center;
 }
 
+@keyframes float {
+  from {
+    transform: translateY(0px) rotate(-15deg);
+  }
+  to {
+    transform: translateY(5px) rotate(-15deg);
+  }
+}
+
+.platitudes p {
+  align-self: center;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
 .partOne {
   align-self: start;
   grid-column-end: 7;
