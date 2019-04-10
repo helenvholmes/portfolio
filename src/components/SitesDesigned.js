@@ -36,8 +36,7 @@ const settings = {
   infinite: true,
   speed: 500,
   arrows: true,
-  className: 'variousSwagSlider',
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 3,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />
@@ -62,7 +61,7 @@ const SitesDesigned = ({ children }) => (
     `}
     render={data => (
       <section className={AdditionalProjectStyles.section}>
-        <h2 className={HeadersStyles.regular}>Sites Designed</h2>
+        <h2 className={HeadersStyles.regular}>Sites Designed & Built</h2>
         <Slider {...settings}>
           {data.allFile.edges.map((node, i)=>(
             <div key={i}>

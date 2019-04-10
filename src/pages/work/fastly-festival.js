@@ -52,19 +52,17 @@ export const FastlyFestivalTemplate = ({
                 <td className={FastlyFestivalStyles.tableNumbers}>1</td>
                 <td style={{borderLeft: 5 + 'px solid white'}}>Keynote file for announcement</td>
                 <td className={FastlyFestivalStyles.tableNumbers}>3</td>
-                <td style={{borderLeft: 5 + 'px solid white'}}>Pieces of customizeable signagee for the event and venue(s)</td>
+                <td style={{borderLeft: 5 + 'px solid white'}}>Pieces of customizeable signage for the event</td>
               </tr>
               <tr>
                 <td className={FastlyFestivalStyles.tableNumbers}>6</td>
-                <td style={{borderLeft: 5 + 'px solid white'}}>Email teemplates, designed and coded</td>
+                <td style={{borderLeft: 5 + 'px solid white'}}>Email templates, designed and coded</td>
                 <td className={FastlyFestivalStyles.tableNumbers}>1</td>
                 <td>Photobooth backdrop</td>
               </tr>
               <tr>
                 <td className={FastlyFestivalStyles.tableNumbers}>7</td>
                 <td>Custom illustrations</td>
-              </tr>
-              <tr>
                 <td className={FastlyFestivalStyles.tableNumbers}>2</td>
                 <td>Pieces of custom swag</td>
               </tr>

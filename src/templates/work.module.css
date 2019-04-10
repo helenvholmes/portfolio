@@ -31,8 +31,7 @@
 }
 
 .cipConference {
-  grid-column-start: 1;
-  grid-column-end: 10;
+  width: 100%;
 }
 
 .wiltedYards {

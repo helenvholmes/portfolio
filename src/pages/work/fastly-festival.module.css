@@ -54,6 +54,7 @@
   color: var(--helen-off-white);
   text-align: center;
   width: 25px;
+  max-height: 20px;
 }
 
 .snippetSections {

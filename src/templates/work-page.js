@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import VariousLogos from '../components/VariousLogos'
 import VariousSwag from '../components/VariousSwag'
 import AdditionalProjects from '../components/AdditionalProjects'
-import SitesDesigned from '../components/AdditionalProjects'
+import SitesDesigned from '../components/SitesDesigned'
 import '../components/all.css'
 import WorkStyles from './work.module.css'
 import HeadersStyles from '../components/Headers.module.css'
@@ -39,7 +39,7 @@ export const WorkPageTemplate = ({
         </div>
       </Link>
 
-      <Link to={`/${project1.url}`} className={WorkStyles.project}>
+      <Link to={`/${project1.url}`}>
         <div className={WorkStyles.cipConference}>
           <CIPIntroImage />
         </div>
@@ -76,7 +76,7 @@ export const WorkPageTemplate = ({
         <video
           src="/img/videos/ff_festivallogo.mp4"
           videoTitle="Fastly Festival logo animation"
-          loop="true"
+          loop={true}
           autoPlay="autoplay"
           className={WorkStyles.fastlyFestival}
         />
