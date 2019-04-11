@@ -1,11 +1,3 @@
-/* @import 'bourbon';
-@import '../../../styles/grid-settings';
-@import 'neat';
-@import '../../../styles/typography';
-@import '../../../styles/colors';
-@import '../../../styles/modules/post-ending';
-@import '../../../styles/vendor/github-syntax-highlighting';
-
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -30,17 +22,17 @@ img, video {
 .extra {
   margin-top: 20% !important;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     margin-top: 40% !important;
-  }
+  } */
 }
 
 .extra-2x {
   margin-top: 20% !important;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     margin-top: 70% !important;
-  }
+  } */
 }
 
 ol {
@@ -53,9 +45,9 @@ ol {
   text-align: justify;
   width: 80%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     width: 40%;
-  }
+  } */
 }
 
 .left {
@@ -70,9 +62,9 @@ ol {
 .right {
   margin-left: 10%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     margin-left: 50%;
-  }
+  } */
 }
 
 .title {
@@ -82,19 +74,19 @@ ol {
   line-height: 1;
   text-transform: uppercase;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     font-size: 11rem;
-  }
+  } */
 }
 
 .batman {
   margin: 10% auto;
   width: 50%;
   text-align: center;
+}
 
-  img {
-    width: 90%;
-  }
+.batman img {
+  width: 90%;
 }
 
 .ux {
@@ -104,9 +96,9 @@ ol {
   outline: 1px solid $brand-gray;
   width: 30%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     display: block;
-  }
+  } */
 }
 
 .ux > .right {
@@ -119,17 +111,17 @@ ol {
   margin: 0;
   width: 50%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     display: block;
-  }
+  } */
 }
 
 .glyphs {
   width: 100%;
 
-  & ~ .right {
+  /* & ~ .right {
     margin-top: 0;
-  }
+  } */
 }
 
 .middle-example {
@@ -143,14 +135,13 @@ ol {
   margin-left: 10%;
   width: 40%;
 
-  & > .left {
+  /* & > .left {
     float: right;
     margin-top: 0;
-  }
+  } */
 }
 
 .printing-press-quote {
-  // Am I down to the wire yet
   width: 100% !important;
 }
 
@@ -161,11 +152,11 @@ ol {
 .example {
   width: 100%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     float: right;
     margin-right: 10%;
     width: 30%;
-  }
+  } */
 }
 
 .quote {
@@ -174,10 +165,10 @@ ol {
   margin: 5% auto 5% auto;
   width: 80%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     margin: 20% auto 10% auto;
     width: 50%;
-  }
+  } */
 }
 
 .quote-attribution {
@@ -193,9 +184,9 @@ ol {
   text-align: center;
   width: 80%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     width: 50%;
-  }
+  } */
 }
 
 h2 {
@@ -211,28 +202,28 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   width: 60%;
+}
 
-  &::before {
-    background-color: white;
-    border-bottom: 2px solid $brand-primary;
-    border-top: 1px solid $brand-primary;
-    content: "";
-    display: block;
-    height: 7px;
-    margin: 0 auto 15% auto;
-    width: 15%;
-  }
+.king::before {
+  background-color: white;
+  border-bottom: 2px solid $brand-primary;
+  border-top: 1px solid $brand-primary;
+  content: "";
+  display: block;
+  height: 7px;
+  margin: 0 auto 15% auto;
+  width: 15%;
+}
 
-  &::after {
-    background-color: white;
-    border-top: 2px solid $brand-primary;
-    border-bottom: 1px solid $brand-primary;
-    content: "";
-    display: block;
-    height: 7px;
-    margin: 15% auto 0 auto;
-    width: 15%;
-  }
+.king::after {
+  background-color: white;
+  border-top: 2px solid $brand-primary;
+  border-bottom: 1px solid $brand-primary;
+  content: "";
+  display: block;
+  height: 7px;
+  margin: 15% auto 0 auto;
+  width: 15%;
 }
 
 .code-example-section {
@@ -245,21 +236,21 @@ h2 {
   margin-left: 10%;
   width: 80%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     margin-left: 5%;
     width: 30%;
-  }
+  } */
 }
 
 .code-example-code {
   width: 100%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     float: right;
     margin-right: 5%;
     margin-top: 0;
     width: 55%;
-  }
+  } */
 }
 
 .foft {
@@ -275,7 +266,7 @@ h2 {
   margin: auto;
   width: 80%;
 
-  @include media($nine-col) {
+  /* @include media($nine-col) {
     width: 50%;
-  }
-} */
+  } */
+}

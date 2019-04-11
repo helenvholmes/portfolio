@@ -3,7 +3,7 @@ templateKey: blog-post
 title: On Critique
 date: 2019-03-21T15:02:28.067Z
 description: 'Chloe asks from in front of the oven, “What are these on the second rack?”'
-stylesheet: /static/stylesheets/critique.css
+stylesheet: '/static/stylesheets/critique.css'
 tags:
   - essay
 ---
