@@ -33,11 +33,7 @@ export const WorkPageTemplate = ({
         />
       </section>
 
-      <Link to={`/${project6.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
-        <div className={WorkStyles.altitude}>
-          <PreviewCompatibleImage imageInfo={project6.image6} />
-        </div>
-      </Link>
+      <Link to={`/${project6.url}`} className={WorkStyles.altitude}>beep</Link>
 
       <Link to={`/${project1.url}`}>
         <div className={WorkStyles.cipConference}>

@@ -69,7 +69,13 @@
 }
 
 .altitude {
-  grid-column: 1 / 10;
+  display: block;
+
+  height: 70vh;
+  width: 100%;
+
+  background: url('/img/altitude-2018.png');
+  background-size: cover;
 }
 
 .meElsewhere {

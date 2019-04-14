@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import LayoutStyles from '../../components/Layout.module.css'
 import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 
 import WiltedYardsStyles from './wilted-yards.module.css'
@@ -82,6 +83,10 @@ export const WiltedYardsTemplate = ({
         <div className={WiltedYardsStyles.collection}>
           <PreviewCompatibleImage imageInfo={collectionImage} />
         </div>
+      </section>
+
+      <section className={LayoutStyles.citations}>
+        <Link to="/work" className={LayoutStyles.workLinks}>See other projects ⟶</Link>
       </section>
     </div>
   )

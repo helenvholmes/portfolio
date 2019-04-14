@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import LayoutStyles from '../../components/Layout.module.css'
 import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 
 import CIPConferenceStyles from './cip-conference.module.css'
@@ -105,6 +106,10 @@ export const CIPConferenceTemplate = ({
       {/* <section className={CIPConferenceStyles.section}>
         <p>My favorite piece of swag to produce was this informational booklet that folded out and included a welcome to attendees, the schedule, and a map of the venue.</p>
       </section> */}
+
+      <section className={LayoutStyles.citations}>
+        <Link to="/work" className={LayoutStyles.workLinks}>See other projects ⟶</Link>
+      </section>
     </div>
   )
 }
