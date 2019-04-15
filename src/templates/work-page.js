@@ -25,21 +25,21 @@ export const WorkPageTemplate = ({
 }) => {
   return (
     <main>
-      <section className={WorkStyles.reel  + ' ' + WorkStyles.white}>
+      {/* <section className={WorkStyles.reel  + ' ' + WorkStyles.white}>
         <video
           src="/img/videos/reel.mp4"
           title="Helen V. Holmes 2019 Reel"
           controls
         />
-      </section>
-
-      <Link to={`/${project6.url}`} className={WorkStyles.altitude}>beep</Link>
+      </section> */}
 
       <Link to={`/${project1.url}`}>
         <div className={WorkStyles.cipConference}>
           <CIPIntroImage />
         </div>
       </Link>
+
+      <Link to={`/${project6.url}`} className={WorkStyles.altitude}>beep</Link>
 
       <VariousSwag />
 
