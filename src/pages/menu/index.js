@@ -243,7 +243,7 @@ export default class Menu extends React.Component {
               <Link to="/work">All Projects</Link>
             </div> */}
             <Link
-              to="/contact"
+              to="/about"
               id="link2"
               className={MenuStyles.link2}
               onMouseEnter={i => this.handleLinkMouseover(2)}
