@@ -39,7 +39,7 @@ export const WorkPageTemplate = ({
         </div>
       </Link>
 
-      <Link to={`/${project6.url}`} className={WorkStyles.altitude}>beep</Link>
+      <Link to={`/${project6.url}`} className={WorkStyles.altitude}></Link>
 
       <VariousSwag />
 

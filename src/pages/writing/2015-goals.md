@@ -5,6 +5,7 @@ date: 2015-02-05T15:42:52.106Z
 description: Now that we're in February
 tags:
   - goals
+  - resolutions
 ---
 <ul>
   <li><p><strong>Created a demo at work that’s made huge waves</strong>. I’m talking about the CEO of my company saying, “This needs to be in our commercials,” and getting a high-five from my VP. This is a man who under normal circumstances might not know my name. It’s spawned off a video and some other internal craziness that’s pretty cool.</p></li>

@@ -30,11 +30,11 @@ const Footer = class extends React.Component {
             </thead>
             <tbody>
               <tr>
-                <td><Link to="/tags/featured/">Featured</Link></td>
-                <td><Link to="/tags/physical/">Physical</Link></td>
+                <td><Link to="/work/cip-conference/">Featured</Link></td>
+                <td><Link to="/work/altitude-2018/">Physical</Link></td>
               </tr>
               <tr>
-                <td><Link to="/tags/digital/">Digital</Link></td>
+                <td><Link to="/work/designing-developer-tools/">Digital</Link></td>
                 <td><Link to="/work/">All Projects</Link></td>
               </tr>
             </tbody>
@@ -49,11 +49,11 @@ const Footer = class extends React.Component {
             </thead>
             <tbody>
               <tr>
-                <td><Link to="/about#professional">Professional</Link></td>
-                <td><Link to="/about#personal">Personal</Link></td>
+                <td><a href="/about#professional">Professional</a></td>
+                <td><a href="/about#personal">Personal</a></td>
               </tr>
               <tr>
-                <td><Link to="/work/me-elsewhere/">Elsewhere on the Web</Link></td>
+                <td><a href="/about#elsewhere">Elsewhere on the Web</a></td>
                 <td><Link to="/resume">Resume</Link></td>
               </tr>
             </tbody>
@@ -78,12 +78,12 @@ const Footer = class extends React.Component {
                 <td><Link to="/tags/learning/">Learning</Link></td>
               </tr>
               <tr>
-                <td><Link to="/tags/longform/">Longform</Link></td>
+                <td><Link to="/tags/long-form/">Longform</Link></td>
                 <td><Link to="/tags/conferences/">Conferences</Link></td>
               </tr>
               <tr>
                 <td><Link to="/tags/resolutions/">Resolutions</Link></td>
-                <td><Link to="/tags/questions-answered/">Questions Answered</Link></td>
+                <td><Link to="/tags/mac/">Mac Guides</Link></td>
               </tr>
             </tbody>
           </table>
@@ -97,7 +97,7 @@ const Footer = class extends React.Component {
             </thead>
             <tbody>
               <tr>
-                <td><Link to="/contact#email">Email</Link></td>
+                <td><a href="mailto:sayhi@helenvholmes.com">Email</a></td>
                 <td><Link to="/contact#form">Form</Link></td>
               </tr>
             </tbody>

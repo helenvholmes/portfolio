@@ -5,6 +5,7 @@ date: 2016-09-22T15:54:26.623Z
 description: Why webfonts are beautiful and how to make them performant.
 tags:
   - conferences
+  - talks
 ---
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 

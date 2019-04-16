@@ -9,14 +9,16 @@ export default class Resume extends React.Component {
   }
 
   componentDidMount() {
-    // eslint-disable-next-line
     const windowHeight = Math.max(
       document.documentElement["clientHeight"],
       document.body["scrollHeight"],
       document.documentElement["scrollHeight"],
       document.body["offsetHeight"],
-      document.documentElement["offsetHeight"]
+      document.documentElement["offsetHeight"],
+      document.window
     );
+
+    console.log(windowHeight);
   }
 
   render() {

@@ -24,7 +24,7 @@ const AboutPage = ({ data }) => {
       </div>
 
       <section className={[AboutStyles.section, AboutStyles.white].join(" ")}>
-        <h3 className={AboutStyles.full}>Professional Accomplishments</h3>
+        <h3 className={AboutStyles.full} id="professional">Professional Accomplishments</h3>
 
         <div>
           <p>I started my career at a small design shop a former professor started. It was flattering to be asked to be the first employee, and it gave me my first glimpse into what it was like working at a design firm and running your own business. When later I would start my own I shifted through my memories of this place to remember how to present to clients, how they handled the struggles they had, and tried to learn from the mistakes they made.</p>
@@ -70,7 +70,7 @@ const AboutPage = ({ data }) => {
 
       <section className={AboutStyles.section}>
         <div>
-          <h3>Interviews</h3>
+          <h3 id="elsewhere">Interviews</h3>
           <ul>
             <li><a href="https://interfacelovers.com/interviews/helen-holmes" target="_blank" rel="noopener noreferrer">Interface Lovers interview</a>, March 2019</li>
             <li><a href="https://design-work.simplecast.com/episodes/ep05-helen-v-holmes-on-why-your-grandma-f31cf374" target="_blank" rel="noopener noreferrer">DovetailX interview with Kate Darby</a>, October 2018</li>
@@ -113,7 +113,7 @@ const AboutPage = ({ data }) => {
 
       <section className={[AboutStyles.section, AboutStyles.white].join(" ")}>
         <div className={AboutStyles.personalPassions}>
-          <h3>Personal Values & Passions</h3>
+          <h3 id="personal">Personal Values & Passions</h3>
 
           <p>My passions outside of design are food, sewing, and reading.</p>
 
