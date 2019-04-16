@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../../../components/Layout'
 import ThingsOwnStyles from './the-future-of-wearables.module.css'
-import Title from '../../../img/thingsOwnedTitle.svg'
 
 export default class Future extends React.Component {
   render() {
@@ -41,7 +40,7 @@ export default class Future extends React.Component {
               </audio>
             </p>
             <aside className={ThingsOwnStyles.pulloutRight}>
-              <img src="/img/future-of-wearables/tape-recorder.jpg"/>
+              <img src="/img/future-of-wearables/tape-recorder.jpg" alt="My grandfather's old tape recorder." />
             </aside>
             <p className={ThingsOwnStyles.serif}>“… We are unable, or perhaps unwilling, to answer the telephone right now. Please leave your name and telephone number, and we will return your call [BEEP]”</p>
             <p className={ThingsOwnStyles.serif}>That’s a generation that doesn’t want to be bothered. That man will never own an iPhone, believe me.</p>
@@ -53,7 +52,7 @@ export default class Future extends React.Component {
 
           <div className={ThingsOwnStyles.breakout}>
             <div class='large-image'>
-              <img src="/img/future-of-wearables/sheets.jpg" />
+              <img src="/img/future-of-wearables/sheets.jpg" alt="Sheets." />
             </div>
 
             <div className={ThingsOwnStyles.caption}>A bed where I would rather spend my time.</div>
@@ -73,7 +72,7 @@ export default class Future extends React.Component {
             <p className={ThingsOwnStyles.serif}>Notifications are like telemarketers on our wrists and in our pockets. Or maybe more like a drug dealer and you’re getting really, really into speed. Checking your phone during a conversation is rude; so is checking your watch. But <em>we have trouble being polite because we’re addicted. </em>This may be the future we’re living in but I don’t think it’s the future we should be striving for.</p>
           </div>
           <div className={ThingsOwnStyles.breakout + ' ' + ThingsOwnStyles.two}>
-            <div className={ThingsOwnStyles.breakoutImage}><img src="/img/future-of-wearables/apple-watch.jpg"/></div>
+            <div className={ThingsOwnStyles.breakoutImage}><img src="/img/future-of-wearables/apple-watch.jpg" alt="Apple watch" /></div>
             <blockquote>
               <p>I disapprove.</p>
             </blockquote>

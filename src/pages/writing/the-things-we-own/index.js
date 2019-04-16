@@ -95,7 +95,7 @@ export default class ThingsOwned extends React.Component {
         <p className={ThingsOwnStyles.getRidOfIt}>The rest should go. You put it in trash bags, and you watch as you begin to see counterspace and flooring again. You watch as rooms that felt small become large. You find room to breathe. You welcome the light in again. </p>
 
         <span className={ThingsOwnStyles.enchantedUs}>
-          <img src="/img/the-things-we-own/enchanted-us.jpg" />
+          <img src="/img/the-things-we-own/enchanted-us.jpg" alt="They enchanted us." />
         </span>
 
         <section className={ThingsOwnStyles.tired}>

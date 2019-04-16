@@ -16,6 +16,13 @@ const FeaturedWriting = class extends React.Component {
         <div className={FeaturedWritingStyles.articles}>
           <Link
             className={FeaturedWritingStyles.link}
+            to="/writing/on-critique"
+          >
+            On Critique
+          </Link>
+
+          <Link
+            className={FeaturedWritingStyles.link}
             to="/writing/the-things-we-own"
           >
             The Things We Own
@@ -26,13 +33,6 @@ const FeaturedWriting = class extends React.Component {
             to="/writing/the-future-of-wearables"
           >
             The Future of Wearables
-          </Link>
-
-          <Link
-            className={FeaturedWritingStyles.link}
-            to="/writing/critique-is-terrifying"
-          >
-            Critique is Terrifying
           </Link>
         </div>
       </section>

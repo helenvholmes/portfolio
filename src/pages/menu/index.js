@@ -223,7 +223,7 @@ export default class Menu extends React.Component {
               <Link to="/work/digital">Digital</Link>
               <Link to="/work">All Projects</Link>
             </div> */}
-            {/* <Link
+            <Link
               to="/writing"
               id="link2"
               className={MenuStyles.link2}
@@ -231,7 +231,7 @@ export default class Menu extends React.Component {
               onMouseOut={i => this.handleLinkMouseout(2)}
             >
               Writing
-            </Link> */}
+            </Link>
             <LinkUnderline
               className={MenuStyles.linkUnderline2}
               alt="link underline"
@@ -244,28 +244,28 @@ export default class Menu extends React.Component {
             </div> */}
             <Link
               to="/about"
-              id="link2"
-              className={MenuStyles.link2}
-              onMouseEnter={i => this.handleLinkMouseover(2)}
-              onMouseOut={i => this.handleLinkMouseout(2)}
-            >
-              About
-            </Link>
-            <LinkUnderline
-              className={MenuStyles.linkUnderline2}
-              alt="link underline"
-            />
-            <Link
-              to="/contact"
               id="link3"
               className={MenuStyles.link3}
               onMouseEnter={i => this.handleLinkMouseover(3)}
               onMouseOut={i => this.handleLinkMouseout(3)}
             >
-              Contact
+              About
             </Link>
             <LinkUnderline
               className={MenuStyles.linkUnderline3}
+              alt="link underline"
+            />
+            <Link
+              to="/contact"
+              id="link4"
+              className={MenuStyles.link4}
+              onMouseEnter={i => this.handleLinkMouseover(4)}
+              onMouseOut={i => this.handleLinkMouseout(4)}
+            >
+              Contact
+            </Link>
+            <LinkUnderline
+              className={MenuStyles.linkUnderline4}
               alt="link underline"
             />
           </div>
