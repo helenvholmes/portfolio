@@ -46,7 +46,7 @@ export const IndexPageTemplate = ({
               <div className={IndexStyles.headshotBorder3} />
             </div>
             <div className={IndexStyles.learnMore}>
-              <Link to="/#about" className={IndexStyles.learnMoreLink}>
+              <Link to="/about" className={IndexStyles.learnMoreLink}>
                 Read more about Helen ⟶
               </Link>
             </div>

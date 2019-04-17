@@ -86,9 +86,15 @@
   justify-content: center;
 }
 
-.learnMoreLink {
+a.learnMoreLink {
   color: var(--helen-off-white);
   letter-spacing: 0.01em;
   text-decoration: none;
   align-self: center;
+}
+
+a.learnMoreLink:hover,
+.learnMoreLink:visited, {
+  color: var(--helen-off-white);
+  text-decoration: underline;
 }
