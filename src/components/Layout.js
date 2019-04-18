@@ -4,10 +4,14 @@ import { StaticQuery, graphql } from 'gatsby'
 import 'normalize.css'
 // eslint-disable-next-line
 import LayoutStyles from './Layout.module.css'
+import ReactGA from 'react-ga';
 
 import './all.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+
+ReactGA.initialize('UA-48354895-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
