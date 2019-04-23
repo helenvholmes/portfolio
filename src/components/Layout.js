@@ -4,14 +4,10 @@ import { StaticQuery, graphql } from 'gatsby'
 import 'normalize.css'
 // eslint-disable-next-line
 import LayoutStyles from './Layout.module.css'
-import ReactGA from 'react-ga';
-
 import './all.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-ReactGA.initialize('UA-48354895-2');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -64,6 +60,16 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
+
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48354895-2"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-48354895-2');
+          </script>
+          <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4711315.js"></script>
         </Helmet>
         <Navbar />
         <div>{children}</div>

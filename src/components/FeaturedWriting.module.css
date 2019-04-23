@@ -18,5 +18,13 @@
   color: var(--helen-red);
   display: block;
   font-family: "Butler", serif;
-  font-size: 4em;
+  font-size: 2em;
+  margin: 10% 0;
+}
+
+@media screen and (min-width: 600px) {
+  .link  {
+    font-size: 4em;
+    margin: 0;
+  }
 }

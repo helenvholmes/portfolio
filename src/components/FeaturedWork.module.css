@@ -4,15 +4,26 @@
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   align-items: center;
-  padding: 7% 0;
+  padding: 15% 0;
   text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .section  {
+    padding: 7% 0;
+  }
 }
 
 .work {
   background-color: var(--brand-primary);
   border: 8px solid var(--helen-off-white);
-  grid-column-start: 3;
-  grid-column-end: 8;
+  grid-column: 2 / 9;
+}
+
+@media screen and (min-width: 600px) {
+  .work  {
+    grid-column: 3 / 8;
+  }
 }
 
 .link {
@@ -21,7 +32,14 @@
   color: var(--brand-primary);
   display: block;
   font-family: "Knockout", sans-serif;
-  font-size: 4em;
+  font-size: 1em;
   font-weight: black;
   text-decoration: none;
+}
+
+
+@media screen and (min-width: 600px) {
+  .link  {
+    font-size: 4em;
+  }
 }

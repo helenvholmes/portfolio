@@ -1,8 +1,24 @@
 .featured {
-  font-size: 1em;
+  font-size: 0.75em;
   font-weight: bold;
   justify-self: center;
   letter-spacing: 0.5px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.featured + .featured {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .featured  {
+    font-size: 1em;
+  }
+
+  .featured + .featured {
+    display: block;
+  }
 }
 
 .red {
@@ -28,4 +44,10 @@
   color: var(--brand-primary);
   font-size: 6em;
   line-height: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .rotate  {
+    display: block;
+  }
 }
