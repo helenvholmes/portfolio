@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import FullStory from 'react-fullstory'
+
 import 'normalize.css'
 // eslint-disable-next-line
 import LayoutStyles from './Layout.module.css'
@@ -60,20 +62,12 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
-
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48354895-2"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-48354895-2');
-          </script>
-          <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4711315.js"></script>
         </Helmet>
         <Navbar />
         <div>{children}</div>
         <Footer />
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4711315.js"></script>
+        <FullStory org="KMTDY" />
       </div>
     )}
   />
