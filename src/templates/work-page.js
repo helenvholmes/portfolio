@@ -33,26 +33,6 @@ export const WorkPageTemplate = ({
         />
       </section> */}
 
-      <Link to={`/${project1.url}`}>
-        <div className={WorkStyles.cipConference}>
-          <CIPIntroImage />
-        </div>
-      </Link>
-
-      <Link to={`/${project6.url}`} className={WorkStyles.altitude}></Link>
-
-      <VariousSwag />
-
-      <Link to={`/${project2.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
-        <div className={WorkStyles.wiltedYards}>
-          <PreviewCompatibleImage imageInfo={project2.image2} />
-        </div>
-      </Link>
-
-      <VariousLogos />
-
-      <SitesDesigned />
-
       <Link to={`/${project5.url}`} className={[WorkStyles.project, WorkStyles.white, WorkStyles.designingDeveloperTools].join(' ')}>
         <h2
           className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.red].join(' ')}
@@ -64,6 +44,26 @@ export const WorkPageTemplate = ({
           <PreviewCompatibleImage imageInfo={project5.image5} />
           Designing Developer Tools
         </span>
+      </Link>
+
+      <Link to={`/${project6.url}`} className={WorkStyles.altitude}></Link>
+
+      <VariousSwag />
+
+      <Link to={`/${project1.url}`}>
+        <div className={WorkStyles.cipConference}>
+          <CIPIntroImage />
+        </div>
+      </Link>
+
+      <VariousLogos />
+
+      <SitesDesigned />
+
+      <Link to={`/${project2.url}`} className={WorkStyles.project + ' ' + WorkStyles.red}>
+        <div className={WorkStyles.wiltedYards}>
+          <PreviewCompatibleImage imageInfo={project2.image2} />
+        </div>
       </Link>
 
       <AdditionalProjects />
