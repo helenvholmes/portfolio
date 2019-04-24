@@ -41,8 +41,8 @@ const FeaturedLogos = class extends React.Component {
 
           <span className={FeaturedLogosStyles.logoGridVerticalSeparator3} />
 
-          <Link to="/work/altitude-2018">
-            <AltitudeLogo style={{ width: '150%' }} />
+          <Link to="/work/altitude-2018" className={FeaturedLogosStyles.altitudeLogo}>
+            <AltitudeLogo />
           </Link>
 
           <span className={FeaturedLogosStyles.logoGridHorizontalSeparator} />

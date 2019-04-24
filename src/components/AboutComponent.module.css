@@ -18,10 +18,16 @@
   background-color: var(--brand-primary);
   color: var(--helen-off-white);
   display: flex;
-  grid-column-end: 4;
-  grid-column-start: 2;
+  grid-column: 2 / 11;
   justify-content: center;
 }
+
+@media screen and (min-width: 600px) {
+  .platitudes  {
+    grid-column: 2 / 4;
+  }
+}
+
 
 @keyframes float {
   from {
@@ -39,12 +45,22 @@
 
 .partOne {
   align-self: start;
-  grid-column-end: 7;
-  grid-column-start: 5;
+  grid-column: 2 / 11;
+}
+
+@media screen and (min-width: 600px) {
+  .partOne  {
+    grid-column: 5 / 7;
+  }
 }
 
 .partTwo {
   align-self: start;
-  grid-column-end: 10;
-  grid-column-start: 8;
+  grid-column: 2 / 11;
+}
+
+@media screen and (min-width: 600px) {
+  .partTwo  {
+    grid-column: 8 / 10;
+  }
 }
