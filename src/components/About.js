@@ -35,8 +35,7 @@ const About = class extends React.Component {
 
         <div className={AboutStyles.partTwo}>
           <p>
-            She can get you started with your first logo, your company website,
-            your community conference, your restaurant menu, your app design, or whatever other wild, exciting project you're cooking up. If you have a project you’re looking for design assistance on, you can contact Helen at <a href="mailto:sayhi@helenvholmes.com">sayhi@helenvholmes.com</a>. She is currently looking for full-time employment—please feel free to reach out or see her resume <Link to="/resume/">here</Link>.
+            In the past she's helped people get started with their first logo, their company websites, their community conferences, restaurant menus, app designs, and other wild, exciting projects. She's currently looking for her next full-time opportunity in-house in New York, NY. If you have a position you think she would be good for you can contact Helen at <a href="mailto:sayhi@helenvholmes.com">sayhi@helenvholmes.com</a>. See her resume <Link to="/resume/">here</Link>.
           </p>
         </div>
       </section>
