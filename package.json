@@ -64,6 +64,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.5",
     "prettier": "^1.16.4",
     "rimraf": "^2.6.2",
     "svg-react-loader": "^0.4.6"
