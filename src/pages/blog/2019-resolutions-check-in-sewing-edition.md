@@ -8,9 +8,9 @@ description: >-
 tags:
   - learning
 ---
-Learning to sew has long been a goal, but at the beginning of the year Brian and I began reading [_Overdressed: The Shockingly High Cost of Cheap Fashion_](https://www.goodreads.com/book/show/11797414-overdressed) and I got so riled up I finally took out the sewing machine that I've been scared of from its box. The book has been a fascinating (if a tough) read and it has inspired a lot of further research that I'll be covering in another post because of how long it was making this one.
+Learning to sew has long been a goal, but at the beginning of the year Brian and I began reading [_Overdressed: The Shockingly High Cost of Cheap Fashion_](https://www.goodreads.com/book/show/11797414-overdressed) and I got so riled up I finally took out the sewing machine that I've been scared of from its box. The book has been a fascinating (if a tough) read and it inspired a lot of further research that I hope to cover in Q2's resolution update.
 
-The very first thing I made was a napkin out of the back of a black t-shirt we planned on donating from a Google swag drive:
+The list of things I've made and/or messed with got pretty long pretty fast. The very first thing I made was a napkin out of the back of a black t-shirt we planned on donating from a Google swag drive:
 
 ![Napkin with hem](/img/img_4502.jpg)
 
@@ -43,4 +43,4 @@ The projects I'm planning to work on next:
 
 **Recreating [this belt](https://elizabethsuzann.com/products/asawa-tie-belt-midweight-linen)** as a present for a family member—since I've started sewing I've definitely been wondering if I can thoughtfully craft some gifts for family members for Christmas this year if I start early enough. I also have a candle-making kit I picked up last year and a bunch of essential oils friends have given me as gifts, so Christmas this year is probably gonna be weird coming from our household. I've been collecting glass jars and gathering label inspiration online—while I don't have easy access to nice printers in the city, I have time to figure it out and a graphic design degree, so I guess I should put that to use.
 
-If this inspired you in any way, I'd love to hear about it at sayhi@helenvholmes.com. (Or if you have any cool patterns to share, I won't say no.)
+If this inspired you in any way, I'd love to hear about it at [sayhi@helenvholmes.com](mailto:sayhi@helenvholmes.com). (Or if you have any cool patterns to share, I won't say no.)
