@@ -5,6 +5,7 @@ date: 2019-02-27T17:16:43.184Z
 description: >-
   What I've accomplished thus far in Q1 toward my 2019 Resolution to learn to
   sew.
+stylesheet: None
 tags:
   - learning
 ---
@@ -20,15 +21,29 @@ The wooden hoop is an embroidery hoop, since I planned to begin embroidering aft
 
 Since this was my first piece _ever_, it's not much to look at. I didn't know how to use my sewing machine yet, so I followed [this tutorial](https://youtu.be/rnTwT-ifLkU) on Youtube to set up [my machine](https://www.amazon.com/gp/product/B00VV4ZWBQ/ref=oh_aui_search_asin_title?ie=UTF8&psc=1). (As far as tutorials go, I love this one, and am hoping to check out her following tutorial on skirt making at some point.) If I was to re-do this now I'd probably not choose a knit fabric because of how stretchy it was—it was harder to get straight lines.
 
+![My coat, still in pieces as I made my pattern](/img/img_4620.jpg)
+
 Some other things I've made or worked on:
 
 * Putting darts in vintage wool pants from L.L.Bean. These are still not tightly done enough, unfortunately but that didn't stop me from posing in it while grinning like an idiot.
-* Repairing holes in two pairs of jeans, both of whiched I've had to repair again since
+* Repairing holes in two pairs of jeans, both of which I've had to repair again since
 * Altering a green t-shirt from Zara, which I then undid because I didn't like it
 * Four handkerchiefs out of a linen napkin my mother bought me from Sur la Table that are not well-made but I use all the time
 * Altering a men's dress shirt from a thrift store by shortening the front panels (one of my best alterations thus far)
 * Destroying not one but possibly TWO of my favorite t-shirts by trying to expand the neckline because I was coveting [this shirt](https://www.vettacapsule.com/collections/tops/products/the-convertible-tee?variant=8985870925860) from Vetta. Live and learn, also collars are tough
-* Creating a puffer coat following a DIY from [with wendy](https://www.youtube.com/user/withwendy) which kicked my ass. I worked on it every night for two weeks solid and it was still a mess by the end, but someone bought it from me online for $30, so I guess that makes me a ~~fashion designer~~. Hahahaha. I made my husband do a photoshoot with me wearing it to commemorate a job finally finished and desite how trribly made it was in the end, I'm still proud of it. Those photos are at the bottom of my [about](/about/) page.
+* Creating a puffer coat following a DIY from [with wendy](https://www.youtube.com/user/withwendy) which kicked my ass. I worked on it every night for two weeks solid and it was still a mess by the end, but someone bought it from me online for $30, so I guess that makes me a ~~fashion designer~~. Hahahaha. I made my husband do a photoshoot with me wearing it to commemorate a job finally finished and despite how terribly made it was in the end, I'm still proud of it. Those photos are at the bottom of my [about](/about/) page.
+
+![Darts in pants](/img/img_4580.jpg)
+
+![Me figuring out how the panels worked together](/img/57333329299__6ad1d914-aa55-4862-81f1-aa41141cdfa4.jpg)
+
+![Cape stage](/img/img_4636.jpg)
+
+![Finished coat](/img/_dsf4684.jpg)
+
+![From the side](/img/_dsf4687.jpg)
+
+![An oversized L.L.Bean shirt where I lopped off the front panel. Makes me feel like a creative director or something](/img/img_4709.jpg)
 
 When I originally drafted this post (at this point, almost two months ago) I had some funny ideas about my own skills (notably with the puffer jacket project I was planning). That said I think my ideas were still fun if my own ability to execute was a mess, so I might add in some of those ideas into my winter jacket I own now:
 
@@ -43,4 +58,4 @@ The projects I'm planning to work on next:
 
 **Recreating [this belt](https://elizabethsuzann.com/products/asawa-tie-belt-midweight-linen)** as a present for a family member—since I've started sewing I've definitely been wondering if I can thoughtfully craft some gifts for family members for Christmas this year if I start early enough. I also have a candle-making kit I picked up last year and a bunch of essential oils friends have given me as gifts, so Christmas this year is probably gonna be weird coming from our household. I've been collecting glass jars and gathering label inspiration online—while I don't have easy access to nice printers in the city, I have time to figure it out and a graphic design degree, so I guess I should put that to use.
 
-If this inspired you in any way, I'd love to hear about it at [sayhi@helenvholmes.com](mailto:sayhi@helenvholmes.com). (Or if you have any cool patterns to share, I won't say no.)
+If this inspired you in any way, I'd love to hear about it at <mailto:sayhi@helenvholmes.com>. (Or if you have any cool patterns to share, I won't say no.)
