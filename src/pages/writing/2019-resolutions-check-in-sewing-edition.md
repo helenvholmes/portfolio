@@ -22,7 +22,7 @@ Since this was my first piece _ever_, it's not much to look at. I didn't know ho
 
 Some other things I've made or worked on:
 
-* Putting darts in vintage wool pants from L.L.Bean. These are still not tightly done enough, unfortunately.
+* Putting darts in vintage wool pants from L.L.Bean. These are still not tightly done enough, unfortunately but that didn't stop me from posing in it while grinning like an idiot.
 * Repairing holes in two pairs of jeans, both of whiched I've had to repair again since
 * Altering a green t-shirt from Zara, which I then undid because I didn't like it
 * Four handkerchiefs out of a linen napkin my mother bought me from Sur la Table that are not well-made but I use all the time
