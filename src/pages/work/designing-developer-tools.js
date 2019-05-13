@@ -78,7 +78,7 @@ export const DesigningDeveloperToolsTemplate = ({
         <div className={DesigningDevtoolsStyles.socialParagraph}>
           <p>One of the wilder things I got to work on at Firefox was a social media campaign run by the mysterious humans behind <a href="https://twitter.com/firefox" target="_blank" rel="noopener noreferrer">@Firefox</a>, a handle with over 1million followers. I sat down with them for a day to run a “Twitter takeover” where we polled followers for an internet mascot to turn into a sticker. Besides the usual inappropriate nonsense one might get on Twitter we got some hilarious suggestions, such as: A complicated pizza. A flying tesseract. A foxdragon.</p>
 
-          <p>Fred, our dragon, won the day. I drew him breathing wifi fire, because he is after all, a mascot for the internet. The social media team very happily met their goals for the quarter. I’m not saying I had anything to do with it, but I am saying Fred might.</p>
+          <p>Fred, our dragon, won the day. I drew him breathing wifi fire, because he is after all, a mascot for the internet. The social media team very happily met their goals for the quarter. I’m not saying I had anything to do with it, but I am saying Fred might. (You can snag your own <a href="https://www.ebay.com/itm/This-is-fine-wifi-breathing-4-fox-dragon-sticker/323806066128" target="_blank" rel="noopener noreferrer">Fred</a> here.)</p>
         </div>
 
         <div className={DesigningDevtoolsStyles.socialImagery}>
