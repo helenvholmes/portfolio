@@ -52,13 +52,13 @@ const AboutPage = ({ data }) => {
       <section className={AboutStyles.keyMoments}>
         <h3 className={AboutStyles.full}>Key Moments</h3>
 
-        <div className={AboutStyles.keyMoment1}>Sole creator of a webapp shown to the CEO directly by my VP that secured additional funding to the design team<a href="citation-1">¹</a></div>
+        <div className={AboutStyles.keyMoment1}>Sole creator of a webapp shown to the CEO directly by my VP that secured additional funding to the design team<a href="#citation-1">¹</a></div>
 
-        <div className={AboutStyles.keyMoment2}>Branding a company’s entire yearly conference<a href="citation-2">²</a></div>
+        <div className={AboutStyles.keyMoment2}>Branding a company’s entire yearly conference<a href="#citation-2">²</a></div>
 
-        <div className={AboutStyles.keyMoment3}>My conference work being an inspiration to others, notably Font Style Matcher<a href="citation-3">³</a></div>
+        <div className={AboutStyles.keyMoment3}>My conference work being an inspiration to others, notably Font Style Matcher<a href="#citation-3">³</a></div>
 
-        <div className={AboutStyles.keyMoment4}>Designing the initial tooling for CSS Grid, subsequently studied by all other major browsers for their own implementations<a href="citation-4">⁴</a></div>
+        <div className={AboutStyles.keyMoment4}>Designing the initial tooling for CSS Grid, subsequently studied by all other major browsers for their own implementations<a href="#citation-4">⁴</a></div>
 
         <div className={AboutStyles.keyMomentCitations}>
           <span id="citation-1">¹ Rich Fairbanks, Capital One</span> <br />
