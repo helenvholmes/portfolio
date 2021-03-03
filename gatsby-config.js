@@ -3,6 +3,9 @@ module.exports = {
     title: 'Helen V. Holmes | Designer',
     description: 'is a designer',
   },
+  flags: {
+    FAST_DEV: true,
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
