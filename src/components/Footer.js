@@ -54,7 +54,7 @@ const Footer = class extends React.Component {
               </tr>
               <tr>
                 <td><a href="/about#elsewhere">Elsewhere on the Web</a></td>
-                <td><Link to="/resume">Resume</Link></td>
+                <td><a href="https://drive.google.com/file/d/1fTj9KM0GC5Yei7-J1-I-MyI_FjNTfnMH/view?usp=sharing" target="_blank">Resume</a></td>
               </tr>
             </tbody>
           </table>
