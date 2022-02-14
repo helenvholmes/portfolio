@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => {
       <Header />
 
       <div className={AboutStyles.headshot}>
-        <PreviewCompatibleImage imageInfo={data.headshot} />
+        <Logo />
       </div>
 
       <div className={[AboutStyles.section, AboutStyles.white].join(" ")} style={{paddingBottom: 0}}>
