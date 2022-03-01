@@ -4,12 +4,7 @@
 
 This repo contains my portfolio website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[helenvholmes.com](https://helenvholmes.com/)**.
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
-
-## Prerequisites
-
-- Node (v8.2.0 or higher)
-- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+I'm actually working on a redesign of this site that uses Remix.run and Notion. You can check that work out over on my [notion](https://github.com/scooooooooby/portfolio/tree/notion) branch.
 
 ### Access Locally
 ```
