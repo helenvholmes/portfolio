@@ -67,7 +67,15 @@ const TemplateWrapper = ({ children }) => (
         <Navbar />
         <div>{children}</div>
         <Footer />
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4711315.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3BMN5FED3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Y3BMN5FED3');
+        </script>
         <FullStory org="KMTDY" />
       </div>
     )}
