@@ -46,9 +46,9 @@ project7:
 # project8:
 #   background8: white
 #   url: https://helenvholmes.notion.site/The-New-York-Public-Library-Design-System-2474ad2d983f42cfb8f6ebe8b589249c
-  image8:
-    alt: 'NYPL Design System'
-    image: /img/nypl-logo.png
+  # image8:
+  #   alt: 'NYPL Design System'
+  #   image: /img/nypl-logo.png
 ---
 
 `vimeo: 326633047`
