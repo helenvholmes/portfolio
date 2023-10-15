@@ -21,7 +21,7 @@ export const WorkPageTemplate = ({
   project5,
   project6,
   project7,
-  project8,
+  // project8,
 
 }) => {
   return (
@@ -131,11 +131,11 @@ WorkPageTemplate.propTypes = {
     background7: PropTypes.string,
     url: PropTypes.string,
   }),
-  project8: PropTypes.shape({
-    image8: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    background8: PropTypes.string,
-    url: PropTypes.string,
-  }),
+  // project8: PropTypes.shape({
+  //   image8: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  //   background8: PropTypes.string,
+  //   url: PropTypes.string,
+  // }),
 }
 
 const WorkPage = ({ data }) => {
@@ -152,7 +152,7 @@ const WorkPage = ({ data }) => {
         project5={post.frontmatter.project5}
         project6={post.frontmatter.project6}
         project7={post.frontmatter.project7}
-        project8={post.frontmatter.project8}
+        // project8={post.frontmatter.project8}
       />
     </Layout>
   )
@@ -261,19 +261,19 @@ export const WorkPageQuery = graphql`
           background7
           url
         }
-        project8 {
-          image8 {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          background8
-          url
-        }
+        // project8 {
+        //   image8 {
+        //     image {
+        //       childImageSharp {
+        //         fluid(maxWidth: 526, quality: 92) {
+        //           ...GatsbyImageSharpFluid
+        //         }
+        //       }
+        //     }
+        //   }
+        //   background8
+        //   url
+        // }
       }
     }
   }
