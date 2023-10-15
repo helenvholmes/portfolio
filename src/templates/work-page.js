@@ -34,7 +34,7 @@ export const WorkPageTemplate = ({
         />
       </section> */}
 
-      <Link to={`https://helenvholmes.notion.site/The-New-York-Public-Library-Design-System-2474ad2d983f42cfb8f6ebe8b589249c`} className={[WorkStyles.project, WorkStyles.white, WorkStyles.designingDeveloperTools].join(' ')}>
+      {/* <Link to={`https://helenvholmes.notion.site/The-New-York-Public-Library-Design-System-2474ad2d983f42cfb8f6ebe8b589249c`} className={[WorkStyles.project, WorkStyles.white, WorkStyles.designingDeveloperTools].join(' ')}>
         <h2
           className={[HeadersStyles.featured, HeadersStyles.rotate, HeadersStyles.red].join(' ')}
         >
@@ -45,7 +45,7 @@ export const WorkPageTemplate = ({
           <PreviewCompatibleImage imageInfo={project8.image8} />
           Leading NYPL's Design System
         </span>
-      </Link>
+      </Link> */}
 
       <Link to={`/${project6.url}`} className={WorkStyles.altitude}></Link>
       <Link to={`/${project5.url}`} className={[WorkStyles.project, WorkStyles.white, WorkStyles.designingDeveloperTools].join(' ')}>
