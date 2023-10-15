@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-// import FullStory from 'react-fullstory'
 
 import 'normalize.css'
 // eslint-disable-next-line
@@ -67,15 +66,14 @@ const TemplateWrapper = ({ children }) => (
         <Navbar />
         <div>{children}</div>
         <Footer />
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3BMN5FED3"></script> */}
-        {/* <script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3BMN5FED3"></script>
+        <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-Y3BMN5FED3');
-        </script> */}
-        {/* <FullStory org="KMTDY" /> */}
+        </script>
       </div>
     )}
   />
