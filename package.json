@@ -4,7 +4,10 @@
   "description": "",
   "private": true,
   "keywords": [
-    "portfolio", "Helen V. Holmes", "resume", "personal website"
+    "portfolio",
+    "Helen V. Holmes",
+    "resume",
+    "personal website"
   ],
   "license": "MIT Licnese",
   "author": "Helen V. Holmes",
@@ -15,6 +18,8 @@
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.3",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
