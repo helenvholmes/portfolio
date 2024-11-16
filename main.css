@@ -255,7 +255,7 @@ dd {
   margin-left: 0;
 }
 
-dd:not(:last-of-type) {
+dd {
   padding-bottom: 2em;
 }
 
