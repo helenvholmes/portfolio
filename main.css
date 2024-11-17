@@ -209,7 +209,6 @@ a:hover::after {
   );
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
-  width: var(--size);
   will-change: transform, opacity;
   transform: translate3d(-50%, -50%, 0px);
 }
