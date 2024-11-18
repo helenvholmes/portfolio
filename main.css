@@ -87,6 +87,15 @@ html {
     "c";
 }
 
+.section-two-col {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "a"
+    "b";
+}
+
 .wide {
   grid-area: a;
 }
@@ -106,6 +115,12 @@ html {
     grid-template-areas: "a b c";
     gap: 4em;
     grid-template-columns: 1fr 2fr 2fr;
+  }
+
+  .section-two-col {
+    grid-template-areas: "a b";
+    gap: 3em;
+    grid-template-columns: 1fr 4fr;
   }
 }
 
@@ -129,6 +144,14 @@ html {
 
 .font-medium {
   font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.small {
+  font-size: 0.85em;
 }
 
 .display-large {
