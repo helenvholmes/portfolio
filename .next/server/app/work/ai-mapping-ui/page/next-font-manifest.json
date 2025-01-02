@@ -1,0 +1,15 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/src/app/work/ai-mapping-ui/page": [
+      "static/media/jVyO7nf_B2zO5jVpUGU8ljQDf8l99AXo-s.p.ea613d27.woff2",
+      "static/media/buExpoi6YtLz2QW7LA4flVgv__RPSC8ocg-s.p.c02c56ca.woff2",
+      "static/media/bWtm7fHPcgrhC_J3lcXhcQTY5Ixs6Au9YgCTiBcQXYMTKoK1-s.p.cbcb4763.woff2",
+      "static/media/EJRYQgs1XtIEskMA_hR77LKV-s.p.093ae2cf.woff2",
+      "static/media/CSR54zpSlumSWj9CGVsoBZdeWNReuc4nG2o-s.p.4e3b658a.woff2",
+      "static/media/w8gXH2EuRptdsN_QjwOH-s.p.31f471b6.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}
