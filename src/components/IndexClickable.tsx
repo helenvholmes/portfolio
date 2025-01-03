@@ -13,7 +13,7 @@ export default function IndexClickable({
 }: React.PropsWithChildren<IndexClickableProps>) {
   return (
     <Clickable
-      className="group/indexClickable flex w-full flex-col gap-8 pt-6 text-6xl"
+      className="group/indexClickable flex w-full flex-col gap-4 pt-4 text-4xl lg:gap-8 lg:pt-6 lg:text-6xl"
       destination="internal"
       data-cursor-background-image={cursorImage}
       data-cursor-size={cursorImage && "250px"}
