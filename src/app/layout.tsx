@@ -65,7 +65,7 @@ export default function RootLayout({
             <Columns
               label={
                 <div className="flex flex-col gap-2">
-                  —<br />
+                  —
                   <Clickable href="/" type="unstyled" destination="internal">
                     <Label>Helen V. Holmes</Label>
                   </Clickable>
@@ -75,11 +75,10 @@ export default function RootLayout({
               collapseBehavior="twoCol"
               firstColumn={
                 <div className="flex flex-col items-start gap-1">
-                  —<br />
+                  —
                   <Clickable destination="internal" href="/">
                     helenvholmes.com
                   </Clickable>
-                  <br />
                   <Clickable
                     destination="external"
                     href="mailto:sayhi@helenvholmes.com"

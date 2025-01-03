@@ -192,6 +192,8 @@ export default function Nav() {
     },
   ] as ClickableProps[];
 
+  const [isMobile, setIsMobile] = useState(true);
+
   // Gets the dimensions for the SVG takeover
   useEffect(() => {
     const resize = () => {
@@ -199,6 +201,7 @@ export default function Nav() {
         height: window.innerHeight,
         width: window.innerWidth,
       });
+      window.innerWidth > 700 && setIsMobile(false);
     };
 
     resize();
@@ -213,7 +216,7 @@ export default function Nav() {
         isOpen && "absolute bottom-0 left-0 right-0 top-0 h-screen w-full",
       )}
     >
-      <Cursor />
+      {!isMobile && <Cursor />}
       <Clickable
         data-cursor-text="🪩"
         data-cursor-size="100px"
