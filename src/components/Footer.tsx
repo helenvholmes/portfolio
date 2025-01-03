@@ -29,6 +29,7 @@ export default function Footer() {
               <div
                 className="text-lg font-black lg:text-6xl"
                 data-cursor-text="i am primordial"
+                data-cursor-size="150px"
               >
                 Making a mess on the internet since 1492.
               </div>
