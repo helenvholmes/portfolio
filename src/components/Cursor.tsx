@@ -492,13 +492,14 @@ export const Cursor: FC<CursorProps> = ({
       ref={cursor}
       id={"c-cursor"}
       className={clsx(
-        "translate-[-50%,-50%] pointer-events-none fixed left-0 top-0 z-[999] will-change-[transform,height,width,color]",
+        "pointer-events-none fixed left-0 top-0 z-[999] will-change-[transform,height,width,color]",
         !isBorderRadius && "rounded-full",
       )}
       style={{
         background: cursorBackgroundColor,
         contain: "layout style size",
         height: cursorSizeY ? cursorSizeY : cursorSize,
+        transform: "translate(-50%, -50%)",
         width: cursorSize,
       }}
     >

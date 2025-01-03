@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 import { TransitionRouter } from "next-transition-router";
 
 import Clickable, { ClickableProps } from "./Clickable";
-import { Cursor } from "./Cursor";
 import FadeIn from "./FadeIn";
 import Float from "./Float";
 import Icon from "./Icon";
@@ -163,15 +162,15 @@ export default function Nav() {
       ),
       href: "/work",
     },
-    {
-      children: "playground",
-      className: clsx(
-        linkClassName,
-        "lg:order-4 lg:col-span-5 lg:col-start-2 lg:row-span-1 lg:row-start-4",
-        fontFamilies[fontFamily],
-      ),
-      href: "/playground",
-    },
+    // {
+    //   children: "playground",
+    //   className: clsx(
+    //     linkClassName,
+    //     "lg:order-4 lg:col-span-5 lg:col-start-2 lg:row-span-1 lg:row-start-4",
+    //     fontFamilies[fontFamily],
+    //   ),
+    //   href: "/playground",
+    // },
     {
       children: "resume",
       className: clsx(
@@ -192,8 +191,6 @@ export default function Nav() {
     },
   ] as ClickableProps[];
 
-  const [isMobile, setIsMobile] = useState(true);
-
   // Gets the dimensions for the SVG takeover
   useEffect(() => {
     const resize = () => {
@@ -201,7 +198,6 @@ export default function Nav() {
         height: window.innerHeight,
         width: window.innerWidth,
       });
-      window.innerWidth > 700 && setIsMobile(false);
     };
 
     resize();
@@ -216,11 +212,9 @@ export default function Nav() {
         isOpen && "absolute bottom-0 left-0 right-0 top-0 h-screen w-full",
       )}
     >
-      {!isMobile && <Cursor />}
       <Clickable
         data-cursor-text="🪩"
         data-cursor-size="100px"
-        data-cursor-magnetic
         type="unstyled"
         className={clsx("flex flex-col gap-px px-8 pb-8", isOpen && "hidden")}
         onClick={() => setIsOpen(!isOpen)}
@@ -235,10 +229,10 @@ export default function Nav() {
           {dimensions.width > 0 && <SVG {...dimensions} />}
           <div
             className={clsx(
-              "pointer-events-auto fixed left-0 top-0 z-10 mx-auto flex h-screen w-screen items-center fill-surface p-12 xl:px-24",
+              "pointer-events-auto fixed left-0 top-0 mx-auto flex h-screen w-screen items-center fill-surface p-12 xl:px-24",
               isOpen && "z-20",
             )}
-            data-cursor-color="rgba(var(--shadow-color), 100%)"
+            // data-cursor-color="rgba(var(--shadow-color), 100%)"
           >
             <div className="grid h-full w-full grid-cols-1 grid-rows-5 lg:h-3/4 lg:grid-cols-[2fr_4fr_1fr_2fr_2fr_4fr_1fr_4fr_1fr_2fr]">
               {links &&

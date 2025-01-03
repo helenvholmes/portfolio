@@ -47,7 +47,7 @@ export default function Home() {
         alignLabel
         collapseBehavior="oneCol"
         firstColumn={
-          <div className="flex flex-col gap-8 items-end">
+          <div className="flex flex-col items-end gap-8">
             <FadeIn delay={0.2} exitDelay={0.3}>
               <Item
                 description="Built out the AI Mapping UI tool for Modern Treasury's reconciliation engine, which allowed users to visualize and connect data columns in their own software against MT's. Unveiled at Transfer 2024."
@@ -187,7 +187,7 @@ export default function Home() {
         }
         numberOfColumns={2}
         secondColumn={
-          <div className="flex flex-col justify-between h-full items-end">
+          <div className="flex h-full flex-col items-end justify-between">
             <div className="flex flex-col gap-8">
               <FadeIn delay={0} exitDelay={0.4}>
                 <Item

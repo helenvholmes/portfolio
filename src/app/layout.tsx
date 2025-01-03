@@ -10,7 +10,14 @@ import {
 
 import "./globals.css";
 
-import { Clickable, Columns, Container, Footer, Label } from "~/components";
+import {
+  Clickable,
+  Columns,
+  Container,
+  Cursor,
+  Footer,
+  Label,
+} from "~/components";
 import Nav from "~/components/Nav";
 
 export const metadata: Metadata = {
@@ -61,6 +68,9 @@ export default function RootLayout({
     >
       <body>
         <main>
+          <div className="hidden lg:block">
+            <Cursor />
+          </div>
           <Container>
             <Columns
               label={
