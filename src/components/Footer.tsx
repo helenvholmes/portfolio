@@ -26,7 +26,10 @@ export default function Footer() {
               <Clickable href="/" type="unstyled" destination="internal">
                 <Logo width={40} height={40} />
               </Clickable>
-              <div className="text-lg font-black lg:text-6xl">
+              <div
+                className="text-lg font-black lg:text-6xl"
+                data-cursor-text="i am primordial"
+              >
                 Making a mess on the internet since 1492.
               </div>
               <div className="text-xs opacity-65">
