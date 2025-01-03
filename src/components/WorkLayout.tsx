@@ -95,7 +95,7 @@ export default function WorkLayout({
                   <Image
                     {...imageProps}
                     alt={imageProps.alt || ""}
-                    className="w-max object-none object-left-top md:object-cover"
+                    className="w-max object-cover"
                   />
                 </FadeIn>
               ))}

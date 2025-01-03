@@ -19,7 +19,7 @@ export default function Footer() {
       className="relative h-[525px] bg-surface"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="fixed bottom-0 h-[525px] w-full">
+      <div className="fixed bottom-6 h-[525px] w-full lg:bottom-0">
         <Container>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.5fr_1fr_1fr] lg:gap-24">
             <div className={columnClasses}>
