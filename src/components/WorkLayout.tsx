@@ -72,7 +72,7 @@ export default function WorkLayout({
               {children}
             </FadeIn>
           </div>
-          <div className="flex flex-col gap-8 lg:items-center">
+          <div className="flex flex-col items-center gap-8">
             {sideBarVideo &&
               sideBarVideo.map((videoProps, index) => (
                 <FadeIn delay={0.2} exitDelay={0.2} key={index}>
