@@ -99,7 +99,11 @@ export default function RootLayout({
                 </div>
               }
               numberOfColumns={2}
-              secondColumn={<Nav />}
+              secondColumn={
+                <div className="hidden lg:block">
+                  <Nav />
+                </div>
+              }
               secondColumnClassName="fixed top-6 right-0 items-end lg:static"
             />
           </Container>
