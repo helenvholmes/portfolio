@@ -1,5 +1,7 @@
 import type { StorybookConfig } from "@storybook/nextjs";
 
+import "../src/app/globals.css";
+
 const config: StorybookConfig = {
   addons: [
     "@storybook/addon-onboarding",
@@ -8,7 +10,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
     "@storybook/addon-mdx-gfm",
     "@storybook/addon-styling-webpack",
-    "@storybook/addon-themes"
+    "@storybook/addon-themes",
   ],
 
   docs: {},

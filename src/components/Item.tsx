@@ -36,7 +36,7 @@ export default function Item({
           className={clsx(
             "flex flex-col gap-5",
             title.clickableProps &&
-              "-ml-6 cursor-pointer p-6 transition-all duration-300 group-hover/item:xl:bg-surface",
+              "-ml-6 cursor-pointer p-6 transition-all duration-300 group-hover/item:bg-surface",
           )}
         >
           <dt className="font-medium">
@@ -73,7 +73,7 @@ export default function Item({
             {team && <Team {...team} />}
           </dd>
         </div>
-        <div className="hidden xl:relative xl:flex xl:w-full">
+        <div className="relative flex w-full">
           <div
             className="absolute -bottom-6 -left-4 h-6 skew-y-[45deg] transition-colors duration-300 group-hover/item:bg-surface-shadow"
             style={{
