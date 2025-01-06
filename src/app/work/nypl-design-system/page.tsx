@@ -43,7 +43,7 @@ export default function NYPLDesignSystem() {
               role: "Tech Lead",
             },
             {
-              name: "Kathy Lac, Jack Kim, and others",
+              name: "Kathy Lac, Ellen Li, Willa Armstrong, and others",
               role: "Designers",
             },
           ],

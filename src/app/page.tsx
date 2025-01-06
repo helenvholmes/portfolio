@@ -64,7 +64,7 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={0.3} exitDelay={0.2}>
               <Item
-                cursorImage="https://placehold.co/600x400/EEE/31343C"
+                // cursorImage="https://placehold.co/600x400/EEE/31343C"
                 description="Built out the redesign for ModernTreasury.com in a quarter with a hard deadline for the yearly Transfer conference. Built with NextJS, Sanity, Tailwind, and TypeScript, and was completely self-serve for the content team upon finish."
                 title={{
                   clickableProps: {
