@@ -31,7 +31,10 @@ export default function Footer() {
                 data-cursor-text="i am primordial"
                 data-cursor-size="150px"
               >
-                Making a mess on the internet since 1492.
+                <span className="inline xl:hidden">Having fun m</span>
+                <span className="hidden xl:inline">M</span>aking a mess on the
+                internet
+                <span className="hidden xl:inline"> since 1492</span>.
               </div>
               <div className="text-xs opacity-65">
                 © Helen V. Holmes, {new Date().getFullYear()}.
