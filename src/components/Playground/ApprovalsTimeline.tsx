@@ -1,5 +1,6 @@
 import clsx from "clsx";
 
+import Clickable from "~/components/Clickable";
 import Icon from "~/components/Icon";
 
 // type ReviewActionEnum = "Approve" | "Deny";
@@ -13,7 +14,7 @@ import Icon from "~/components/Icon";
 type Group = {
   id?: string;
   name: string;
-  path?: string;
+  path: string;
 };
 
 interface ApprovalNeededProps {
@@ -21,7 +22,7 @@ interface ApprovalNeededProps {
   /** Groups the item needs approval from.
 
       Uses the Group item props to build approval buttons. */
-  approvalGroups?: Group[];
+  approvalGroups: Group[];
   /** A list of `Groups` the user can review as. */
   canReviewAsGroups?: Group[];
   /** Allows you to pass custom styles to the outermost div of the component.. */
@@ -53,17 +54,33 @@ export function ApprovalNeeded({
   // onReview,
   // reviewerId,
 }: ApprovalNeededProps) {
+  const approvalGroupsLength = approvalGroups.length;
+
   return (
     <div className={clsx("flex flex-col gap-2", className)}>
-      <Icon
-        iconName="time_40_s"
-        className="relative mr-2.5 inline-block shrink-0 text-gray-400"
-      />
-      {numberOfApprovals} Approval needed from
-      {approvalGroups &&
-        approvalGroups.map((group, index) => (
-          <div key={index}>{group.name}</div>
-        ))}
+      <div>
+        <Icon
+          className="relative mb-px mr-2.5 inline-block shrink-0"
+          iconName="time_40_s"
+          size="small"
+        />
+        {numberOfApprovals} Approval{numberOfApprovals > 1 && "s"} needed from{" "}
+        {approvalGroups &&
+          approvalGroups.map((group, index) => (
+            <>
+              {approvalGroupsLength > 1 &&
+                index !== approvalGroupsLength &&
+                approvalGroups.length === index + 1 &&
+                " or "}
+              <Clickable href={group.path} key={index}>
+                {group.name}
+              </Clickable>
+              {index + 1 !== approvalGroupsLength &&
+                approvalGroups.length > 2 &&
+                ", "}
+            </>
+          ))}
+      </div>
     </div>
   );
 }

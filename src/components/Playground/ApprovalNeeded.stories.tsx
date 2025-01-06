@@ -10,7 +10,25 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Simple: Story = {
+  args: {
+    approvalGroups: [
+      {
+        id: "1",
+        name: "Finance",
+        path: "/finance",
+      },
+      {
+        id: "2",
+        name: "Operations",
+        path: "/operations",
+      },
+    ],
+    numberOfApprovals: 2,
+  },
+};
+
+export const SingleApprovalGroup: Story = {
   args: {
     approvalGroups: [
       {
@@ -19,6 +37,39 @@ export const Primary: Story = {
         path: "/finance",
       },
     ],
-    numberOfApprovals: 2,
+  },
+};
+
+export const MultipleApprovalGroups: Story = {
+  args: {
+    approvalGroups: [
+      {
+        id: "1",
+        name: "Finance",
+        path: "/finance",
+      },
+      {
+        id: "2",
+        name: "Operations",
+        path: "/operations",
+      },
+      {
+        id: "3",
+        name: "HR",
+        path: "/hr",
+      },
+    ],
+  },
+};
+
+export const CurrentUserCanReview: Story = {
+  args: {
+    approvalGroups: [
+      {
+        id: "1",
+        name: "Finance",
+        path: "/finance",
+      },
+    ],
   },
 };

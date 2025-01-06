@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root,
+.light {
   /* color-scheme: light dark;
 
   --background-color: light-dark(#fff, #1b1313);
@@ -27,7 +28,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  .dark {
     --accent: #3d2b2b;
     --accent-opacity: rgba(61, 43, 43, 0.25);
 
@@ -47,7 +49,7 @@ html {
   /* Color functions not working as of 2024/03/19, so I can't use var here
   * https://chromium.googlesource.com/chromium/src/+/6db46180a7cde348b4fb78fe19e94d4695b91bd3
   * */
-  background-color: var(--background-color);
+  background-color: rgb(var(--background-color));
   box-sizing: border-box;
   color: rgb(var(--color));
   font-family: inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
