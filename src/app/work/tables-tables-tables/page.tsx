@@ -71,7 +71,7 @@ export default function TablesTablesTables() {
           </p>
           <p>
             Tables are a generated view in the MT app, built with a ruby service
-            that my tech lead had set up. Ot allowed the backend engineers to
+            that my tech lead had set up. This allowed the backend engineers to
             set up a model with specialized key/value pairings that would create
             columns for the data. In my time there I set up a number of these
             custom display columns that allowed engineers to set things like
