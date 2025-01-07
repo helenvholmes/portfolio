@@ -30,16 +30,36 @@ export default function Home() {
         numberOfColumns={2}
         secondColumn={
           <FadeIn delay={0.1} exitDelay={0.3}>
-            I&apos;m currently looking for my next position. If you think
-            I&apos;d be a good fit for your company, please reach out at{" "}
-            <Clickable
-              destination="external"
-              href="mailto:sayhi@helenvholmes.com"
-              type="inline"
-            >
-              sayhi@helenvholmes.com
-            </Clickable>
-            .
+            <p>
+              I&apos;m currently working on{" "}
+              <Clickable
+                href="https://buildingdesignsystems.com"
+                destination="external"
+              >
+                Building Design Systems
+              </Clickable>
+              , an irreverent technical blog, and{" "}
+              <Clickable
+                href="https://arrtifaacts-com.vercel.app/"
+                destination="external"
+              >
+                arrtifaacts
+              </Clickable>
+              , a marketing website solution for people who need a marketing
+              website but really, really don&apos;t want to agonize over it.
+            </p>
+            <p>
+              I&apos;m currently looking for my next position. If you think
+              I&apos;d be a good fit for your company, please reach out at{" "}
+              <Clickable
+                destination="external"
+                href="mailto:sayhi@helenvholmes.com"
+                type="inline"
+              >
+                sayhi@helenvholmes.com
+              </Clickable>
+              .
+            </p>
           </FadeIn>
         }
       />

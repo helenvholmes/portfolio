@@ -86,7 +86,7 @@ a:hover::after {
   const clickableClassNames = clsx(
     "transition-all duration-300",
     type === "inline" &&
-      "after:content-['']  after:block after:bg-current inline-block no-underline after:h-px after:w-full",
+      "after:content-[''] after:block after:bg-current inline-block no-underline after:h-px after:w-full break-words",
     type === "index" &&
       "italic font-medium flex flex-row items-center gap-1 group",
     type === "button" &&
