@@ -39,10 +39,7 @@ export default function Home() {
                 Building Design Systems
               </Clickable>
               , an irreverent technical blog, and{" "}
-              <Clickable
-                href="https://arrtifaacts-com.vercel.app/"
-                destination="external"
-              >
+              <Clickable href="https://arrtifaacts.com" destination="external">
                 arrtifaacts
               </Clickable>
               , a marketing website solution for people who need a marketing
