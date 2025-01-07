@@ -58,7 +58,7 @@ export interface ClickableProps {
   /** When `true`, opens item in a new tab. */
   openInNewTab?: boolean;
   /** Sets the view type for the clickable. */
-  type?: "inline" | "unstyled" | "index";
+  type?: "button" | "inline" | "unstyled" | "index";
 }
 
 /** Used for any clickable item. [Documentation]() */
@@ -84,10 +84,13 @@ a:hover::after {
 } */
 
   const clickableClassNames = clsx(
+    "transition-all duration-300",
     type === "inline" &&
-      "after:content-[''] transition-all after:block after:bg-current inline-block no-underline after:h-px after:w-full",
+      "after:content-['']  after:block after:bg-current inline-block no-underline after:h-px after:w-full",
     type === "index" &&
       "italic font-medium flex flex-row items-center gap-1 group",
+    type === "button" &&
+      "flex items-center rounded-sm outline-none focus:ring-interactive-focus focus:ring-offset-0 justify-center text-center px-3 gap-2 h-8 py-1 text-sm border border-interactive hover:border-interactive-hover focus:border-transparent focus:outline-none focus:ring-2 disabled:bg-interactive-disabled disabled:opacity-50 font-medium disabled:cursor-not-allowed w-full",
     className,
   );
 

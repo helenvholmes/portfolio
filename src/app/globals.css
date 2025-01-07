@@ -19,6 +19,9 @@
   --gradient: linear-gradient(to left, #3d2b2b, pink, #6360a0);
   --highlight: #e6dada;
   --interactive: 81, 57, 57;
+  --interactive-disabled: 227, 214, 214;
+  --interactive-focus: 153, 103, 103;
+  --interactive-hover: 81, 57, 57;
   --link-underline: 239, 227, 227;
   --shadow-color: 217, 235, 239;
   --surface-color: 240, 248, 250;
@@ -39,6 +42,9 @@
     --gradient: linear-gradient(to left, #3d2b2b, pink, #6360a0);
     --highlight: #3d2b2b;
     --interactive: 216, 204, 204;
+    --interactive-disabled: 42, 30, 30;
+    --interactive-focus: 153, 103, 103;
+    --interactive-hover: 128, 109, 109;
     --link-underline: 239, 227, 227;
     --shadow-color: 39, 28, 28;
     --surface-color: 55, 41, 41;

@@ -67,7 +67,7 @@ export function ApprovalNeeded({
         {numberOfApprovals} Approval{numberOfApprovals > 1 && "s"} needed from{" "}
         {approvalGroups &&
           approvalGroups.map((group, index) => (
-            <>
+            <span key={index}>
               {approvalGroupsLength > 1 &&
                 index !== approvalGroupsLength &&
                 approvalGroups.length === index + 1 &&
@@ -78,8 +78,14 @@ export function ApprovalNeeded({
               {index + 1 !== approvalGroupsLength &&
                 approvalGroups.length > 2 &&
                 ", "}
-            </>
+            </span>
           ))}
+      </div>
+      <div className="ml-7 flex flex-col gap-2">
+        <div className="flex w-full flex-row gap-2">
+          <Clickable type="button">Approve</Clickable>
+          <Clickable type="button">Deny</Clickable>
+        </div>
       </div>
     </div>
   );

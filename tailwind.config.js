@@ -32,6 +32,9 @@ module.exports = {
         "surface-shadow": "rgb(var(--shadow-color))",
         link: "rgb(var(--link-underline))",
         interactive: "rgb(var(--interactive))",
+        "interactive-disabled": "rgb(var(--interactive-disabled))",
+        "interactive-hover": "rgb(var(--interactive-hover))",
+        "interactive-focus": "rgb(var(--interactive-focus))",
         text: "var(--color)",
         "mt-alpha-black": {
           50: "rgba(0, 0, 0, 0.05)",
