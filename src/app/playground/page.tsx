@@ -7,27 +7,31 @@ import {
   Columns,
   Container,
   FadeIn,
+  Float,
   Label,
-  PlaygroundCard,
-  PlaygroundCardProps,
+  // PlaygroundCard,
+  // PlaygroundCardProps,
 } from "~/components";
-import Toggle from "~/components/Playground/Toggle";
+// import Toggle from "~/components/Playground/Toggle";
 
 export default function Playground() {
-  const firstColLinks = [
-    {
-      children: <Toggle value={false} onChange={() => {}} />,
-      clickableProps: { href: "/playground/toggle" },
-      label: "Toggle",
-      technology: "Framer Motion",
-    },
-    {
-      children: <>hahahahha</>,
-      clickableProps: { href: "toggle" },
-      label: "Pin Code",
-      technology: "React",
-    },
-  ] as unknown as PlaygroundCardProps[];
+  // const firstColLinks = [
+  //   {
+  //     children: <Toggle value={false} onChange={() => {}} />,
+  //     clickableProps: { href: "/playground/toggle" },
+  //     label: "Toggle",
+  //     technology: "Framer Motion",
+  //   },
+  //   {
+  //     children: <>hahahahha</>,
+  //     clickableProps: { href: "toggle" },
+  //     label: "Pin Code",
+  //     technology: "React",
+  //   },
+  // ] as unknown as PlaygroundCardProps[];
+
+  const str = "coming soon";
+  const chars = str.split("");
 
   return (
     <Container>
@@ -40,10 +44,34 @@ export default function Playground() {
         collapseBehavior="twoCol"
         firstColumn={
           <FadeIn delay={0} exitDelay={0.4} className="flex flex-col gap-12">
-            {firstColLinks &&
-              firstColLinks.map((props, index) => (
-                <PlaygroundCard {...props} key={index} />
-              ))}
+            <div className="flex gap-2">
+              {chars &&
+                chars.map((char, index) =>
+                  char === " " ? (
+                    <Float key={index} delay={index / 10} className="mr-1">
+                      {" "}
+                    </Float>
+                  ) : (
+                    <Float delay={index / 10} key={index}>
+                      {char}
+                    </Float>
+                  ),
+                )}
+            </div>
+            <div className="flex gap-2">
+              {chars &&
+                chars.map((char, index) =>
+                  char === " " ? (
+                    <Float key={index} delay={index / 10} className="mr-1">
+                      {" "}
+                    </Float>
+                  ) : (
+                    <Float delay={index / 10} key={index}>
+                      {char}
+                    </Float>
+                  ),
+                )}
+            </div>
           </FadeIn>
         }
         hideOnCollapse={0}
@@ -55,10 +83,34 @@ export default function Playground() {
         numberOfColumns={2}
         secondColumn={
           <FadeIn delay={0.1} exitDelay={0.3} className="flex flex-col gap-12">
-            {firstColLinks &&
-              firstColLinks.map((props, index) => (
-                <PlaygroundCard {...props} key={index} />
-              ))}
+            <div className="flex gap-2">
+              {chars &&
+                chars.map((char, index) =>
+                  char === " " ? (
+                    <Float key={index} delay={index / 10} className="mr-1">
+                      {" "}
+                    </Float>
+                  ) : (
+                    <Float delay={index / 10} key={index}>
+                      {char}
+                    </Float>
+                  ),
+                )}
+            </div>
+            <div className="flex gap-2">
+              {chars &&
+                chars.map((char, index) =>
+                  char === " " ? (
+                    <Float key={index} delay={index / 10} className="mr-1">
+                      {" "}
+                    </Float>
+                  ) : (
+                    <Float delay={index / 10} key={index}>
+                      {char}
+                    </Float>
+                  ),
+                )}
+            </div>
           </FadeIn>
         }
       />

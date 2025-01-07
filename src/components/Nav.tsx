@@ -162,15 +162,15 @@ export default function Nav() {
       ),
       href: "/work",
     },
-    // {
-    //   children: "playground",
-    //   className: clsx(
-    //     linkClassName,
-    //     "lg:order-4 lg:col-span-5 lg:col-start-2 lg:row-span-1 lg:row-start-4",
-    //     fontFamilies[fontFamily],
-    //   ),
-    //   href: "/playground",
-    // },
+    {
+      children: "playground",
+      className: clsx(
+        linkClassName,
+        "lg:order-4 lg:col-span-5 lg:col-start-2 lg:row-span-1 lg:row-start-4",
+        fontFamilies[fontFamily],
+      ),
+      href: "/playground",
+    },
     {
       children: "resume",
       className: clsx(
