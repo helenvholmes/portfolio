@@ -30,7 +30,7 @@ export default function Work() {
           collapseBehavior="oneCol"
           firstColumn={
             <div className="flex flex-col">
-              <FadeIn delay={0} exitDelay={0.9}>
+              <FadeIn delay={0} exitDelay={0.8}>
                 <IndexClickable
                   // cursorImage="work/ai-mapping-ui/reconcile.mp4"
                   href="/work/ai-mapping-ui"
@@ -38,7 +38,7 @@ export default function Work() {
                   AI Mapping UI
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.1} exitDelay={0.8}>
+              <FadeIn delay={0.1} exitDelay={0.7}>
                 <IndexClickable
                   // cursorImage="https://placehold.co/600x400/EEE/31343C"
                   href="/work/tables-tables-tables"
@@ -46,7 +46,15 @@ export default function Work() {
                   Tables
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.1} exitDelay={0.7}>
+              <FadeIn delay={0.2} exitDelay={0.6}>
+                <IndexClickable
+                  // cursorImage="https://placehold.co/600x400/EEE/31343C"
+                  href="/work/approvals-timeline"
+                >
+                  Approvals Timeline
+                </IndexClickable>
+              </FadeIn>
+              <FadeIn delay={0.3} exitDelay={0.5}>
                 <IndexClickable
                   // cursorImage="https://placehold.co/600x400/EEE/31343C"
                   href="/work/modern-treasury-dot-com"
@@ -54,7 +62,7 @@ export default function Work() {
                   ModernTreasury.com
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.2} exitDelay={0.6}>
+              <FadeIn delay={0.4} exitDelay={0.4}>
                 <IndexClickable
                   // cursorImage="https://placehold.co/600x400/EEE/31343C"
                   href="/work/nypl-design-system"
@@ -62,7 +70,7 @@ export default function Work() {
                   NYPL Design System
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.4} exitDelay={0.5}>
+              <FadeIn delay={0.5} exitDelay={0.3}>
                 <IndexClickable
                   // cursorImage="https://placehold.co/600x400/EEE/31343C"
                   href="/work/altitude"
@@ -70,7 +78,7 @@ export default function Work() {
                   Altitude
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.5} exitDelay={0.4}>
+              <FadeIn delay={0.6} exitDelay={0.2}>
                 <IndexClickable
                   // cursorImage="https://placehold.co/600x400/EEE/31343C"
                   href="/work/designing-developer-tools"
@@ -78,7 +86,7 @@ export default function Work() {
                   Designing Developer Tools
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.6} exitDelay={0.3}>
+              <FadeIn delay={0.7} exitDelay={0.1}>
                 <IndexClickable
                   // cursorImage="https://placehold.co/600x400/EEE/31343C"
                   href="/work/fastly-festival"
@@ -86,7 +94,7 @@ export default function Work() {
                   Fastly Festival
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.7} exitDelay={0.2}>
+              <FadeIn delay={0.8} exitDelay={0}>
                 <IndexClickable
                   // cursorImage="https://placehold.co/600x400/EEE/31343C"
                   href="/work/cip-conference"

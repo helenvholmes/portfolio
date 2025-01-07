@@ -71,5 +71,22 @@ export const CurrentUserCanReview: Story = {
         path: "/finance",
       },
     ],
+    canReviewAsGroups: [
+      {
+        id: "1",
+        name: "Finance",
+        path: "/finance",
+      },
+      {
+        id: "2",
+        name: "Operations",
+        path: "/operations",
+      },
+      {
+        id: "3",
+        name: "HR",
+        path: "/hr",
+      },
+    ],
   },
 };

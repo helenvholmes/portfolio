@@ -36,7 +36,7 @@ export default function Item({
           className={clsx(
             "flex flex-col gap-5",
             title.clickableProps &&
-              "-ml-6 cursor-pointer p-6 transition-all duration-300 xl:group-hover/item:bg-surface",
+              "-ml-6 cursor-pointer p-6 transition-all duration-300 lg:group-hover/item:bg-surface",
           )}
         >
           <dt className="font-medium">

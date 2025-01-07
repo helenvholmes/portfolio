@@ -19,9 +19,7 @@ type Group = {
 
 interface ApprovalNeededProps {
   // adminOverrideReviewer: Reviewer;
-  /** Groups the item needs approval from.
-
-      Uses the Group item props to build approval buttons. */
+  /** Groups the item needs approval from. */
   approvalGroups: Group[];
   /** A list of `Groups` the user can review as. */
   canReviewAsGroups?: Group[];
@@ -47,7 +45,7 @@ interface ApprovalNeededProps {
 export function ApprovalNeeded({
   // adminOverrideReviewer,
   approvalGroups,
-  // canReviewAsGroups,
+  canReviewAsGroups,
   className,
   // disableActions = false,
   numberOfApprovals = 1,
@@ -55,6 +53,11 @@ export function ApprovalNeeded({
   // reviewerId,
 }: ApprovalNeededProps) {
   const approvalGroupsLength = approvalGroups.length;
+  const canApprove = approvalGroups.filter(
+    (o) =>
+      canReviewAsGroups &&
+      canReviewAsGroups.some(({ id, name }) => o.id === id && o.name === name),
+  );
 
   return (
     <div className={clsx("flex flex-col gap-2", className)}>
@@ -81,12 +84,14 @@ export function ApprovalNeeded({
             </span>
           ))}
       </div>
-      <div className="ml-7 flex flex-col gap-2">
-        <div className="flex w-full flex-row gap-2">
-          <Clickable type="button">Approve</Clickable>
-          <Clickable type="button">Deny</Clickable>
+      {canApprove.length > 0 && (
+        <div className="ml-7 flex flex-col gap-2">
+          <div className="flex w-full flex-row gap-2">
+            <Clickable type="button">Approve</Clickable>
+            <Clickable type="button">Deny</Clickable>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
