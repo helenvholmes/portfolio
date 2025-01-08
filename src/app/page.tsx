@@ -30,7 +30,7 @@ export default function Home() {
         numberOfColumns={2}
         secondColumn={
           <FadeIn delay={0.1} exitDelay={0.3}>
-            <p>
+            {/* <p>
               I&apos;m currently working on{" "}
               <Clickable
                 href="https://buildingdesignsystems.com"
@@ -44,7 +44,7 @@ export default function Home() {
               </Clickable>
               , a marketing website solution for people who need a marketing
               website but really, really don&apos;t want to agonize over it.
-            </p>
+            </p> */}
             <p>
               I&apos;m currently looking for my next position. If you think
               I&apos;d be a good fit for your company, please reach out at{" "}
