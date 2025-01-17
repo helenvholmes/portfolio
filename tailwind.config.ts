@@ -4,7 +4,7 @@ import containerQueries from "@tailwindcss/container-queries";
 
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
-  // Toggle dark-mode based on .dark class or data-mode="dark"
+  // Toggle dark-mode based on .dark class or data-mode="dark" (Storybook)
   darkMode: ["class", '[data-mode="dark"]'],
   plugins: [containerQueries],
   theme: {
