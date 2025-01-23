@@ -38,14 +38,6 @@ export default function Work() {
                   AI Mapping UI
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.1} exitDelay={0.7}>
-                <IndexClickable
-                  // cursorImage="https://placehold.co/600x400/EEE/31343C"
-                  href="/work/tables-tables-tables"
-                >
-                  Tables
-                </IndexClickable>
-              </FadeIn>
               <FadeIn delay={0.2} exitDelay={0.6}>
                 <IndexClickable
                   // cursorImage="https://placehold.co/600x400/EEE/31343C"

@@ -22,14 +22,14 @@ export default function AIMappingUI() {
             <AISuggestionsCard {...MatchStory.args} loading={loading} />
           </div>
         }
-        sideBarVideo={[
-          {
-            src: "/work/ai-mapping-ui/reconcile.mp4",
-          },
-          {
-            src: "/work/ai-mapping-ui/suggested-rules.mp4",
-          },
-        ]}
+        // sideBarVideo={[
+        //   {
+        //     src: "/work/ai-mapping-ui/reconcile.mp4",
+        //   },
+        //   {
+        //     src: "/work/ai-mapping-ui/suggested-rules.mp4",
+        //   },
+        // ]}
         subMenu={{
           children: "Work",
           destination: "internal",
