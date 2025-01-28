@@ -9,6 +9,10 @@ const config: StorybookConfig = {
     "@storybook/addon-themes",
   ],
 
+  core: {
+    disableTelemetry: true, // 👈 Disables telemetry
+  },
+
   docs: {},
 
   framework: {
