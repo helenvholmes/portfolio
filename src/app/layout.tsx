@@ -66,7 +66,7 @@ export default function RootLayout({
       lang="en"
       className={`${jacquard.variable} ${irishGrover.variable} ${modak.variable} ${kablammo.variable} ${leagueScript.variable} ${oi.variable} bg-background`}
     >
-      <body>
+      <body className="text-color">
         <main>
           <div className="hidden lg:block">
             <Cursor />
