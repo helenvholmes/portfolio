@@ -9,7 +9,7 @@ export default function ModernTreasuryDotCom() {
     <>
       <WorkLayout
         hero={
-          <div className="-z-10 flex min-h-32 w-full items-center justify-items-stretch md:w-2/3">
+          <div className="flex min-h-32 w-full items-center justify-items-stretch md:w-2/3">
             <video
               width="2112"
               height="3248"

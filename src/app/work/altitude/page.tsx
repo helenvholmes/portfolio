@@ -10,7 +10,7 @@ export default function Altitude() {
     <>
       <WorkLayout
         hero={
-          <div className="-z-10 flex min-h-32 w-full items-center justify-items-stretch">
+          <div className="flex min-h-32 w-full items-center justify-items-stretch">
             <Image
               alt="Altitude 2018"
               height={3360}

@@ -9,7 +9,7 @@ export default function Artifacts() {
     <>
       <WorkLayout
         hero={
-          <div className="-z-10 flex min-h-32 w-full items-center justify-items-stretch md:w-2/3">
+          <div className="flex min-h-32 w-full items-center justify-items-stretch md:w-2/3">
             <FadeIn delay={0} exitDelay={0.7}>
               <video autoPlay loop playsInline preload="auto">
                 <source

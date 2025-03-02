@@ -10,7 +10,7 @@ export default function CIPConference() {
     <>
       <WorkLayout
         hero={
-          <div className="-z-10 flex min-h-32 w-full items-center justify-items-stretch md:w-2/3">
+          <div className="flex min-h-32 w-full items-center justify-items-stretch md:w-2/3">
             <Image
               alt=""
               src="/work/cip-conference/cipIntro.svg"
