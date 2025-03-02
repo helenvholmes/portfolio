@@ -10,6 +10,7 @@ export function Camera() {
     [],
   );
   useEffect(() => {
+    // eslint-disable-next-line no-undef
     let timeout: string | number | NodeJS.Timeout | undefined;
     const wander = () => {
       api.start({ "rotation-z": Math.random() });
