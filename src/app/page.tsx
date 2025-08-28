@@ -18,11 +18,11 @@ export default function Home() {
         collapseBehavior="twoCol"
         firstColumn={
           <FadeIn delay={0} exitDelay={0.4}>
-            I&apos;m a design engineer based in Philadelphia with a focus in
+            I&apos;m a UX designer based in Philadelphia with a focus in
             building UI for web apps. Over my career I&apos;ve worked with
             different companies to create design systems, bridging the gap
             between design and engineering to ensure best-in-class user
-            experience and front-end infrastructure.
+            experience.
           </FadeIn>
         }
         hideOnCollapse={0}
