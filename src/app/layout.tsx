@@ -1,4 +1,5 @@
 import React, { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import {
   Irish_Grover,
   Jacquard_24,
