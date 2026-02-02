@@ -1,3 +1,6 @@
+import nextTypescript from "eslint-config-next/typescript";
+import next from "eslint-config-next";
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
 import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import perfectionist from "eslint-plugin-perfectionist";
@@ -15,11 +18,10 @@ const compat = new FlatCompat({
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
-  ...compat.extends(
-    "next",
-    "next/core-web-vitals",
-    "plugin:storybook/recommended",
-  ),
+  ...nextTypescript,
+  ...next,
+  ...nextCoreWebVitals,
+  ...compat.extends("plugin:storybook/recommended"),
   {
     plugins: {
       perfectionist,
@@ -55,4 +57,7 @@ export default [
       ],
     },
   },
+  {
+    ignores: ["node_modules/**", ".next/**", "out/**", "build/**", "next-env.d.ts"]
+  }
 ];
