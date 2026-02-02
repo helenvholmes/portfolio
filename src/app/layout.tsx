@@ -1,5 +1,5 @@
-import React, { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import React, { Metadata } from "next";
 import {
   Irish_Grover,
   Jacquard_24,
@@ -111,6 +111,7 @@ export default function RootLayout({
           <div style={{ minHeight: "calc(100vh - 180px)" }}>{children}</div>
           <Footer />
         </main>
+        <Analytics />
       </body>
     </html>
   );
