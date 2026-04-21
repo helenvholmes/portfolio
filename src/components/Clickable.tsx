@@ -58,7 +58,7 @@ export interface ClickableProps {
   /** When `true`, opens item in a new tab. */
   openInNewTab?: boolean;
   /** Sets the view type for the clickable. */
-  type?: "button" | "inline" | "unstyled" | "index";
+  type?: "button" | "inline" | "inline-article" | "unstyled" | "index";
 }
 
 /** Used for any clickable item. [Documentation]() */
@@ -87,6 +87,7 @@ a:hover::after {
     "transition-all duration-300",
     type === "inline" &&
       "after:content-[''] after:block after:bg-current inline-block no-underline after:h-px after:w-full break-words",
+    type === "inline-article" && "underline",
     type === "index" &&
       "italic font-medium flex flex-row items-center gap-1 group",
     type === "button" &&

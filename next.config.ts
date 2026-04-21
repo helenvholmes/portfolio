@@ -9,21 +9,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async redirects() {
-    return [
-      {
-        destination: "https://buildingdesignsystems.com",
-        permanent: true,
-        source: "/writing",
-      },
-      // Wildcard path matching
-      // {
-      //   source: "/blog/:slug",
-      //   destination: "/news/:slug",
-      //   permanent: true,
-      // },
-    ];
-  },
   transpilePackages: ["three"],
 };
 
