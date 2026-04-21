@@ -26,7 +26,7 @@ export default function CodeOwnershipAndAI() {
         <p>
           I think the goal of Figma Make/Claude Design/whatever
           Opus-4.7-driven-thing-to-kill-them-all you&apos;re using is to
-          produce prototypes that look like your company to do the following:
+          produce prototypes that look like your company is to do the following:
         </p>
         <ul className="list-disc pl-5">
           <li>Help with requirement handoff to engineers</li>
