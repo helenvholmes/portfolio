@@ -52,7 +52,7 @@ export default function CodeOwnershipAndAI() {
           facetious.) (<Clickable href="/writing/llm-maintainable-code-meme.jpg" destination="external" openInNewTab type="inline-article">I mean AI is a better programmer than I am though.</Clickable>)
         </p>
         <p>
-          Ultimately the burden of maintenance is ultimately going to fall to an
+          The burden of maintenance is ultimately going to fall to an
           engineer. So the right call is not expecting designers to vibe-code
           your production app, which dilutes engineering ownership in odd ways,
           but to use prototypes to understand the problem you&apos;re trying to
@@ -60,9 +60,9 @@ export default function CodeOwnershipAndAI() {
         </p>
         <p>
           I think the odd designer in collaboration with their engineering team
-          may occasionally partner and ship some vibe-coded work into
+          may occasionally ship vibe-coded work into
           production. I&apos;m this kind of designer. It happens. But I
-          don&apos;t think it should be the expectation, or the expected norm.
+          don&apos;t think it should be the expectation, or the norm.
         </p>
         <p>
           —Signed, a person who&apos;s been a &ldquo;prototyper&rdquo; at a
