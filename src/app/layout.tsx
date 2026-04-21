@@ -22,8 +22,8 @@ import {
 import Nav from "~/components/Nav";
 
 export const metadata: Metadata = {
-  description: "Portfolio website of Helen V. Holmes, design engineer.",
-  title: "Helen V. Holmes · Design Engineer",
+  description: "Portfolio website of Helen V. Holmes, designer.",
+  title: "Helen V. Holmes · Designer",
 };
 
 const jacquard = Jacquard_24({
@@ -80,7 +80,7 @@ export default function RootLayout({
                   <Clickable href="/" type="unstyled" destination="internal">
                     <Label>Helen V. Holmes</Label>
                   </Clickable>
-                  Design Engineer
+                  Designer
                 </div>
               }
               collapseBehavior="twoCol"
