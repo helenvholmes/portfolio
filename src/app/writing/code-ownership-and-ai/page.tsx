@@ -69,6 +69,7 @@ export default function CodeOwnershipAndAI() {
           bunch of places before AI made us all prototypers (the future will be pretty cool) (assuming the robots don&apos;t
           kill us all).
         </p>
+        <p>Should designers code 2026?</p>
         <p>Happy vibe-coding!</p>
         <p>
           <em>
