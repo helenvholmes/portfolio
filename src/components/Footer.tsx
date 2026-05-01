@@ -83,7 +83,7 @@ export default function Footer() {
               </div>
             </div>
             <div className={columnClasses}>
-              <div className={gridClasses}>
+              {/* <div className={gridClasses}>
                 <div className={labelClasses}>
                   <Clickable href="/playground" {...clickableProps}>
                     Playground
@@ -94,7 +94,7 @@ export default function Footer() {
                 <span className="italic">Coming soon</span>
                 <span className="italic">Coming soon</span>
                 <span className="italic">Coming soon</span>
-              </div>
+              </div> */}
               <div className={gridClasses}>
                 <div className={labelClasses}>Contact</div>
                 <div className="border-b-4" />
