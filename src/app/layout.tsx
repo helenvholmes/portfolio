@@ -19,6 +19,7 @@ import {
   Footer,
   Label,
 } from "~/components";
+import CookieConsent from "~/components/CookieConsent";
 import Nav from "~/components/Nav";
 
 export const metadata: Metadata = {
@@ -111,6 +112,7 @@ export default function RootLayout({
           <div style={{ minHeight: "calc(100vh - 180px)" }}>{children}</div>
           <Footer />
         </main>
+        <CookieConsent />
         <Analytics />
       </body>
     </html>
