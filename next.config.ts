@@ -15,8 +15,8 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return [
-      { source: "/library", destination: `${LIBRARY_ORIGIN}/` },
-      { source: "/library/:path*", destination: `${LIBRARY_ORIGIN}/:path*` },
+      { source: "/library", destination: `${LIBRARY_ORIGIN}/library` },
+      { source: "/library/:path*", destination: `${LIBRARY_ORIGIN}/library/:path*` },
     ];
   },
   transpilePackages: ["three"],
