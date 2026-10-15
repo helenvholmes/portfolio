@@ -13,7 +13,7 @@ export default function CodeOwnershipAndAI() {
         type: "index",
       }}
       title={{
-        children: "I'm ready to rant about code ownership in the world of AI",
+        children: "Let's discuss code ownership",
       }}
       year="April 2026"
     >

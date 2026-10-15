@@ -6,7 +6,6 @@ import {
   Container,
   FadeIn,
   IndexClickable,
-  Label,
 } from "~/components";
 
 export default function Writing() {
@@ -26,26 +25,33 @@ export default function Writing() {
       </Container>
       <Container>
         <Columns
-          alignLabel
           collapseBehavior="oneCol"
           firstColumn={
             <div className="flex flex-col">
-              <FadeIn delay={0} exitDelay={0.6}>
+              <FadeIn delay={0} exitDelay={0.8}>
                 <IndexClickable href="/writing/industry-predictions">
-                  Ya gurl loves making industry predictions you didn&apos;t ask for
+                  Industry predictions you didn&apos;t ask for
                 </IndexClickable>
               </FadeIn>
-              <FadeIn delay={0.2} exitDelay={0.4}>
+              <FadeIn delay={0.1} exitDelay={0.7}>
                 <IndexClickable href="/writing/code-ownership-and-ai">
-                  I&apos;m ready to rant about code ownership in the world of AI
+                  Let&apos;s discuss code ownership
+                </IndexClickable>
+              </FadeIn>
+              <FadeIn delay={0.2} exitDelay={0.6}>
+                <IndexClickable href="/writing/on-critique">On critique</IndexClickable>
+              </FadeIn>
+              <FadeIn delay={0.3} exitDelay={0.5}>
+                <IndexClickable href="/writing/the-things-we-own">
+                  The things we own
+                </IndexClickable>
+              </FadeIn>
+              <FadeIn delay={0.4} exitDelay={0.4}>
+                <IndexClickable href="/writing/the-future-of-wearables">
+                  Future of wearables
                 </IndexClickable>
               </FadeIn>
             </div>
-          }
-          label={
-            <FadeIn delay={0.2}>
-              <Label>Writing</Label>
-            </FadeIn>
           }
           numberOfColumns={1}
         />

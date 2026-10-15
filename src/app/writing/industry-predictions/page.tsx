@@ -21,7 +21,7 @@ export default function IndustryPredictions() {
       }}
       title={{
         children:
-          "Ya gurl loves making industry predictions you didn't ask for",
+          "Industry predictions you didn't ask for",
       }}
       year="May 2026"
     >
